@@ -1,0 +1,90 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "48773b41-b773-40e2-8ba4-2e78c7a3e45f")
+	(paper "A4")
+	(lib_symbols)
+	(text "Replaces anti-parallel led driver in battery pack string lights.\nAdds wifi/btle for control\nWILL be more expensive\nAim to fit in the same casings.\nUse an esp32 family to make easier for \"community\" hacking rather than\nel cheapo chinesium bluetooth gear"
+		(exclude_from_sim no)
+		(at 29.972 46.482 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0ba762e4-086c-4a3e-b767-9bba81580135")
+	)
+	(text "kTwinkler"
+		(exclude_from_sim no)
+		(at 47.498 29.21 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "49f25047-32d8-458e-9cb9-5ee256176565")
+	)
+	(text "Constraints\n* Only the one user facing button from external\n* Updates?\n* Programming? USB-C inside? just serial pads?\n"
+		(exclude_from_sim no)
+		(at 30.988 122.682 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7696aca3-010c-43fa-ac85-a9b2b3ee4403")
+	)
+	(text "2016 is the cheapest smallest 40M crystal if you do this yourself the hard way"
+		(exclude_from_sim no)
+		(at 135.636 98.298 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb9fda81-6751-4e7f-8cd3-6242df4e7f0c")
+	)
+	(text "battery:  Keystone 5201 is spring, would need bending and insertion.\none of my boards is positive on left pin, one is negative....\nKeystone 5223 is the other side.  (on lcsc, but not good for straigth soldering!)\n\nHoles for mounting: they're in different places\n\nButtons: different offsets and different sides!\n"
+		(exclude_from_sim no)
+		(at 37.084 148.082 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e40ce4a3-7589-4fa1-811a-29b7442500c9")
+	)
+	(text "This controller _will_ drain the batteries when \"off\"!\nOriginal parts use ~370nA when \"off\" we'll never get that low!"
+		(exclude_from_sim no)
+		(at 33.782 106.426 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eea24f51-f0b7-4b28-9d32-9ef3091329a9")
+	)
+	(text "ESP32x in 13.2x16.6mm modules:\nESP32-C6-MINI-1-N4 - well stocked, $4 (wifi+btle+802.15.4)\nESP32-C61-MINI-1 - no stock\nESP32-C3-MINI-1-H4X - well stocked, $3 (wifi+btle)\nESP8684-MINI-1-H4 - some stock, $2  (wifi+btle)\nESP32-H2-MINI-1 - no stock (btle+802.15.4 only)\nESP32-PICO-MINI-02-N8R2 - well stocked, $5 (wifi+bt+btle)\n\nSo... C6 or C3?\nfuck matter... C3 is fine :)\n\n\n\n"
+		(exclude_from_sim no)
+		(at 29.972 85.852 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f8b964e9-0f4d-4af1-a5c0-08490cf76d3b")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

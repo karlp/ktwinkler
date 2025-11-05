@@ -1,0 +1,3 @@
+# kTwinkler
+
+Replacement controller board for some "common" battery powered led fairy lights...
