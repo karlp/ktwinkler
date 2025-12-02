@@ -596,6 +596,12 @@
           "label": "jlc-basic",
           "name": "jlc-basic",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "lcsc2#",
+          "name": "lcsc2#",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -649,6 +655,18 @@
     [
       "48773b41-b773-40e2-8ba4-2e78c7a3e45f",
       "Root"
+    ],
+    [
+      "f1fab45e-2489-4bf6-8b0f-5e1748a9ff79",
+      "esp32"
+    ],
+    [
+      "c43f945b-11fd-4720-850e-2a9100759260",
+      "leds"
+    ],
+    [
+      "974aa20f-6384-4103-a4af-e95b95e9bb34",
+      "power"
     ]
   ],
   "text_variables": {}

@@ -3646,7 +3646,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Replaces anti-parallel led driver in battery pack string lights.\nAdds wifi/btle for control\nWILL be more expensive\nAim to fit in the same casings.\nUse an esp32 family to make easier for \"community\" hacking rather than\nel cheapo chinesium bluetooth gear"
+	(text "Replaces anti-parallel led driver in battery pack string lights.\nAdds wifi/btle for control\nWILL be more expensive\nAim to fit in the same casings.\nUse an esp32 family to make easier for \"community\" hacking rather than\nel cheapo chinesium bluetooth gear\nBut you, CH572, or CH592, or CH582 would be _small_ and _lower power_ and _cheaper_?\n572d is 40c, 3x3mm, 20pins, more than enough, but fuck all ram.\n582f is 4x4mm, 28pins, we've used it before.\n584f is still only 90c, 4x4, 32pins"
 		(exclude_from_sim no)
 		(at 29.972 46.482 0)
 		(effects
