@@ -1018,7 +1018,7 @@
 	)
 	(text "fm116c: 0.04, 60k stock (600/800mA)\nad116: 0.04, 3k stock (1.1/2A)\nlk116: 0.04 200 stock (1A/2A)\nt1016h: 0.05 4k stock  (2.3A)\nbdr6120: 0.05 ~zero stock\ngr6205: 0.03 2k stock (200mA)\nhl116: 0.03 3k stock (500/800mA)"
 		(exclude_from_sim no)
-		(at 117.856 34.798 0)
+		(at 117.602 37.338 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1768,6 +1768,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1852,6 +1858,12 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "J7")
+					(unit 1)
+				)
+			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -1940,6 +1952,12 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2041,6 +2059,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2129,6 +2153,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2214,6 +2244,12 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2315,6 +2351,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2381,6 +2423,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2444,6 +2492,12 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2545,6 +2599,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2611,6 +2671,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2674,6 +2740,12 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2764,6 +2836,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2848,6 +2926,12 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -2949,6 +3033,12 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3036,6 +3126,18 @@
 					(unit 1)
 				)
 			)
+			(project "leds"
+				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

@@ -5,6 +5,177 @@
 	(uuid "d0017722-6c4c-43fd-bf9f-addbf649d146")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Antenna_Dipole"
 			(pin_numbers
 				(hide yes)
@@ -106,6 +277,156 @@
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -473,6 +794,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "karl-atomic-basic:KR0402_0R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "0R"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, 0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C17168"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "0402WGF0000TCE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "jlcbasic" "basic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor 0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_0603*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "KR0402_0R_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "KR0402_0R_1_1"
+				(text "0402"
+					(at 0 0 900)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "karl-atomic-basic:KR0402_22R"
 			(pin_numbers
 				(hide yes)
@@ -635,7 +1118,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-atomic-basic:KR0603_0R"
+		(symbol "karl-atomic-basic:KR0402_470R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -655,7 +1138,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "0R"
+			(property "Value" "470R"
 				(at 0.762 -1.016 0)
 				(effects
 					(font
@@ -664,7 +1147,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 				(at 0 0 0)
 				(effects
 					(font
@@ -691,7 +1174,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part #" "C21189"
+			(property "LCSC Part #" "C25117"
 				(at 0 0 0)
 				(effects
 					(font
@@ -700,7 +1183,7 @@
 					(hide yes)
 				)
 			)
-			(property "MPN" "0603WAF0000T5E"
+			(property "MPN" "0402WGF4700TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -718,7 +1201,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R resistor 0603"
+			(property "ki_keywords" "R resistor 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -736,7 +1219,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "KR0603_0R_0_1"
+			(symbol "KR0402_470R_0_1"
 				(rectangle
 					(start -0.762 1.778)
 					(end 0.762 -1.778)
@@ -749,8 +1232,8 @@
 					)
 				)
 			)
-			(symbol "KR0603_0R_1_1"
-				(text "0603"
+			(symbol "KR0402_470R_1_1"
+				(text "0402"
 					(at 0 0 900)
 					(effects
 						(font
@@ -2129,6 +2612,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "double check vddspi on fh4 package"
+		(exclude_from_sim no)
+		(at 182.118 41.148 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "19067f1b-949d-433b-92d5-a474ff4b2339")
+	)
 	(text "hang on....\nI was going to yolo this,\nbut.. do I need to?\nwell, what was the point otherwise?"
 		(exclude_from_sim no)
 		(at 39.624 54.864 0)
@@ -2186,6 +2679,12 @@
 		(uuid "0e12e505-a878-4834-b6ea-79008a20b790")
 	)
 	(junction
+		(at 203.2 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1039a451-a70c-4e52-bc97-a99364944657")
+	)
+	(junction
 		(at 119.38 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2202,6 +2701,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47080abf-e81d-48c6-899b-870afc23d1d3")
+	)
+	(junction
+		(at 213.36 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53d14f07-d870-4b91-98d7-7ade89aa3369")
+	)
+	(junction
+		(at 213.36 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59e43da6-75c5-4ce1-9cf4-54a9e16d4993")
 	)
 	(junction
 		(at 167.64 45.72)
@@ -2232,6 +2743,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5c58b51-d482-4a5a-9cae-681a4f11b104")
+	)
+	(junction
+		(at 203.2 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9b1eda1-2341-4f14-b064-68c86fc3a306")
 	)
 	(no_connect
 		(at 177.8 48.26)
@@ -2289,6 +2806,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 73.66) (xy 137.16 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2261ef77-48f2-4a98-b5c6-26ab1e85b744")
+	)
+	(wire
+		(pts
 			(xy 127 96.52) (xy 132.08 96.52)
 		)
 		(stroke
@@ -2296,6 +2823,56 @@
 			(type default)
 		)
 		(uuid "29edf44c-20b1-4805-a69d-39e9bad34632")
+	)
+	(wire
+		(pts
+			(xy 142.24 73.66) (xy 149.86 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bf24a6d-8f57-44d4-b9b2-3648904a03e0")
+	)
+	(wire
+		(pts
+			(xy 96.52 76.2) (xy 149.86 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2def9e7f-6ead-42ec-ad5c-25ac90fb020a")
+	)
+	(wire
+		(pts
+			(xy 203.2 33.02) (xy 203.2 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f546cbb-be5c-44be-a713-edf769642498")
+	)
+	(wire
+		(pts
+			(xy 96.52 78.74) (xy 99.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ee642c-c79f-482a-9b26-0bf3647a5e6b")
+	)
+	(wire
+		(pts
+			(xy 223.52 25.4) (xy 223.52 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33c94fc7-9e9b-45e7-8ed3-08247789160c")
 	)
 	(wire
 		(pts
@@ -2319,6 +2896,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 30.48) (xy 203.2 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4105d082-e926-4f77-ae3b-703ec4b967eb")
+	)
+	(wire
+		(pts
 			(xy 124.46 104.14) (xy 144.78 104.14)
 		)
 		(stroke
@@ -2326,6 +2913,16 @@
 			(type default)
 		)
 		(uuid "41ac1c8b-a047-4b20-9ae1-1c84dd395044")
+	)
+	(wire
+		(pts
+			(xy 223.52 33.02) (xy 213.36 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b5c694-ad86-4f48-8ac2-442bef54e11a")
 	)
 	(wire
 		(pts
@@ -2399,7 +2996,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 48.26) (xy 207.01 53.34)
+			(xy 208.28 48.26) (xy 208.28 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2419,6 +3016,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 30.48) (xy 223.52 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e767db3-1f6f-4e01-a9a2-6d374485daca")
+	)
+	(wire
+		(pts
 			(xy 162.56 40.64) (xy 162.56 45.72)
 		)
 		(stroke
@@ -2426,6 +3033,26 @@
 			(type default)
 		)
 		(uuid "6edaf041-3405-4f1a-adff-a5aa4926c9fc")
+	)
+	(wire
+		(pts
+			(xy 213.36 33.02) (xy 203.2 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b63c08-21d6-46d1-ac8c-74dce07c3f0e")
+	)
+	(wire
+		(pts
+			(xy 213.36 30.48) (xy 213.36 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d7f1f5-eb29-4f8a-bc5d-a06a0857413b")
 	)
 	(wire
 		(pts
@@ -2509,6 +3136,26 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 22.86) (xy 203.2 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0ea4b91-6a90-4b51-acfe-45feaaadb14c")
+	)
+	(wire
+		(pts
+			(xy 203.2 20.32) (xy 203.2 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa77af21-7014-4845-93cb-d95778e21606")
+	)
+	(wire
+		(pts
 			(xy 132.08 68.58) (xy 149.86 68.58)
 		)
 		(stroke
@@ -2516,6 +3163,16 @@
 			(type default)
 		)
 		(uuid "b62aba78-a15e-4176-bbb7-8094c728b4f0")
+	)
+	(wire
+		(pts
+			(xy 99.06 78.74) (xy 99.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b973335d-c656-4eac-af5d-1be7e485ac7c")
 	)
 	(wire
 		(pts
@@ -2559,7 +3216,17 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 53.34) (xy 201.93 53.34)
+			(xy 223.52 22.86) (xy 213.36 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9502071-2b19-46c1-bfb0-58522d1be30b")
+	)
+	(wire
+		(pts
+			(xy 195.58 53.34) (xy 203.2 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2589,6 +3256,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 22.86) (xy 203.2 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2849dc4-3193-4de8-b71e-7116ac3cefe0")
+	)
+	(wire
+		(pts
 			(xy 167.64 45.72) (xy 172.72 45.72)
 		)
 		(stroke
@@ -2596,6 +3273,16 @@
 			(type default)
 		)
 		(uuid "e59ce772-da06-42df-99da-f8cc4d815d29")
+	)
+	(wire
+		(pts
+			(xy 213.36 25.4) (xy 213.36 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf11be3-4790-4fae-a31a-190d2e6a765d")
 	)
 	(wire
 		(pts
@@ -2834,7 +3521,7 @@
 	)
 	(symbol
 		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
-		(at 133.35 43.18 0)
+		(at 203.2 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2843,7 +3530,7 @@
 		(fields_autoplaced yes)
 		(uuid "1872f17f-3c17-4c5b-a01a-ce2e84c914e5")
 		(property "Reference" "C14"
-			(at 135.89 41.4071 0)
+			(at 205.74 26.1671 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2852,7 +3539,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 135.89 43.9471 0)
+			(at 205.74 28.7071 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2861,7 +3548,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 132.842 46.99 0)
+			(at 202.692 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2870,7 +3557,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 133.35 43.18 0)
+			(at 203.2 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2879,7 +3566,7 @@
 			)
 		)
 		(property "Description" "16V X7R"
-			(at 133.35 46.99 0)
+			(at 203.2 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,7 +3575,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KO5NNNC"
-			(at 133.096 46.99 0)
+			(at 202.946 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2897,7 +3584,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1525"
-			(at 133.35 46.99 0)
+			(at 203.2 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2906,7 +3593,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 133.35 43.18 0)
+			(at 203.2 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2924,6 +3611,110 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 243.84 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1efd55b5-a15e-4f8d-8bc4-bcd5027655f2")
+		(property "Reference" "SW1"
+			(at 243.84 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 243.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+			(at 243.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS-1187A-B-A-B"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "lcsc2#" ""
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C318884"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87fb7b09-7241-48db-9779-1a2a9c6d78d1")
+		)
+		(pin "2"
+			(uuid "c20c2080-645c-409a-a69c-7f9e6dbbcf3e")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3189,7 +3980,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Dipole")
-		(at 207.01 43.18 0)
+		(at 208.28 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3198,7 +3989,7 @@
 		(fields_autoplaced yes)
 		(uuid "3788cca4-180b-4d33-aafd-8bb086c238b0")
 		(property "Reference" "AE1"
-			(at 213.36 44.4499 0)
+			(at 214.63 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3206,8 +3997,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Antenna_Dipole"
-			(at 213.36 46.9899 0)
+		(property "Value" "Antenna_lolpole"
+			(at 214.63 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3216,7 +4007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 43.18 0)
+			(at 208.28 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +4016,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 43.18 0)
+			(at 208.28 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3234,7 +4025,7 @@
 			)
 		)
 		(property "Description" "Dipole antenna"
-			(at 207.01 43.18 0)
+			(at 208.28 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3439,35 +4230,33 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
-		(at 153.67 43.18 0)
+		(lib_id "karl-atomic-basic:KR0402_470R")
+		(at 139.7 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "49064e10-b500-4618-85cf-971f73435371")
-		(property "Reference" "C13"
-			(at 156.21 41.4071 0)
+		(uuid "4685e65c-1e0e-4333-9366-d3be35c3de19")
+		(property "Reference" "R9"
+			(at 139.7 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 156.21 43.9471 0)
+		(property "Value" "470R"
+			(at 139.7 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 153.162 46.99 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 139.7 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3476,7 +4265,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 43.18 0)
+			(at 139.7 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3484,8 +4273,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V X7R"
-			(at 153.67 46.99 0)
+		(property "Description" "Resistor, 0603"
+			(at 139.7 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3493,8 +4282,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
-			(at 153.416 46.99 0)
+		(property "LCSC Part #" "C25117"
+			(at 139.7 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,8 +4291,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C1525"
-			(at 153.67 46.99 0)
+		(property "MPN" "0402WGF4700TCE"
+			(at 139.7 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3512,7 +4301,104 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 153.67 43.18 0)
+			(at 139.7 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fdf9d20a-e5e4-40f4-9ff9-3fc18adb12c9")
+		)
+		(pin "2"
+			(uuid "8bccd23b-1916-4239-bfb8-09a733adbf91")
+		)
+		(instances
+			(project ""
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
+		(at 223.52 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49064e10-b500-4618-85cf-971f73435371")
+		(property "Reference" "C13"
+			(at 226.06 26.1671 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 226.06 28.7071 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 223.012 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "16V X7R"
+			(at 223.52 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 223.266 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1525"
+			(at 223.52 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 223.52 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3530,6 +4416,101 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KR0402_0R")
+		(at 205.74 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ada02bc-45f4-44c4-adb0-2192e8e4fe48")
+		(property "Reference" "R3"
+			(at 205.74 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 205.74 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 205.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, 0603"
+			(at 205.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17168"
+			(at 205.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 205.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 205.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b0fc7f1-5e3a-430b-b756-b60c4a115d6e")
+		)
+		(pin "2"
+			(uuid "8651925b-cb77-4705-bb13-e6f94f80de75")
+		)
+		(instances
+			(project ""
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3734,33 +4715,17 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KR0603_0R")
-		(at 204.47 53.34 90)
+		(lib_id "power:+3V3")
+		(at 203.2 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "75c149c7-ba40-446f-9781-9e435c2a7a9d")
-		(property "Reference" "R3"
-			(at 204.47 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 204.47 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 53.34 0)
+		(uuid "6f6dbe83-647e-4c19-9c9c-dca921d9791c")
+		(property "Reference" "#PWR024"
+			(at 203.2 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3768,8 +4733,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 204.47 53.34 0)
+		(property "Value" "+3V3"
+			(at 203.2 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3777,8 +4750,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, 0603"
-			(at 204.47 53.34 0)
+		(property "Datasheet" ""
+			(at 203.2 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3786,26 +4759,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C21189"
-			(at 204.47 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF0000T5E"
-			(at 204.47 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 204.47 53.34 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 203.2 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3814,15 +4769,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "57a19f27-2c45-417d-bc75-c03db1683e04")
-		)
-		(pin "2"
-			(uuid "e2c4f9a1-7c27-4ddf-863d-70d49459867a")
+			(uuid "06443280-3401-46f1-ac7d-64e596faf147")
 		)
 		(instances
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "R3")
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 91.44 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a64905c-0c1c-48d6-8e9a-05c494265a32")
+		(property "Reference" "J5"
+			(at 91.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 91.44 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fd3da1b8-8d6c-4ac0-985d-6380db1f1bca")
+		)
+		(pin "1"
+			(uuid "5f551e57-4102-4afa-b2c3-ae2535163104")
+		)
+		(pin "3"
+			(uuid "60b7f7a6-3841-40c9-b600-6ff85284adb6")
+		)
+		(instances
+			(project ""
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4058,7 +5081,7 @@
 	)
 	(symbol
 		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
-		(at 143.51 43.18 0)
+		(at 213.36 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4067,7 +5090,7 @@
 		(fields_autoplaced yes)
 		(uuid "a984d0cf-b2ce-49f5-b07a-39e529260a26")
 		(property "Reference" "C2"
-			(at 146.05 41.4071 0)
+			(at 215.9 26.1671 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4076,7 +5099,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 146.05 43.9471 0)
+			(at 215.9 28.7071 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4085,7 +5108,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 143.002 46.99 0)
+			(at 212.852 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4094,7 +5117,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 43.18 0)
+			(at 213.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4103,7 +5126,7 @@
 			)
 		)
 		(property "Description" "16V X7R"
-			(at 143.51 46.99 0)
+			(at 213.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,7 +5135,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KO5NNNC"
-			(at 143.256 46.99 0)
+			(at 213.106 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4121,7 +5144,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1525"
-			(at 143.51 46.99 0)
+			(at 213.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4130,7 +5153,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 143.51 43.18 0)
+			(at 213.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4315,6 +5338,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 203.2 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8c8c0c3-32f1-4d8e-861a-fba44deb8ab7")
+		(property "Reference" "#PWR025"
+			(at 203.2 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c71ddd5c-1632-4048-98c9-74ee5a1782ca")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "karl-atomic-basic:KR0402_22R")
 		(at 129.54 66.04 90)
 		(unit 1)
@@ -4404,6 +5493,72 @@
 			(project ""
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8be69d5-1403-45c7-b3b2-a06ab0422bb8")
+		(property "Reference" "#PWR026"
+			(at 99.06 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a83b380-88a9-4c81-b0c0-37cf5153fe37")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
