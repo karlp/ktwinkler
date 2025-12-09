@@ -1008,172 +1008,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-atomic-basic:KC0603_100nF"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "100nF"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-				(at -0.508 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "50V, X7R"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "CC0603KRX7R9BB104"
-				(at -0.254 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" "C14663"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "KC0603_100nF_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "KC0603_100nF_1_1"
-				(text "0603"
-					(at -1.524 1.27 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "karl-atomic-basic:KC0805_22uF_25V"
 			(pin_numbers
 				(hide yes)
@@ -4211,182 +4045,6 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0603_100nF")
-		(at 148.59 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04ca5dfb-575e-4fff-84f4-17d18a68850d")
-		(property "Reference" "C3"
-			(at 151.13 115.0671 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 151.13 117.6071 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 148.082 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50V, X7R"
-			(at 148.59 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 148.336 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 148.59 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "66e56cad-0558-4e38-b2de-b79d49d9ae41")
-		)
-		(pin "1"
-			(uuid "18dfe837-3bd7-46bd-acbf-900f13fe13bd")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/974aa20f-6384-4103-a4af-e95b95e9bb34"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-atomic-basic:KC0603_100nF")
-		(at 160.02 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07f4f8b6-ca74-4bf5-bc5b-bc8694389678")
-		(property "Reference" "C4"
-			(at 162.56 115.0671 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 162.56 117.6071 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 159.512 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50V, X7R"
-			(at 160.02 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 159.766 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 160.02 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "098d45ea-c773-4a08-9339-449ddaa3bde3")
-		)
-		(pin "1"
-			(uuid "e30fe321-28e0-496b-aa23-1efbbbbeedaf")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/974aa20f-6384-4103-a4af-e95b95e9bb34"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 58.42 149.86 0)
 		(mirror y)
@@ -4622,10 +4280,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "163f8a44-f135-4cbc-94f1-f132f60c248f")
 		(property "Reference" "R1"
-			(at 86.36 43.18 90)
+			(at 82.804 46.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +4290,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 86.36 45.72 90)
+			(at 90.424 46.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6649,10 +6306,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f4573f46-edb1-4477-9b3e-b9573093320c")
 		(property "Reference" "R2"
-			(at 86.36 45.72 90)
+			(at 82.804 52.324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6660,7 +6316,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 86.36 48.26 90)
+			(at 90.17 52.324 90)
 			(effects
 				(font
 					(size 1.27 1.27)

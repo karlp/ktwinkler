@@ -147,7 +147,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-atomic-basic:KC0603_100nF"
+		(symbol "karl-atomic-basic:KC0402_100nF_16V"
 			(pin_numbers
 				(hide yes)
 			)
@@ -176,7 +176,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 				(at -0.508 -3.81 0)
 				(effects
 					(font
@@ -194,7 +194,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "50V, X7R"
+			(property "Description" "16V X7R"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -203,7 +203,7 @@
 					(hide yes)
 				)
 			)
-			(property "MPN" "CC0603KRX7R9BB104"
+			(property "MPN" "CL05B104KO5NNNC"
 				(at -0.254 -3.81 0)
 				(effects
 					(font
@@ -212,8 +212,17 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part #" "C14663"
+			(property "LCSC Part #" "C1525"
 				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "jlcbasic" "basic"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -239,7 +248,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "KC0603_100nF_0_1"
+			(symbol "KC0402_100nF_16V_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -265,8 +274,8 @@
 					)
 				)
 			)
-			(symbol "KC0603_100nF_1_1"
-				(text "0603"
+			(symbol "KC0402_100nF_16V_1_1"
+				(text "0402"
 					(at -1.524 1.27 0)
 					(effects
 						(font
@@ -1016,6 +1025,17 @@
 		)
 		(uuid "0d19af72-0d54-420d-ad1f-37dd75d570df")
 	)
+	(text "Try and split these power? to eval the drivers separately?"
+		(exclude_from_sim no)
+		(at 170.434 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8eae7701-6bf4-4cc3-a2c8-d1cc97560ea8")
+	)
 	(text "fm116c: 0.04, 60k stock (600/800mA)\nad116: 0.04, 3k stock (1.1/2A)\nlk116: 0.04 200 stock (1A/2A)\nt1016h: 0.05 4k stock  (2.3A)\nbdr6120: 0.05 ~zero stock\ngr6205: 0.03 2k stock (200mA)\nhl116: 0.03 3k stock (500/800mA)"
 		(exclude_from_sim no)
 		(at 117.602 37.338 0)
@@ -1026,6 +1046,12 @@
 			(justify left)
 		)
 		(uuid "98f96e5d-8190-45fc-9fe3-8e3d017fe413")
+	)
+	(junction
+		(at 101.6 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "001859a4-3f66-46f4-8389-95da19384a56")
 	)
 	(junction
 		(at 60.96 55.88)
@@ -1040,10 +1066,10 @@
 		(uuid "1c1abcd5-7da9-4b60-8efa-eb47619e3061")
 	)
 	(junction
-		(at 104.14 63.5)
+		(at 101.6 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "35f45c6d-bfcc-46be-a6f6-96f073414f41")
+		(uuid "36581bca-4282-4ccc-83fd-fed8ce7c57b7")
 	)
 	(junction
 		(at 60.96 127)
@@ -1052,50 +1078,32 @@
 		(uuid "72aaa1b4-278c-4360-9038-e18c15d9d13e")
 	)
 	(junction
-		(at 104.14 99.06)
+		(at 101.6529 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9e2648a5-312a-4e0d-add9-13e92fb9044c")
+		(uuid "7b0bf8cf-f38d-4b32-960e-1dcbbb406439")
 	)
 	(junction
-		(at 104.14 93.98)
+		(at 101.6529 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bd201776-9a52-4254-a2bd-756a1debc2a2")
+		(uuid "865e55ac-aac8-4b91-a897-ff7bfa0ad837")
 	)
 	(junction
-		(at 104.14 129.54)
+		(at 101.6 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cdaf7347-a608-4d28-bac8-ff049a1d90fa")
+		(uuid "cdd1ca60-46fd-4f43-881f-56ee9d7f8a25")
 	)
 	(junction
-		(at 104.14 134.62)
+		(at 101.6 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d44e0656-2ad4-4f33-a15b-fb6599bf13da")
-	)
-	(junction
-		(at 104.14 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d7d11a97-35b2-40fd-bcb2-49995d687216")
-	)
-	(junction
-		(at 104.14 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "efb95401-4967-4a5f-ad4a-594c21d2a50d")
-	)
-	(junction
-		(at 104.14 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1e6ae36-a9fe-4b8b-bb5d-894a7805bc4d")
+		(uuid "e4cd3e0b-7730-4791-8576-3882614579a6")
 	)
 	(wire
 		(pts
-			(xy 104.14 170.18) (xy 121.92 170.18)
+			(xy 93.98 170.18) (xy 101.6 170.18)
 		)
 		(stroke
 			(width 0)
@@ -1105,13 +1113,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 170.18) (xy 104.14 170.18)
+			(xy 101.6529 93.98) (xy 121.92 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b503b30-4477-42d7-a851-8dd4c35e404a")
+		(uuid "0524a48b-9070-4dde-aa11-b2505b050a50")
 	)
 	(wire
 		(pts
@@ -1145,13 +1153,13 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 58.42) (xy 104.14 58.42)
+			(xy 101.6 170.18) (xy 121.92 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "172f8074-a792-463d-aa24-2725c053b363")
+		(uuid "1a1a9347-24c6-465a-854f-1005d14df6a6")
 	)
 	(wire
 		(pts
@@ -1172,6 +1180,16 @@
 			(type default)
 		)
 		(uuid "1bd699a1-34a1-4b2b-a010-28804739b4f8")
+	)
+	(wire
+		(pts
+			(xy 101.6529 99.06) (xy 121.92 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed784ca-9350-4289-bdae-23b25ca10ff9")
 	)
 	(wire
 		(pts
@@ -1205,16 +1223,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 99.06) (xy 121.92 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "369f0fc0-8259-4840-9e9e-5c8c2c65e3df")
-	)
-	(wire
-		(pts
 			(xy 76.2 175.26) (xy 76.2 180.34)
 		)
 		(stroke
@@ -1225,7 +1233,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 93.98) (xy 104.14 93.98)
+			(xy 86.36 93.98) (xy 101.6529 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1255,7 +1263,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 99.06) (xy 104.14 99.06)
+			(xy 93.98 99.06) (xy 101.6529 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1275,6 +1283,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 134.62) (xy 121.92 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "494e7001-1f52-468d-ab7a-acd5885ceb63")
+	)
+	(wire
+		(pts
 			(xy 50.8 129.54) (xy 66.04 129.54)
 		)
 		(stroke
@@ -1285,7 +1303,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 134.62) (xy 104.14 134.62)
+			(xy 93.98 134.62) (xy 101.6 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1315,23 +1333,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 165.1) (xy 121.92 165.1)
+			(xy 86.36 165.1) (xy 101.6 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "68e69ea7-15a8-45ae-96ae-161f7eb13e8f")
-	)
-	(wire
-		(pts
-			(xy 104.14 93.98) (xy 121.92 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bc81bf3-32de-4594-948d-92bf72d71847")
 	)
 	(wire
 		(pts
@@ -1345,17 +1353,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 165.1) (xy 104.14 165.1)
+			(xy 101.6 129.54) (xy 121.92 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b8354df-393d-4c30-87fd-38aac3f9155f")
+		(uuid "78287aa0-4cdc-4987-84fd-a71e0d94eddd")
 	)
 	(wire
 		(pts
-			(xy 104.14 58.42) (xy 121.92 58.42)
+			(xy 86.36 58.42) (xy 121.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1375,17 +1383,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 63.5) (xy 104.14 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84b4a779-aebf-4a47-ad77-ea3f7dcc899c")
-	)
-	(wire
-		(pts
-			(xy 104.14 63.5) (xy 121.92 63.5)
+			(xy 93.98 63.5) (xy 121.92 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1402,16 +1400,6 @@
 			(type default)
 		)
 		(uuid "94a22b5f-4483-4b35-9b1d-3a4912631034")
-	)
-	(wire
-		(pts
-			(xy 104.14 129.54) (xy 121.92 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99f87733-639a-47b3-9ad6-86d8d2133952")
 	)
 	(wire
 		(pts
@@ -1495,16 +1483,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 134.62) (xy 121.92 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca2d604f-eeb0-4d51-8540-a1ae30396545")
-	)
-	(wire
-		(pts
 			(xy 86.36 132.08) (xy 93.98 132.08)
 		)
 		(stroke
@@ -1522,6 +1500,16 @@
 			(type default)
 		)
 		(uuid "d6d46bab-0b67-46fa-9b73-6f43e83c22a4")
+	)
+	(wire
+		(pts
+			(xy 101.6 165.1) (xy 121.92 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da4b3fee-7e7a-484f-822a-20bf5d51a65b")
 	)
 	(wire
 		(pts
@@ -1575,7 +1563,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 129.54) (xy 104.14 129.54)
+			(xy 86.36 129.54) (xy 101.6 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1683,100 +1671,6 @@
 		(uuid "f7cc0c15-341b-48c3-82f9-36eec50fca5e")
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0603_100nF")
-		(at 104.14 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00cb7d40-16b2-4f0f-a41b-b4377acf220a")
-		(property "Reference" "C5"
-			(at 106.68 59.1871 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 106.68 61.7271 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 103.632 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50V, X7R"
-			(at 104.14 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 103.886 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 104.14 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f19fcfe3-af85-4da1-9c91-13608b95f681")
-		)
-		(pin "1"
-			(uuid "458c3b64-eff5-4f5b-8334-066cedd6698f")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 127 132.08 0)
 		(mirror x)
@@ -1870,17 +1764,17 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0603_100nF")
-		(at 104.14 167.64 0)
+		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
+		(at 101.6 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "094c093b-ae05-41b5-a5b6-698ff667f402")
-		(property "Reference" "C8"
-			(at 106.68 165.8671 0)
+		(uuid "2b1e8a26-404c-4746-8719-f9e2f1a78a9c")
+		(property "Reference" "C4"
+			(at 104.14 130.3071 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1889,7 +1783,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 106.68 168.4071 0)
+			(at 104.14 132.8471 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1897,8 +1791,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 103.632 171.45 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.092 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1907,7 +1801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 167.64 0)
+			(at 101.6 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,8 +1809,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "50V, X7R"
-			(at 104.14 171.45 0)
+		(property "Description" "16V X7R"
+			(at 101.6 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1924,8 +1818,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 103.886 171.45 0)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 101.346 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,8 +1827,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C14663"
-			(at 104.14 171.45 0)
+		(property "LCSC Part #" "C1525"
+			(at 101.6 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 101.6 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1943,21 +1846,112 @@
 			)
 		)
 		(pin "2"
-			(uuid "dadc120f-b4fe-41fb-ba81-3b5597314bc5")
+			(uuid "99a29c4d-e91c-4677-a14b-da5f3884a30b")
 		)
 		(pin "1"
-			(uuid "f163dd75-916a-4e5a-8934-8643be9bb735")
+			(uuid "83e94a0f-e492-427b-a6f7-a464d7c70b10")
 		)
 		(instances
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "C8")
+					(reference "C4")
 					(unit 1)
 				)
 			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "C?")
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
+		(at 101.5498 60.7943 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34814a37-1c9f-4124-bb24-a822d39860df")
+		(property "Reference" "C6"
+			(at 104.0898 59.0214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 104.0898 61.5614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.0418 64.6043 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.5498 60.7943 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "16V X7R"
+			(at 101.5498 64.6043 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 101.2958 64.6043 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1525"
+			(at 101.5498 64.6043 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 101.5498 60.7943 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "383198df-2977-477c-aa22-0d7269f27627")
+		)
+		(pin "1"
+			(uuid "83b8e290-104c-40f8-87f7-1a1ef2dccb66")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -2068,17 +2062,17 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0603_100nF")
-		(at 104.14 96.52 0)
+		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
+		(at 101.6529 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "48fa1f23-960f-4af1-a42f-3cdcbaa0ea10")
-		(property "Reference" "C6"
-			(at 106.68 94.7471 0)
+		(uuid "413c4a06-7f45-45d6-87f9-04c9a841c59a")
+		(property "Reference" "C5"
+			(at 104.1929 94.7471 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,7 +2081,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 106.68 97.2871 0)
+			(at 104.1929 97.2871 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,8 +2089,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 103.632 100.33 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.1449 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2105,7 +2099,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 96.52 0)
+			(at 101.6529 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2113,8 +2107,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "50V, X7R"
-			(at 104.14 100.33 0)
+		(property "Description" "16V X7R"
+			(at 101.6529 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2122,8 +2116,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 103.886 100.33 0)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 101.3989 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2131,8 +2125,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C14663"
-			(at 104.14 100.33 0)
+		(property "LCSC Part #" "C1525"
+			(at 101.6529 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,93 +2134,8 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "3cd1dc79-1c41-4516-b72a-d223279e300b")
-		)
-		(pin "1"
-			(uuid "4e7f9d5c-f66c-4eb0-b59b-1e58e3dd1339")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-atomic-basic:KC0603_100nF")
-		(at 104.14 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54dff3ec-58a6-4788-a17e-3e266ea9fc2f")
-		(property "Reference" "C7"
-			(at 106.68 130.3071 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 106.68 132.8471 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 103.632 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50V, X7R"
-			(at 104.14 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 103.886 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 104.14 135.89 0)
+		(property "jlcbasic" "basic"
+			(at 101.6529 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2235,21 +2144,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "52e7ed60-327c-421f-abf1-774b571b9aa1")
+			(uuid "8e8d361c-1433-4eab-84a5-ffe25f41aab5")
 		)
 		(pin "1"
-			(uuid "94fd80ed-7529-469b-a523-0eb5799d0f35")
+			(uuid "cb6655c3-2f90-4d0e-883d-2fd7b0456e8f")
 		)
 		(instances
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "C?")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -2602,6 +2505,103 @@
 			(project "leds"
 				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
 					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
+		(at 101.6 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f239e62-6419-45b2-9b77-fcd993f74753")
+		(property "Reference" "C3"
+			(at 104.14 165.8671 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 104.14 168.4071 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.092 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "16V X7R"
+			(at 101.6 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 101.346 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1525"
+			(at 101.6 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 101.6 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "82529d78-32b4-42db-9bc4-6bafe44086b3")
+		)
+		(pin "1"
+			(uuid "17312386-19c8-41f7-83d9-44f993d8087f")
+		)
+		(instances
+			(project ""
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "C3")
 					(unit 1)
 				)
 			)
