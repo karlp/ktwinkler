@@ -458,156 +458,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "karl-atomic-basic:KC0402_100nF_16V"
 			(pin_numbers
 				(hide yes)
@@ -1632,168 +1482,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-atomic-basic:KR0402_22R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "0R"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, 0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" "C25092"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "0402WGF220JTCE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "jlcbasic" "basic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor 0402"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_0603*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "KR0402_22R_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "KR0402_22R_1_1"
-				(text "0402"
-					(at 0 0 900)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "karl-atomic-basic:KR0402_470R"
 			(pin_numbers
 				(hide yes)
@@ -2304,6 +1992,232 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "karl-parts:Crystal_40M_2016_TAXM40M4ZHBCDT2T"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 1.27 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_32M_2016_XTM20032000DT00351005"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304031830_Yajingxin-TAXM40M4ZHBCDT2T_C424432.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40MHz 15pf 10ppm, 2016-4 crystal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "TAXM40M4ZHBCDT2T"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C424432"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_40M_2016_TAXM40M4ZHBCDT2T_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.762) (xy -1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 -1.524)
+					(end 0.762 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.762) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_40M_2016_TAXM40M4ZHBCDT2T_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.635)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.635)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.762 0.762)
 							)
 						)
 					)
@@ -3005,241 +2919,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-parts:XL2EL89CPI-111YLC-40M"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 1.27 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "XL2EL89CPI-111YLC-40M"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603166568012525568"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "40MHz 15pF 10/20ppm SMD3225-4P"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" "C5444549"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "XL2EL89CPI-111YLC-40M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "jlcbasic" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "quartz ceramic resonator oscillator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Crystal*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XL2EL89CPI-111YLC-40M_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.762) (xy -1.27 0.762)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 -1.524)
-					(end 0.762 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.762) (xy 1.27 0.762)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "XL2EL89CPI-111YLC-40M_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.635)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.635)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -3604,12 +3283,6 @@
 		(uuid "59e43da6-75c5-4ce1-9cf4-54a9e16d4993")
 	)
 	(junction
-		(at 91.44 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "657f6ad0-6168-442e-9d74-7fb5745ae594")
-	)
-	(junction
 		(at 127 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3634,12 +3307,6 @@
 		(uuid "7dd53d29-d941-4304-be02-96219bd1260e")
 	)
 	(junction
-		(at 175.26 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ec9ab03-fd4f-4701-b6cb-a30b989289a8")
-	)
-	(junction
 		(at 78.74 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3650,12 +3317,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90fd25ae-7d28-4313-9569-b5e968518904")
-	)
-	(junction
-		(at 91.44 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "961822e4-5b78-4339-ac7a-89fffc1eb579")
 	)
 	(junction
 		(at 91.44 137.16)
@@ -3909,16 +3570,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 83.82) (xy 91.44 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c9da26d-6669-47ba-8757-97e12f8b80a2")
-	)
-	(wire
-		(pts
 			(xy 121.92 86.36) (xy 121.92 88.9)
 		)
 		(stroke
@@ -3946,16 +3597,6 @@
 			(type default)
 		)
 		(uuid "41ac1c8b-a047-4b20-9ae1-1c84dd395044")
-	)
-	(wire
-		(pts
-			(xy 185.42 99.06) (xy 187.96 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42936ee9-08c5-4c52-a02e-0d3dda164478")
 	)
 	(wire
 		(pts
@@ -4009,16 +3650,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 106.68) (xy 109.22 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e783e7f-b99a-43a5-a152-3dbaf605967c")
-	)
-	(wire
-		(pts
 			(xy 109.22 127) (xy 96.52 127)
 		)
 		(stroke
@@ -4049,6 +3680,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 99.06) (xy 170.18 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56b8e800-2462-4326-8b73-4c6708243c04")
+	)
+	(wire
+		(pts
 			(xy 73.66 121.92) (xy 78.74 121.92)
 		)
 		(stroke
@@ -4056,16 +3697,6 @@
 			(type default)
 		)
 		(uuid "57f03038-61ee-4d31-8d57-950e5838c5e9")
-	)
-	(wire
-		(pts
-			(xy 175.26 99.06) (xy 180.34 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5852200e-6020-4efd-aa73-1180f8c9210b")
 	)
 	(wire
 		(pts
@@ -4136,16 +3767,6 @@
 			(type default)
 		)
 		(uuid "64d54bd8-6fc2-414f-939a-1d8fa4755516")
-	)
-	(wire
-		(pts
-			(xy 91.44 101.6) (xy 91.44 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67fd5c2d-7120-4959-b10e-c8ebe4df4dae")
 	)
 	(wire
 		(pts
@@ -4259,16 +3880,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 93.98) (xy 81.28 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bfc634f-3429-4a4b-bf8b-2c242b4ad2e5")
-	)
-	(wire
-		(pts
 			(xy 96.52 127) (xy 96.52 132.08)
 		)
 		(stroke
@@ -4299,7 +3910,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 109.22) (xy 86.36 109.22)
+			(xy 81.28 109.22) (xy 109.22 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4326,16 +3937,6 @@
 			(type default)
 		)
 		(uuid "8c752405-2db8-46d5-8791-2a638ed95233")
-	)
-	(wire
-		(pts
-			(xy 91.44 93.98) (xy 91.44 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d550fe9-4a64-45a2-80db-1ec2dd5c6c5c")
 	)
 	(wire
 		(pts
@@ -4419,7 +4020,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 101.6) (xy 91.44 101.6)
+			(xy 81.28 101.6) (xy 109.22 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4479,16 +4080,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 99.06) (xy 175.26 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aeaaef8b-adf1-4d81-aaee-e6b62ea191d4")
-	)
-	(wire
-		(pts
 			(xy 137.16 86.36) (xy 142.24 86.36)
 		)
 		(stroke
@@ -4506,26 +4097,6 @@
 			(type default)
 		)
 		(uuid "b3f0dcd2-bca8-4744-8968-f8e8a4ad1840")
-	)
-	(wire
-		(pts
-			(xy 91.44 109.22) (xy 109.22 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b62aba78-a15e-4176-bbb7-8094c728b4f0")
-	)
-	(wire
-		(pts
-			(xy 175.26 109.22) (xy 175.26 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8590c98-6944-4e35-9a08-92de6ce9a951")
 	)
 	(wire
 		(pts
@@ -4709,7 +4280,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 106.68) (xy 86.36 106.68)
+			(xy 81.28 106.68) (xy 109.22 106.68)
 		)
 		(stroke
 			(width 0)
@@ -4836,16 +4407,6 @@
 			(type default)
 		)
 		(uuid "f4d9ec5f-e137-4d03-8cbd-5d237441bf3b")
-	)
-	(wire
-		(pts
-			(xy 96.52 83.82) (xy 91.44 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa85cce4-39ee-4167-9231-beac5c3364b0")
 	)
 	(wire
 		(pts
@@ -5047,9 +4608,31 @@
 		)
 		(uuid "f65f4be6-5416-4d71-a8d6-a8f6b5d6e654")
 	)
+	(global_label "RESET_ESP"
+		(shape input)
+		(at 170.18 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "196ec2cf-4142-4def-a8ae-0ea1aa5d5328")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.5064 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USBDM"
 		(shape bidirectional)
-		(at 82.55 106.68 180)
+		(at 81.28 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5059,7 +4642,29 @@
 		)
 		(uuid "5e1c8d0d-b9a6-430c-8423-bba33c4ed024")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.9221 106.68 0)
+			(at 70.6521 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GBOOT"
+		(shape bidirectional)
+		(at 81.28 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a109adff-de62-4195-9022-cb6a7d700969")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.0149 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5071,7 +4676,7 @@
 	)
 	(global_label "USBDP"
 		(shape bidirectional)
-		(at 82.55 109.22 180)
+		(at 81.28 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5081,7 +4686,7 @@
 		)
 		(uuid "a814334d-79b4-424d-8b8a-376e306af39c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.1035 109.22 0)
+			(at 70.8335 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5267,7 +4872,7 @@
 		(fields_autoplaced yes)
 		(uuid "0dd53508-6ff0-44c8-be18-f7cc648e0bb6")
 		(property "Reference" "C10"
-			(at 70.6172 120.65 90)
+			(at 70.6172 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5275,7 +4880,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 70.6172 123.19 90)
+			(at 70.6172 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5544,112 +5149,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 175.26 104.14 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1efd55b5-a15e-4f8d-8bc4-bcd5027655f2")
-		(property "Reference" "SW1"
-			(at 179.07 102.8699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RESET"
-			(at 179.07 105.4099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
-			(at 180.34 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 175.26 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TS-1187A-B-A-B"
-			(at 175.26 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc2#" ""
-			(at 175.26 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 175.26 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C318884"
-			(at 175.26 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "87fb7b09-7241-48db-9779-1a2a9c6d78d1")
-		)
-		(pin "2"
-			(uuid "c20c2080-645c-409a-a69c-7f9e6dbbcf3e")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "karl-atomic-basic:Q13FC13500004")
 		(at 78.74 124.46 90)
 		(unit 1)
@@ -5668,7 +5167,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Q13FC13500004"
+		(property "Value" "32k"
 			(at 81.28 125.7299 90)
 			(effects
 				(font
@@ -5908,73 +5407,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 187.96 99.06 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "333d3e22-172b-4083-b8ec-0ac141c2b905")
-		(property "Reference" "#PWR027"
-			(at 184.15 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 191.77 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 187.96 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0899ac70-32b1-438e-ab33-269aebcf1b03")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Antenna_Dipole")
 		(at 261.62 83.82 0)
 		(unit 1)
@@ -6002,7 +5434,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RF_Experiments:ANT-YOLOPOLE"
 			(at 261.62 83.82 0)
 			(effects
 				(font
@@ -6143,7 +5575,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 91.44 83.82 0)
+		(at 96.52 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6152,7 +5584,7 @@
 		(fields_autoplaced yes)
 		(uuid "432044b2-7ef0-4d71-b7c5-10086e736853")
 		(property "Reference" "#PWR030"
-			(at 91.44 87.63 0)
+			(at 96.52 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6161,7 +5593,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 91.44 78.74 0)
+			(at 96.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6169,7 +5601,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 83.82 0)
+			(at 96.52 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,7 +5610,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 83.82 0)
+			(at 96.52 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6187,7 +5619,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 91.44 83.82 0)
+			(at 96.52 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6870,7 +6302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-parts:XL2EL89CPI-111YLC-40M")
+		(lib_id "karl-parts:Crystal_40M_2016_TAXM40M4ZHBCDT2T")
 		(at 83.82 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6878,24 +6310,24 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "612e765a-1be0-4431-9abf-1e0fa8b401e8")
-		(property "Reference" "Y3"
-			(at 100.33 132.2068 90)
+		(uuid "62b02380-585f-4d1f-89b6-368fec8f45a0")
+		(property "Reference" "Y1"
+			(at 78.74 132.2068 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "XL2EL89CPI-111YLC-40M"
-			(at 100.33 134.7468 90)
+		(property "Value" "40M"
+			(at 78.74 134.7468 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 83.82 137.16 0)
 			(effects
 				(font
@@ -6904,7 +6336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603166568012525568"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304031830_Yajingxin-TAXM40M4ZHBCDT2T_C424432.pdf"
 			(at 83.82 137.16 0)
 			(effects
 				(font
@@ -6913,7 +6345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "40MHz 15pF 10/20ppm SMD3225-4P"
+		(property "Description" "40MHz 15pf 10ppm, 2016-4 crystal"
 			(at 83.82 137.16 0)
 			(effects
 				(font
@@ -6922,7 +6354,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C5444549"
+		(property "MPN" "TAXM40M4ZHBCDT2T"
 			(at 83.82 137.16 0)
 			(effects
 				(font
@@ -6931,7 +6363,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "XL2EL89CPI-111YLC-40M"
+		(property "LCSC Part #" "C424432"
 			(at 83.82 137.16 0)
 			(effects
 				(font
@@ -6939,32 +6371,23 @@
 				)
 				(hide yes)
 			)
-		)
-		(property "jlcbasic" "0"
-			(at 83.82 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "d4c552cb-dd1f-426b-898e-0a3e2904ac20")
-		)
-		(pin "1"
-			(uuid "ea478e85-8648-438e-9322-a9ff36bfe581")
-		)
-		(pin "2"
-			(uuid "7a6b163e-c3c3-48d2-98c1-c6d2cebdcf5d")
 		)
 		(pin "3"
-			(uuid "30103584-4de6-4612-8235-a567dc241a97")
+			(uuid "be363947-9772-4c88-833a-1c81fb867720")
+		)
+		(pin "2"
+			(uuid "d207e978-63bc-4718-80b5-84bbc98daf28")
+		)
+		(pin "1"
+			(uuid "641af554-eb21-43e7-83f1-1f79e177b4c0")
+		)
+		(pin "4"
+			(uuid "4103883e-90b0-4d11-bb61-77d8800c044f")
 		)
 		(instances
-			(project ""
+			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "Y3")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -7297,72 +6720,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 175.26 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7324c7ea-474d-442a-8ffa-758abf734beb")
-		(property "Reference" "#PWR028"
-			(at 175.26 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 175.26 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e114b402-b514-4e44-b8b5-944e51306602")
-		)
-		(instances
-			(project ""
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "karl-atomic-basic:KC0603_1uF")
 		(at 139.7 68.58 0)
 		(unit 1)
@@ -7460,103 +6817,6 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KR0402_10k")
-		(at 91.44 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74df7be9-2885-42b6-b756-b16486b8e7ac")
-		(property "Reference" "R13"
-			(at 93.98 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 93.98 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 0603"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C25744"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402WGF1002TCE"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8f9d31c9-2371-4ee9-b621-d74ee5947b95")
-		)
-		(pin "1"
-			(uuid "f61d5bfd-d611-4728-bebd-838541ee1e2f")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 50.8 116.84 180)
 		(unit 1)
@@ -7622,205 +6882,6 @@
 			(project ""
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 86.36 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e9666c4-f038-4b41-a59e-a72bc49819df")
-		(property "Reference" "SW2"
-			(at 86.36 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BOOT"
-			(at 86.36 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
-			(at 86.36 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 86.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TS-1187A-B-A-B"
-			(at 86.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc2#" ""
-			(at 86.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 86.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C318884"
-			(at 86.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c18ee799-288e-43f1-bb84-fb11f1b62d75")
-		)
-		(pin "2"
-			(uuid "a1d1dbc0-9a76-47d4-8da4-73092c3b1b51")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-atomic-basic:KR0402_22R")
-		(at 88.9 109.22 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8111d622-14a9-4846-8577-e32cc51ccb2b")
-		(property "Reference" "R5"
-			(at 88.9 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 88.9 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 88.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 0603"
-			(at 88.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C25092"
-			(at 88.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402WGF220JTCE"
-			(at 88.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 88.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e0c7b18-390f-44ba-8a69-e0142ceae903")
-		)
-		(pin "2"
-			(uuid "bf2ba90d-ebcc-4b92-830c-c8d845795ec4")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -8243,7 +7304,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2dd16dc-ae53-45c0-8eaf-8c36a8e8066b")
 		(property "Reference" "C12"
-			(at 81.7828 137.16 90)
+			(at 81.7828 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8251,7 +7312,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 81.7828 139.7 90)
+			(at 81.7828 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8623,101 +7684,6 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KR0402_22R")
-		(at 88.9 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf921ae7-2528-405a-a57e-76732733c334")
-		(property "Reference" "R4"
-			(at 88.9 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 88.9 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 88.9 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 0603"
-			(at 88.9 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C25092"
-			(at 88.9 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402WGF220JTCE"
-			(at 88.9 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 88.9 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e48dc062-e941-4760-90ad-a821dc90533b")
-		)
-		(pin "2"
-			(uuid "e91dca7b-7eb3-4893-b23c-f3b75774143a")
-		)
-		(instances
-			(project ""
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 205.74 106.68 0)
 		(unit 1)
@@ -8784,101 +7750,6 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KR0402_10k")
-		(at 182.88 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8a39af7-01c8-4ee1-9970-ebaeddf76cab")
-		(property "Reference" "R11"
-			(at 182.88 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 182.88 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 182.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 0603"
-			(at 182.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C25744"
-			(at 182.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402WGF1002TCE"
-			(at 182.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 182.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "01acf2e0-e64b-4f43-9ff3-12418d5f4356")
-		)
-		(pin "1"
-			(uuid "eaecf1be-fa6b-47c9-b4d2-3b855f81eabe")
-		)
-		(instances
-			(project ""
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 58.42 121.92 0)
 		(unit 1)
@@ -8939,72 +7810,6 @@
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 78.74 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed356fc6-5f49-47a7-abed-59be28815236")
-		(property "Reference" "#PWR029"
-			(at 78.74 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 78.74 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3709761e-22a0-4da6-aed8-552d9a6c348e")
-		)
-		(instances
-			(project "ktwinkler-multi-r2025-12"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
