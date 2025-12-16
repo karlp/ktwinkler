@@ -3421,6 +3421,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 116.84) (xy 106.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2837bc49-0bb7-4d17-8440-61a9e4d3777a")
+	)
+	(wire
+		(pts
 			(xy 124.46 48.26) (xy 116.84 48.26)
 		)
 		(stroke
@@ -3531,6 +3541,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 121.92) (xy 119.38 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6329609e-b4bb-4bec-b283-10e2ec361c61")
+	)
+	(wire
+		(pts
 			(xy 124.46 45.72) (xy 119.38 45.72)
 		)
 		(stroke
@@ -3548,6 +3568,16 @@
 			(type default)
 		)
 		(uuid "6e2869f2-602c-4afc-884d-692f525141fd")
+	)
+	(wire
+		(pts
+			(xy 43.18 116.84) (xy 106.68 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed33942-0991-4978-b61e-f25f11c7049e")
 	)
 	(wire
 		(pts
@@ -3758,6 +3788,16 @@
 			(type default)
 		)
 		(uuid "ac524e88-15a3-488b-9d51-c39291017ba4")
+	)
+	(wire
+		(pts
+			(xy 119.38 121.92) (xy 119.38 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad6248d0-405d-455e-a650-9bea1f146b05")
 	)
 	(wire
 		(pts
@@ -4368,6 +4408,17 @@
 			(justify right)
 		)
 		(uuid "12dc8fdd-0661-4880-86db-efd1da55aaba")
+	)
+	(hierarchical_label "P1IN"
+		(shape input)
+		(at 43.18 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "13c88293-8ec8-40c9-b3e9-3a53cc25ac4c")
 	)
 	(hierarchical_label "PWM4"
 		(shape output)

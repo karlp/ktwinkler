@@ -496,6 +496,140 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "karl-parts:Mounting_SMTSO3015CTJ"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Mounting_SMTSO3015CTJ"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "jlc-extras:Mounting_SMTSO_M3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588954979927535616"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PCB SMT nut M3x1.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "SMTSO3015CTJ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "jlcbasic" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C2915632"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting nut"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Mounting_SMTSO3015CTJ_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Mounting_SMTSO3015CTJ_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -956,6 +1090,12 @@
 		(color 0 0 0 0)
 		(uuid "d0f6f238-38e2-4691-b9ac-1f10ee4dbe2d")
 	)
+	(junction
+		(at 208.28 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fee38555-3761-43ec-85fd-b9f69fbc30fc")
+	)
 	(wire
 		(pts
 			(xy 81.28 182.88) (xy 68.58 182.88)
@@ -968,6 +1108,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 90.17) (xy 208.28 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06923c9d-9e21-4dbc-b82e-246e63328c26")
+	)
+	(wire
+		(pts
 			(xy 187.96 132.08) (xy 187.96 66.04)
 		)
 		(stroke
@@ -975,6 +1125,16 @@
 			(type default)
 		)
 		(uuid "098910d1-21f0-4469-8f38-f729fce2831f")
+	)
+	(wire
+		(pts
+			(xy 177.8 90.17) (xy 208.28 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0ac6ec-0e5d-4021-bfd2-422c0a894a97")
 	)
 	(wire
 		(pts
@@ -1458,6 +1618,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 132.08) (xy 208.28 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed78b81a-0777-41cb-8c8c-55ca7ab6bbdc")
+	)
+	(wire
+		(pts
 			(xy 177.8 66.04) (xy 187.96 66.04)
 		)
 		(stroke
@@ -1475,6 +1645,26 @@
 			(type default)
 		)
 		(uuid "f50871c1-2d44-45d9-8024-dfdf90de0c60")
+	)
+	(wire
+		(pts
+			(xy 208.28 144.78) (xy 177.8 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6699552-5c00-481d-8118-6d2ebaddfa92")
+	)
+	(wire
+		(pts
+			(xy 220.98 132.08) (xy 208.28 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f67dffca-2805-4eae-840b-e22783a8ca5b")
 	)
 	(wire
 		(pts
@@ -2380,6 +2570,100 @@
 		)
 	)
 	(symbol
+		(lib_id "karl-parts:Mounting_SMTSO3015CTJ")
+		(at 30.48 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "991f9540-9010-40c4-87bf-7ec1f26f9b1d")
+		(property "Reference" "H2"
+			(at 33.02 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_SMTSO3015CTJ"
+			(at 33.02 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "jlc-extras:Mounting_SMTSO_M3"
+			(at 30.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588954979927535616"
+			(at 30.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB SMT nut M3x1.5mm"
+			(at 30.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMTSO3015CTJ"
+			(at 30.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "0"
+			(at 30.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2915632"
+			(at 30.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "640fe123-d080-4606-9e04-94674f25247c")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "karl-atomic-basic:KR0402_10k")
 		(at 86.36 114.3 0)
 		(unit 1)
@@ -2603,6 +2887,100 @@
 			(project ""
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-parts:Mounting_SMTSO3015CTJ")
+		(at 30.48 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3b8b0d2-e146-4e53-986f-c02b6f1089f5")
+		(property "Reference" "H1"
+			(at 33.02 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_SMTSO3015CTJ"
+			(at 33.02 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "jlc-extras:Mounting_SMTSO_M3"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588954979927535616"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB SMT nut M3x1.5mm"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMTSO3015CTJ"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "jlcbasic" "0"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2915632"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cd9d9bb-0217-4840-a192-9a42d2c8b83e")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -3022,6 +3400,16 @@
 				(justify right)
 			)
 		)
+		(pin "P1IN" input
+			(at 177.8 144.78 0)
+			(uuid "4566f236-39b1-47cb-83de-fc33c1c19787")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
@@ -3104,6 +3492,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "P1_OUT" output
+			(at 220.98 132.08 180)
+			(uuid "99c265e1-92ab-4422-adf0-671286018ecf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -3363,6 +3761,16 @@
 		(pin "PWM8" output
 			(at 177.8 78.74 0)
 			(uuid "0202bf77-b8cb-4ab2-9381-c14b78999818")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "P1IN" input
+			(at 177.8 90.17 0)
+			(uuid "7f93b851-1a06-4100-946c-4fa1ef5e16f6")
 			(effects
 				(font
 					(size 1.27 1.27)

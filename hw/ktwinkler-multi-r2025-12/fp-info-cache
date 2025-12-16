@@ -1,4 +1,4 @@
-26285029152538315
+26286795075802831
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -104270,6 +104270,13 @@ Place holder for 8x8mm JLC 2D barcode
 
 0
 0
+0
+jlc-extras
+Mounting_SMTSO_M3_1
+SMT PCB Nut, M3 size
+
+0
+1
 0
 jlc-extras
 Opto_SOP8_6.6x9.76mm_6N137S-Everlight

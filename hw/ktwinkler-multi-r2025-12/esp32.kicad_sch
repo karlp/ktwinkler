@@ -3970,6 +3970,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 111.76) (xy 167.64 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a06633d-fd5e-455b-b2aa-c602c92cd88a")
+	)
+	(wire
+		(pts
 			(xy 63.5 127) (xy 63.5 129.54)
 		)
 		(stroke
@@ -4739,6 +4749,17 @@
 			(justify right)
 		)
 		(uuid "62fb0b43-37bf-43b5-afee-d006c4a4af0f")
+	)
+	(hierarchical_label "P1IN"
+		(shape input)
+		(at 167.64 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "72c06780-5bdb-4899-ae15-e955194e17f3")
 	)
 	(hierarchical_label "PWM3"
 		(shape output)
