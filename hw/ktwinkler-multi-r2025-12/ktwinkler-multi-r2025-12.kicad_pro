@@ -461,7 +461,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "karl-atomic-basic",
+      "karl-parts"
+    ]
   },
   "meta": {
     "filename": "ktwinkler-multi-r2025-12.kicad_pro",

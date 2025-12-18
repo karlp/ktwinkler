@@ -1067,6 +1067,12 @@
 		(uuid "6c73f1c5-ee7b-4693-86ad-20065bc89d47")
 	)
 	(junction
+		(at 210.82 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ed5a6b9-466f-4e70-ae83-a76b5e00b85d")
+	)
+	(junction
 		(at 86.36 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1108,13 +1114,23 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 90.17) (xy 208.28 132.08)
+			(xy 208.28 91.44) (xy 208.28 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "06923c9d-9e21-4dbc-b82e-246e63328c26")
+	)
+	(wire
+		(pts
+			(xy 210.82 88.9) (xy 210.82 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0949cd60-31af-464f-b414-f19877953625")
 	)
 	(wire
 		(pts
@@ -1128,7 +1144,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 90.17) (xy 208.28 90.17)
+			(xy 177.8 91.44) (xy 208.28 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1145,6 +1161,16 @@
 			(type default)
 		)
 		(uuid "0d4ff32b-700d-48f5-b50a-d7c8e618d29f")
+	)
+	(wire
+		(pts
+			(xy 177.8 88.9) (xy 210.82 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "146c8932-b05e-4a15-9a99-2d695bf7aded")
 	)
 	(wire
 		(pts
@@ -1195,6 +1221,16 @@
 			(type default)
 		)
 		(uuid "1ebd4c87-63dc-46ac-b37b-12319e65aba4")
+	)
+	(wire
+		(pts
+			(xy 177.8 147.32) (xy 210.82 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f158e25-20c9-468f-80fc-36a0a9fdf488")
 	)
 	(wire
 		(pts
@@ -1538,6 +1574,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 147.32) (xy 210.82 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4095ded-3145-4c06-a78c-09601666fcf9")
+	)
+	(wire
+		(pts
 			(xy 187.96 66.04) (xy 213.36 66.04)
 		)
 		(stroke
@@ -1585,6 +1631,16 @@
 			(type default)
 		)
 		(uuid "dacb8359-a9a8-4b3b-83b8-dc1eb93e4f5c")
+	)
+	(wire
+		(pts
+			(xy 210.82 134.62) (xy 220.98 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db14666c-1e2a-4605-97d3-1893f5596314")
 	)
 	(wire
 		(pts
@@ -2574,7 +2630,7 @@
 		(at 30.48 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2897,7 +2953,7 @@
 		(at 30.48 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3410,6 +3466,16 @@
 				(justify right)
 			)
 		)
+		(pin "P1_Req_Out" output
+			(at 177.8 147.32 0)
+			(uuid "a7a192eb-ba55-4228-b389-ede9f5cc6fa5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ktwinkler-multi-r2025-12"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
@@ -3497,6 +3563,16 @@
 		(pin "P1_OUT" output
 			(at 220.98 132.08 180)
 			(uuid "99c265e1-92ab-4422-adf0-671286018ecf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "P1_Do_Request" input
+			(at 220.98 134.62 180)
+			(uuid "0d84c67b-abe8-45a2-a3ed-b13a8c17c985")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,8 +3845,18 @@
 			)
 		)
 		(pin "P1IN" input
-			(at 177.8 90.17 0)
+			(at 177.8 91.44 0)
 			(uuid "7f93b851-1a06-4100-946c-4fa1ef5e16f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "P1_Req_Out" output
+			(at 177.8 88.9 0)
+			(uuid "df980318-576f-4cf9-9476-fd4d273619ad")
 			(effects
 				(font
 					(size 1.27 1.27)

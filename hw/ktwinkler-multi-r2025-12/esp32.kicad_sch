@@ -4420,6 +4420,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 109.22) (xy 167.64 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb0cc539-545a-442c-bccc-2f607dee8fee")
+	)
+	(wire
+		(pts
 			(xy 205.74 101.6) (xy 205.74 106.68)
 		)
 		(stroke
@@ -4716,6 +4726,17 @@
 			(justify right)
 		)
 		(uuid "441bc6c7-fdd3-4df2-8f27-90520cd84bc0")
+	)
+	(hierarchical_label "P1_Req_Out"
+		(shape output)
+		(at 167.64 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49655d13-3494-4d56-a43c-3f5e92aee77d")
 	)
 	(hierarchical_label "MODE"
 		(shape input)
