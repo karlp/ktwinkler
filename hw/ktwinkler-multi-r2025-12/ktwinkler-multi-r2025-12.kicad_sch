@@ -202,7 +202,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, 0603"
+			(property "Description" "Resistor, 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -247,7 +247,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_0603*"
+			(property "ki_fp_filters" "R_0402*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1344,6 +1344,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 127) (xy 25.4 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "469995e0-3773-45ee-9483-09bf61fa1972")
+	)
+	(wire
+		(pts
 			(xy 177.8 73.66) (xy 195.58 73.66)
 		)
 		(stroke
@@ -1381,6 +1391,16 @@
 			(type default)
 		)
 		(uuid "626a9c1c-0898-45d7-83a2-05f22bf469d0")
+	)
+	(wire
+		(pts
+			(xy 30.48 134.62) (xy 30.48 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b9baff-4164-4772-a40e-c959a22edfdf")
 	)
 	(wire
 		(pts
@@ -2818,6 +2838,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 25.4 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d596d440-0c4e-46fe-94dc-34361a65a9fa")
+		(property "Reference" "#PWR059"
+			(at 25.4 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d17a996-db93-4bf2-99d8-1b61755208af")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 50.8 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2950,7 +3036,7 @@
 	)
 	(symbol
 		(lib_id "karl-parts:Mounting_SMTSO3015CTJ")
-		(at 30.48 124.46 0)
+		(at 25.4 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2959,7 +3045,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3b8b0d2-e146-4e53-986f-c02b6f1089f5")
 		(property "Reference" "H1"
-			(at 33.02 121.9199 0)
+			(at 27.94 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2968,7 +3054,7 @@
 			)
 		)
 		(property "Value" "Mounting_SMTSO3015CTJ"
-			(at 33.02 124.4599 0)
+			(at 27.94 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2977,7 +3063,7 @@
 			)
 		)
 		(property "Footprint" "jlc-extras:Mounting_SMTSO_M3"
-			(at 30.48 124.46 0)
+			(at 25.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2986,7 +3072,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588954979927535616"
-			(at 30.48 124.46 0)
+			(at 25.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,7 +3081,7 @@
 			)
 		)
 		(property "Description" "PCB SMT nut M3x1.5mm"
-			(at 30.48 124.46 0)
+			(at 25.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,7 +3090,7 @@
 			)
 		)
 		(property "MPN" "SMTSO3015CTJ"
-			(at 30.48 124.46 0)
+			(at 25.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,7 +3099,7 @@
 			)
 		)
 		(property "jlcbasic" "0"
-			(at 30.48 124.46 0)
+			(at 25.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +3108,7 @@
 			)
 		)
 		(property "LCSC Part #" "C2915632"
-			(at 30.48 124.46 0)
+			(at 25.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,6 +3367,72 @@
 			(project "ktwinkler-r2025-11"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
 					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa8100a7-bd10-4633-8a94-abe8f9edd84c")
+		(property "Reference" "#PWR058"
+			(at 30.48 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37f54358-297a-4835-997e-457dcc4722da")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)

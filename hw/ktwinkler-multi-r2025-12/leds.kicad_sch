@@ -472,7 +472,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-parts:AD116"
+		(symbol "karl-parts:Driver_AD116"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -484,7 +484,7 @@
 					)
 				)
 			)
-			(property "Value" "AD116"
+			(property "Value" "Driver_AD116"
 				(at -4.826 8.89 0)
 				(effects
 					(font
@@ -546,7 +546,204 @@
 					(hide yes)
 				)
 			)
-			(symbol "AD116_1_1"
+			(symbol "Driver_AD116_1_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "INA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "INB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUTA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUTB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "karl-parts:Driver_FM116C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 6.604 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Driver_FM116C"
+				(at -4.826 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 1.524 -10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C2802264.pdf"
+				(at 3.302 -6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-6V, 0.6A/0.8A peak"
+				(at -1.778 -9.398 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "FM116C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C2802264"
+				(at -12.7 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single channel DC Motor driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Driver_FM116C_1_1"
 				(rectangle
 					(start -7.62 7.62)
 					(end 7.62 -5.08)
@@ -866,7 +1063,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-parts:FM116C"
+		(symbol "karl-parts:Driver_T1016H"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -878,204 +1075,7 @@
 					)
 				)
 			)
-			(property "Value" "FM116C"
-				(at -4.826 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 1.524 -10.414 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2802264.pdf"
-				(at 3.302 -6.604 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-6V, 0.6A/0.8A peak"
-				(at -1.778 -9.398 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "FM116C"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" "C2802264"
-				(at -12.7 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Single channel DC Motor driver"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FM116C_1_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "INA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "INB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUTA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUTB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "karl-parts:T1016H"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 6.604 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "T1016H"
+			(property "Value" "Driver_T1016H"
 				(at -4.826 8.89 0)
 				(effects
 					(font
@@ -1137,7 +1137,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "T1016H_1_1"
+			(symbol "Driver_T1016H_1_1"
 				(rectangle
 					(start -7.62 7.62)
 					(end 7.62 -5.08)
@@ -1446,6 +1446,12 @@
 		(uuid "36581bca-4282-4ccc-83fd-fed8ce7c57b7")
 	)
 	(junction
+		(at 101.6 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3766b827-d3af-43db-94cc-ad82f715f7ff")
+	)
+	(junction
 		(at 38.1 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1464,28 +1470,22 @@
 		(uuid "3f1fcdc0-9ab9-4064-b7ee-50f8ed1ccf9d")
 	)
 	(junction
-		(at 101.6529 99.06)
+		(at 101.6 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7b0bf8cf-f38d-4b32-960e-1dcbbb406439")
+		(uuid "4e599b74-fb50-4827-8290-49b626138922")
+	)
+	(junction
+		(at 116.84 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69dcb166-ef0a-42de-a784-eb072c67173f")
 	)
 	(junction
 		(at 38.1 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d3eace2-d8b0-4076-844d-3561345f43a2")
-	)
-	(junction
-		(at 101.6529 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "865e55ac-aac8-4b91-a897-ff7bfa0ad837")
-	)
-	(junction
-		(at 111.7995 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae8a5d53-ed76-413a-8bf9-3b24a9391c1c")
 	)
 	(junction
 		(at 116.84 63.5)
@@ -1500,10 +1500,10 @@
 		(uuid "c1d81f8b-b2a5-4e1d-bc70-5a91568bf987")
 	)
 	(junction
-		(at 114.3 96.52)
+		(at 111.76 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c47b78d8-d8ca-42d2-9218-8637a646d2c7")
+		(uuid "c2f36682-0b0e-471c-904f-3eb1000f6599")
 	)
 	(junction
 		(at 101.6 134.62)
@@ -1522,12 +1522,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4cd3e0b-7730-4791-8576-3882614579a6")
-	)
-	(junction
-		(at 116.8795 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e979da4e-2a7f-4fb2-adfa-3de7d1951b21")
 	)
 	(junction
 		(at 114.3 165.1)
@@ -1557,13 +1551,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6529 93.98) (xy 111.7995 93.98)
+			(xy 116.84 96.52) (xy 116.84 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0524a48b-9070-4dde-aa11-b2505b050a50")
+		(uuid "089841a3-6507-422f-a8b3-f408bf218733")
 	)
 	(wire
 		(pts
@@ -1574,16 +1568,6 @@
 			(type default)
 		)
 		(uuid "0d5fa25b-3518-4c97-b600-2412902b7373")
-	)
-	(wire
-		(pts
-			(xy 93.98 96.52) (xy 93.98 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e6cb3dd-3c4e-4d4e-9a71-104d1a5bff13")
 	)
 	(wire
 		(pts
@@ -1627,13 +1611,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6529 99.06) (xy 116.8795 99.06)
+			(xy 111.76 93.98) (xy 121.92 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ed784ca-9350-4289-bdae-23b25ca10ff9")
+		(uuid "2253573a-4ab9-47ad-bcc7-0743fd7bb889")
 	)
 	(wire
 		(pts
@@ -1677,13 +1661,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 96.52) (xy 111.7995 96.52)
+			(xy 111.76 96.52) (xy 111.76 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "350a83ff-c0f4-4126-9705-f06a8564a6b0")
+		(uuid "3612e217-9d6e-4858-89d5-db80e2d1eaa8")
 	)
 	(wire
 		(pts
@@ -1704,16 +1688,6 @@
 			(type default)
 		)
 		(uuid "385bccc4-3c5a-4b93-9a2d-a82203e51fd9")
-	)
-	(wire
-		(pts
-			(xy 86.36 93.98) (xy 101.6529 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a78ad95-7dbd-40b7-aab2-bf0f2d6af7e6")
 	)
 	(wire
 		(pts
@@ -1744,16 +1718,6 @@
 			(type default)
 		)
 		(uuid "3cad9ffb-7bb0-4290-8902-4095ee6c2f5c")
-	)
-	(wire
-		(pts
-			(xy 93.98 99.06) (xy 101.6529 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4475a224-3d87-498b-b989-29d45da7be6e")
 	)
 	(wire
 		(pts
@@ -1794,6 +1758,16 @@
 			(type default)
 		)
 		(uuid "51f0e59d-9665-4ccb-ac97-d26dc176252f")
+	)
+	(wire
+		(pts
+			(xy 101.6 99.06) (xy 116.84 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "562a9a51-bbc6-433d-8b51-5d530d60bc8a")
 	)
 	(wire
 		(pts
@@ -1854,16 +1828,6 @@
 			(type default)
 		)
 		(uuid "6e09fd90-8708-4899-9c56-8d4bc855b057")
-	)
-	(wire
-		(pts
-			(xy 111.7995 93.98) (xy 121.92 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "720103e9-8484-48eb-b2c0-e5d4577144af")
 	)
 	(wire
 		(pts
@@ -1944,6 +1908,16 @@
 			(type default)
 		)
 		(uuid "94a22b5f-4483-4b35-9b1d-3a4912631034")
+	)
+	(wire
+		(pts
+			(xy 86.36 93.98) (xy 101.6 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "956f0760-fd82-44e0-bccf-a07e39af85fd")
 	)
 	(wire
 		(pts
@@ -2057,6 +2031,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 99.06) (xy 101.6 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c407231b-e639-4803-babc-0bd55678d5da")
+	)
+	(wire
+		(pts
 			(xy 50.8 167.64) (xy 66.04 167.64)
 		)
 		(stroke
@@ -2064,6 +2048,26 @@
 			(type default)
 		)
 		(uuid "c607e727-e748-44f8-b575-e847be0cac28")
+	)
+	(wire
+		(pts
+			(xy 93.98 96.52) (xy 93.98 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89215db-cf7d-46ae-bcd1-73c51d000e2e")
+	)
+	(wire
+		(pts
+			(xy 116.84 99.06) (xy 121.92 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdde0dd4-bc30-4590-b2c9-b92e9dbadfa4")
 	)
 	(wire
 		(pts
@@ -2084,16 +2088,6 @@
 			(type default)
 		)
 		(uuid "d3e6397f-b1a9-4898-ae8e-47d221022ae8")
-	)
-	(wire
-		(pts
-			(xy 116.8795 96.52) (xy 116.8795 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d49912a7-ec1a-459b-9409-83301de08f8c")
 	)
 	(wire
 		(pts
@@ -2127,6 +2121,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 93.98) (xy 111.76 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e060a7ed-fb4b-4745-9115-58baf17c5549")
+	)
+	(wire
+		(pts
 			(xy 101.6 58.42) (xy 111.76 58.42)
 		)
 		(stroke
@@ -2137,6 +2141,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 96.52) (xy 111.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e46ab39d-2b8f-454e-9e62-5559877bcf01")
+	)
+	(wire
+		(pts
 			(xy 116.84 167.64) (xy 114.3 167.64)
 		)
 		(stroke
@@ -2144,16 +2158,6 @@
 			(type default)
 		)
 		(uuid "e7e7e55c-936f-4fa2-922f-74d0bf07393b")
-	)
-	(wire
-		(pts
-			(xy 111.7995 96.52) (xy 111.7995 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec32b2de-72dd-4e05-8cb7-a065cede3f1b")
 	)
 	(wire
 		(pts
@@ -2197,16 +2201,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.8795 99.06) (xy 121.92 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f97ee776-0c60-4e3d-95fd-a0667fee3818")
-	)
-	(wire
-		(pts
 			(xy 27.94 48.26) (xy 38.1 48.26)
 		)
 		(stroke
@@ -2224,16 +2218,6 @@
 			(type default)
 		)
 		(uuid "fb48a5e0-cb91-4d5f-bbfa-259e80287b68")
-	)
-	(wire
-		(pts
-			(xy 114.3395 96.52) (xy 114.3 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff2fcd9d-f3f3-4947-b31f-73f0badae97b")
 	)
 	(wire
 		(pts
@@ -2767,7 +2751,7 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-parts:T1016H")
+		(lib_id "karl-parts:Driver_T1016H")
 		(at 76.2 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2941,7 +2925,7 @@
 	)
 	(symbol
 		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
-		(at 101.6529 96.52 0)
+		(at 101.6 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2950,7 +2934,7 @@
 		(fields_autoplaced yes)
 		(uuid "413c4a06-7f45-45d6-87f9-04c9a841c59a")
 		(property "Reference" "C5"
-			(at 104.1929 94.7471 0)
+			(at 104.14 94.7471 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,7 +2943,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 104.1929 97.2871 0)
+			(at 104.14 97.2871 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2968,7 +2952,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 101.1449 100.33 0)
+			(at 101.092 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2977,7 +2961,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6529 96.52 0)
+			(at 101.6 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2986,7 +2970,7 @@
 			)
 		)
 		(property "Description" "16V X7R"
-			(at 101.6529 100.33 0)
+			(at 101.6 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,7 +2979,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KO5NNNC"
-			(at 101.3989 100.33 0)
+			(at 101.346 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,7 +2988,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1525"
-			(at 101.6529 100.33 0)
+			(at 101.6 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,7 +2997,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 101.6529 96.52 0)
+			(at 101.6 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-parts:FM116C")
+		(lib_id "karl-parts:Driver_FM116C")
 		(at 76.2 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3521,7 +3505,7 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-parts:AD116")
+		(lib_id "karl-parts:Driver_AD116")
 		(at 76.2 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)

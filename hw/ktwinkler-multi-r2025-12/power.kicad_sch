@@ -1008,6 +1008,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "karl-atomic-basic:Diode_SS34"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Diode_SS34"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586172667489079296"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 3A Schottky Barrier Rectifier Diode, SMA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C8678"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "jlcbasic" "basic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "SS34"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Diode_SS34_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Diode_SS34_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "karl-atomic-basic:KC0805_22uF_25V"
 			(pin_numbers
 				(hide yes)
@@ -1230,7 +1395,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, 0603"
+			(property "Description" "Resistor, 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1275,7 +1440,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_0603*"
+			(property "ki_fp_filters" "R_0402*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1392,7 +1557,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, 0603"
+			(property "Description" "Resistor, 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1437,7 +1602,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_0603*"
+			(property "ki_fp_filters" "R_0402*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1554,7 +1719,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, 0603"
+			(property "Description" "Resistor, 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1599,7 +1764,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_0603*"
+			(property "ki_fp_filters" "R_0402*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1716,7 +1881,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, 0603"
+			(property "Description" "Resistor, 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1761,7 +1926,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_0603*"
+			(property "ki_fp_filters" "R_0402*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1878,7 +2043,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, 0603"
+			(property "Description" "Resistor, 0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1923,7 +2088,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_0603*"
+			(property "ki_fp_filters" "R_0402*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2084,7 +2249,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "*DFN-10*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2778,171 +2943,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-atomic-basic:SS34"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SS34"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMA"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586172667489079296"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "40V 3A Schottky Barrier Rectifier Diode, SMA"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" "C8678"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "jlcbasic" "basic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "SS34"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?41*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SS34_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SS34_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "karl-parts:TPS631000DRLR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3626,12 +3626,6 @@
 		(uuid "178617b6-278c-4fe1-97c4-aec41b12ed60")
 	)
 	(junction
-		(at 129.54 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "239e75ec-02bd-4aca-8b1a-d3d3efb99ae1")
-	)
-	(junction
 		(at 53.34 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3673,6 +3667,12 @@
 		(color 0 0 0 0)
 		(uuid "88845038-cec5-4ea1-b7dd-bf1366d2504d")
 	)
+	(junction
+		(at 129.54 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8bf6a4e-5373-438b-81b1-ac3bcb872266")
+	)
 	(no_connect
 		(at 76.2 73.66)
 		(uuid "1ccd1867-edd5-4cb9-b6e0-73eefd42d06e")
@@ -3680,6 +3680,14 @@
 	(no_connect
 		(at 76.2 71.12)
 		(uuid "31d3e4b8-5876-42a4-a9b3-e801c870e613")
+	)
+	(no_connect
+		(at 114.3 55.88)
+		(uuid "d79f3e7b-0636-4e36-a223-93b91664da31")
+	)
+	(no_connect
+		(at 114.3 63.5)
+		(uuid "faf16c82-25bd-4326-9d3b-be947b9a354e")
 	)
 	(wire
 		(pts
@@ -3753,16 +3761,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 152.4) (xy 129.54 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21320796-cdef-484c-855d-e3f0e7307d94")
-	)
-	(wire
-		(pts
 			(xy 119.38 160.02) (xy 129.54 160.02)
 		)
 		(stroke
@@ -3810,6 +3808,16 @@
 			(type default)
 		)
 		(uuid "3bb28e16-42dc-4d8a-99de-603ff6fc4263")
+	)
+	(wire
+		(pts
+			(xy 119.38 152.4) (xy 129.54 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cfcea47-6d89-44da-b19e-1ef9c12189d6")
 	)
 	(wire
 		(pts
@@ -3923,7 +3931,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 43.18) (xy 135.89 43.18)
+			(xy 121.92 43.18) (xy 134.62 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4193,7 +4201,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 43.18) (xy 148.59 43.18)
+			(xy 139.7 43.18) (xy 148.59 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4353,6 +4361,7 @@
 	)
 	(label "DMinusIn"
 		(at 83.82 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4360,9 +4369,20 @@
 			(justify left bottom)
 		)
 		(uuid "6765643e-6ba2-4b70-94d2-b87d619b7462")
+		(property "Netclass" "usb-7628"
+			(at 83.82 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "DPlusIn"
 		(at 83.82 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4370,6 +4390,16 @@
 			(justify left bottom)
 		)
 		(uuid "93dd9ea9-ce61-46d2-9c7b-41d1e77c701b")
+		(property "Netclass" "usb-7628"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "DMinusIn"
 		(at 83.82 88.9 0)
@@ -4403,7 +4433,7 @@
 			)
 		)
 	)
-	(global_label "USBDM"
+	(global_label "USBDN"
 		(shape bidirectional)
 		(at 104.14 88.9 0)
 		(fields_autoplaced yes)
@@ -4415,7 +4445,7 @@
 		)
 		(uuid "bee8ef44-d51c-4897-a22f-bcdcb5586959")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.7679 88.9 0)
+			(at 114.647 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6703,8 +6733,8 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:SS34")
-		(at 138.43 43.18 180)
+		(lib_id "karl-atomic-basic:Diode_SS34")
+		(at 137.16 43.18 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6713,7 +6743,7 @@
 		(fields_autoplaced yes)
 		(uuid "d5a72e38-44cb-4c90-9a43-b69068ea8fd4")
 		(property "Reference" "D1"
-			(at 138.7475 36.83 0)
+			(at 137.4775 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6721,7 +6751,7 @@
 			)
 		)
 		(property "Value" "SS34"
-			(at 138.7475 39.37 0)
+			(at 137.4775 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6729,7 +6759,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 138.43 38.735 0)
+			(at 137.16 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6738,7 +6768,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586172667489079296"
-			(at 138.43 43.18 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6747,7 +6777,7 @@
 			)
 		)
 		(property "Description" "40V 3A Schottky Barrier Rectifier Diode, SMA"
-			(at 138.43 43.18 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6756,7 +6786,7 @@
 			)
 		)
 		(property "LCSC Part #" "C8678"
-			(at 138.43 43.18 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6765,7 +6795,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 138.43 43.18 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6774,7 +6804,7 @@
 			)
 		)
 		(property "MPN" "SS34"
-			(at 138.43 43.18 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
