@@ -5,6 +5,113 @@
 	(uuid "d0017722-6c4c-43fd-bf9f-addbf649d146")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
@@ -3247,12 +3354,6 @@
 		(uuid "1d7a1396-656a-4a62-983e-9cc326593e72")
 	)
 	(junction
-		(at 96.52 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23489562-c922-477e-9652-0be42b7e8f3b")
-	)
-	(junction
 		(at 238.76 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3289,16 +3390,22 @@
 		(uuid "6f267fd1-3835-4283-ab09-73e5817dacad")
 	)
 	(junction
-		(at 83.82 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72cfa296-c017-4ab2-b522-bc7560916e26")
-	)
-	(junction
 		(at 220.98 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7309eeb2-1fb4-492f-abe7-ff55db44ebc5")
+	)
+	(junction
+		(at 83.82 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73407240-ad44-448b-b3b2-5c14d7e2d984")
+	)
+	(junction
+		(at 96.52 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79dd12c1-c760-486c-8441-886708ecfb2e")
 	)
 	(junction
 		(at 147.32 73.66)
@@ -3347,10 +3454,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef07bb7b-a974-434f-8eb5-d5e93ec5c1ef")
-	)
-	(no_connect
-		(at 154.94 104.14)
-		(uuid "8b9a4187-e6ae-4fb0-9990-66732a13c760")
 	)
 	(wire
 		(pts
@@ -4334,6 +4437,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 104.14) (xy 160.02 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4e45e31-66ca-4d1e-80db-7129c3c0cf61")
+	)
+	(wire
+		(pts
 			(xy 127 86.36) (xy 132.08 86.36)
 		)
 		(stroke
@@ -4453,17 +4566,17 @@
 		(uuid "fce31cd2-03c3-4b16-b6a7-2e4795d9d615")
 	)
 	(label "PWM1"
-		(at 160.02 116.84 0)
+		(at 106.68 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "1581652b-1afc-449d-986b-92f88351d319")
 	)
 	(label "PWM8"
-		(at 162.56 106.68 0)
+		(at 160.02 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4583,7 +4696,7 @@
 		(uuid "c4cbdf60-504b-4dc7-a907-c0d3ed7a6ded")
 	)
 	(label "PWM2"
-		(at 160.02 119.38 0)
+		(at 162.56 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4613,12 +4726,12 @@
 		(uuid "deec9dbb-7a9a-42a2-b7bb-e77a56c501dd")
 	)
 	(label "PWM7"
-		(at 106.68 104.14 180)
+		(at 160.02 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "e3385901-5ba2-4f00-b161-19d070edaf48")
 	)
@@ -6349,7 +6462,7 @@
 	)
 	(symbol
 		(lib_id "karl-parts:Crystal_40M_2016_TAXM40M4ZHBCDT2T")
-		(at 83.82 137.16 90)
+		(at 83.82 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6358,7 +6471,7 @@
 		(fields_autoplaced yes)
 		(uuid "62b02380-585f-4d1f-89b6-368fec8f45a0")
 		(property "Reference" "Y1"
-			(at 78.74 132.2068 90)
+			(at 88.9 131.4382 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6366,7 +6479,7 @@
 			)
 		)
 		(property "Value" "40M"
-			(at 78.74 134.7468 90)
+			(at 88.9 133.9782 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6538,7 +6651,7 @@
 	)
 	(symbol
 		(lib_id "karl-atomic-basic:KC0402_22pF")
-		(at 96.52 134.62 180)
+		(at 81.28 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6547,25 +6660,23 @@
 		(fields_autoplaced yes)
 		(uuid "6a87c8cc-f22b-4df7-a8e6-131c3f653047")
 		(property "Reference" "C11"
-			(at 100.33 133.8527 0)
+			(at 81.7828 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "22pF"
-			(at 100.33 136.3927 0)
+			(at 81.7828 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 97.028 130.81 0)
+			(at 77.47 144.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6574,7 +6685,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 134.62 0)
+			(at 81.28 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6583,7 +6694,7 @@
 			)
 		)
 		(property "Description" "50V, C0G"
-			(at 96.52 130.81 0)
+			(at 77.47 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6592,7 +6703,7 @@
 			)
 		)
 		(property "MPN" "0402CG220J500NT"
-			(at 96.774 130.81 0)
+			(at 77.47 144.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,7 +6712,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1555"
-			(at 96.52 130.81 0)
+			(at 77.47 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6610,7 +6721,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 96.52 134.62 0)
+			(at 81.28 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7243,6 +7354,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 160.02 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e8355ce-b694-420c-a5c0-14b1da754c80")
+		(property "Reference" "TP2"
+			(at 162.56 99.5679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 162.56 102.1079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a74b64f4-36c6-4f7e-b14d-ab43b6138e98")
+		)
+		(instances
+			(project "ktwinkler-multi-r2025-12"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
 		(at 172.72 68.58 0)
 		(unit 1)
@@ -7341,7 +7519,7 @@
 	)
 	(symbol
 		(lib_id "karl-atomic-basic:KC0402_22pF")
-		(at 81.28 144.78 270)
+		(at 96.52 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7350,23 +7528,25 @@
 		(fields_autoplaced yes)
 		(uuid "b2dd16dc-ae53-45c0-8eaf-8c36a8e8066b")
 		(property "Reference" "C12"
-			(at 81.7828 148.59 90)
+			(at 99.06 132.8471 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "22pF"
-			(at 81.7828 151.13 90)
+			(at 99.06 135.3871 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 77.47 144.272 0)
+			(at 96.012 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7375,7 +7555,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 144.78 0)
+			(at 96.52 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7384,7 +7564,7 @@
 			)
 		)
 		(property "Description" "50V, C0G"
-			(at 77.47 144.78 0)
+			(at 96.52 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7393,7 +7573,7 @@
 			)
 		)
 		(property "MPN" "0402CG220J500NT"
-			(at 77.47 144.526 0)
+			(at 96.266 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7402,7 +7582,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1555"
-			(at 77.47 144.78 0)
+			(at 96.52 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7411,7 +7591,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 81.28 144.78 0)
+			(at 96.52 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)

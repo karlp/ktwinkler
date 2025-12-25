@@ -2695,26 +2695,7 @@
 				)
 			)
 			(symbol "Protection_H5VU25UC_1_0"
-				(pin no_connect line
-					(at 1.27 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
+				(pin free line
 					(at 1.27 0 180)
 					(length 2.54)
 					(hide yes)
@@ -2733,8 +2714,27 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 1.27 0 180)
+				(pin free line
+					(at 1.27 -0.127 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 1.27 -0.1778 180)
 					(length 2.54)
 					(hide yes)
 					(name "NC"
@@ -2752,8 +2752,8 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 1.27 0 180)
+				(pin free line
+					(at 1.27 -0.254 180)
 					(length 2.54)
 					(hide yes)
 					(name "NC"
@@ -2763,7 +2763,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
