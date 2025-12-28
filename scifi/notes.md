@@ -6,3 +6,10 @@ https://aemantennas.com/antenna-design-tools/
 might need to order some 50ohm 0402 and 0603 resistors? do I have those?
 
 I'm definitely going to need a few more nh and pf caps in 0402 and 063 aren't I?
+
+https://github.com/Subhankar2000/Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB
+
+https://www.ti.com/lit/an/swra370a/swra370a.pdf some testing methods
+https://files01.core.ac.uk/download/237465980.pdf thesis on ifa
+
+SWRA416 for pcb helicals
