@@ -1,4 +1,4 @@
-26286795852426150
+26290336250535745
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -104279,6 +104279,13 @@ SMT PCB Nut, M3 size
 2
 1
 jlc-extras
+Mounting_SMTSO_M3_ALT
+SMT PCB Nut, M3 size
+
+0
+1
+0
+jlc-extras
 Opto_SOP8_6.6x9.76mm_6N137S-Everlight
 
 
@@ -104341,6 +104348,13 @@ solder jumper open
 0
 2
 2
+jlc-extras
+Untitled
+
+
+0
+0
+0
 marel-footprints
 Logo_Marel_5.3x1.1mm
 Marel Logo, imported from svg, scaled 0.08
