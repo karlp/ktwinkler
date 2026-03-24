@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -60,19 +60,7 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|106915000|117510000|c67bdc4e-9398-493f-b440-6772b2ef9e12|60404a3b-9e6e-48f0-8dc0-469dc9f0e066",
-          ""
-        ],
-        [
-          "hole_clearance|106915000|117510000|c67bdc4e-9398-493f-b440-6772b2ef9e12|8b397ae0-2b1b-46fb-9e3c-d8aef80be6d7",
-          ""
-        ],
-        [
-          "hole_clearance|106915000|123610000|c16011eb-5afe-4cb4-b9c2-312fff3d5961|0efc3a84-5a68-4e05-9074-df5ce17b16e6",
-          ""
-        ],
-        [
-          "hole_clearance|106915000|123610000|c16011eb-5afe-4cb4-b9c2-312fff3d5961|7e382637-ed95-497b-b82d-5bf6474d9325",
+          "courtyards_overlap|163305000|118075000|4a4896f8-77eb-43aa-a5c0-ba63f0212844|b822b1dd-368a-47da-981f-a54eb9e93509",
           ""
         ],
         [
@@ -517,11 +505,21 @@
       },
       {
         "clearance": 0.2,
+        "name": "k50r",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
         "diff_pair_gap": 0.2,
         "diff_pair_width": 0.25,
         "name": "usb-7628",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.5,
@@ -538,6 +536,12 @@
       ],
       "/power/DPlusIn": [
         "usb-7628"
+      ],
+      "Net-(AE2-Pad1)": [
+        "k50r"
+      ],
+      "Net-(U8B-ANT)": [
+        "k50r"
       ]
     },
     "netclass_patterns": [
