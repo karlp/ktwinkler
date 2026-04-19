@@ -2528,17 +2528,6 @@
 					)
 				)
 				(circle
-					(center -0.508 4.572)
-					(radius 0.0001)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
 					(center -0.508 -7.112)
 					(radius 0.0001)
 					(stroke
@@ -2550,7 +2539,7 @@
 					)
 				)
 				(circle
-					(center 0 -2.54)
+					(center 0 4.572)
 					(radius 0.0001)
 					(stroke
 						(width 0.508)
@@ -2561,7 +2550,7 @@
 					)
 				)
 				(circle
-					(center 0.508 4.572)
+					(center 0 -2.54)
 					(radius 0.0001)
 					(stroke
 						(width 0.508)
@@ -2799,18 +2788,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 5.08) (xy 0.508 4.572)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0.508 4.064) (xy -0.508 4.064)
 					)
 					(stroke
@@ -2920,9 +2897,8 @@
 			)
 			(symbol "Protection_H5VU25UC_1_0"
 				(pin free line
-					(at 1.27 0 180)
+					(at 7.62 2.54 180)
 					(length 2.54)
-					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -2939,9 +2915,8 @@
 					)
 				)
 				(pin free line
-					(at 1.27 -0.1778 180)
+					(at 7.62 0 180)
 					(length 2.54)
-					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -2958,9 +2933,8 @@
 					)
 				)
 				(pin free line
-					(at 1.27 -0.127 180)
+					(at 7.62 -2.54 180)
 					(length 2.54)
-					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -2977,9 +2951,8 @@
 					)
 				)
 				(pin free line
-					(at 1.27 -0.254 180)
+					(at 7.62 -5.08 180)
 					(length 2.54)
-					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -3046,7 +3019,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 -7.112) (xy 0 -6.604) (xy 0 4.064) (xy -0.508 4.572)
+						(xy 0.508 -7.112) (xy 0 -6.604) (xy 0 4.064) (xy 0 4.572)
 					)
 					(stroke
 						(width 0)
@@ -3092,7 +3065,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
 					(name "GND"
@@ -3147,9 +3120,10 @@
 					)
 				)
 				(pin passive line
-					(at 0 7.62 270)
+					(at 0 -10.16 90)
 					(length 2.54)
-					(name "VBUS"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3922,12 +3896,6 @@
 		(uuid "28dbe937-cf67-4fe3-a500-3741e86dbeea")
 	)
 	(junction
-		(at 121.92 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ffed3ff-d553-4e35-8baf-cf21a5d613ac")
-	)
-	(junction
 		(at 154.94 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4175,16 +4143,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 43.18) (xy 121.92 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52674536-c488-4bc0-8346-7a2b9714938f")
-	)
-	(wire
-		(pts
 			(xy 50.8 184.15) (xy 50.8 181.61)
 		)
 		(stroke
@@ -4215,23 +4173,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 43.18) (xy 134.62 43.18)
+			(xy 76.2 43.18) (xy 134.62 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f9f9cce-b613-43a8-b44b-2fa8e9de2352")
-	)
-	(wire
-		(pts
-			(xy 76.2 43.18) (xy 121.92 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6281bea9-bdc5-4eb8-9073-1b04d1cc956e")
 	)
 	(wire
 		(pts

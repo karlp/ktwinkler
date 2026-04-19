@@ -10,3 +10,7 @@ Try allll the things!
 * different cheap motor chips
 * smt screw mount shits.
 * battery ... wots?
+
+
+# Errors/lessons from first production run
+lol, the H5VU25UC uni tvs I chose, I totally misread the internal schematic, and connected it with 3/8 being vcc/gnd, ala bidir.  Soooo, that has a nice built in short :)  Easy fix, remove the tvs on these boards, but need to fix the part in my lib!
