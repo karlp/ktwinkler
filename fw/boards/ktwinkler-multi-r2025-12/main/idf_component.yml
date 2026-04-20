@@ -1,0 +1,11 @@
+## IDF Component Manager Manifest File
+dependencies:
+  espressif/mdns: "~1"
+  idf:
+    version: ">=5.5.1"
+  espressif/lan867x:
+    version: "~1.0"
+    rules:
+      - if: "target == esp32"
+      - if: "idf_version >=5.5"
+
