@@ -1,0 +1,3 @@
+[submodule "fw/lib/micropython"]
+	path = fw/lib/micropython
+	url = git@github.com:micropython/micropython.git
