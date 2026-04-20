@@ -7,7 +7,7 @@ import machine
 import time
 
 class Twinkl:
-    def __init__(self, p1=machine.Pin.board.PWM2, p2=machine.Pin.board.PWM3, f=5000):
+    def __init__(self, p1=machine.Pin.board.PWM1, p2=machine.Pin.board.PWM2, f=5000):
         self.w = [machine.PWM(p1, freq=f, duty=0), machine.PWM(p2, freq=f, duty=0)]
 
     def single(self, sel, brightness):
