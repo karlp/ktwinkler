@@ -14,3 +14,6 @@ Try allll the things!
 
 # Errors/lessons from first production run
 lol, the H5VU25UC uni tvs I chose, I totally misread the internal schematic, and connected it with 3/8 being vcc/gnd, ala bidir.  Soooo, that has a nice built in short :)  Easy fix, remove the tvs on these boards, but need to fix the part in my lib!
+
+lol2, PWM3-8 on ESP32 are totally unusable, connected to internal spi.  I could have sworn I'd checked that? not many actually free IOs
+on C3 :(  Need to cut all traces, then it can be flashed and runs ok, with the limited set remaining.  Should have used the jtag pins, and the strapping pins instead :(

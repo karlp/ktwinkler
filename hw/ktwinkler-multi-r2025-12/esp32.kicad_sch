@@ -3579,6 +3579,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "LOL, you fucking eeedjit"
+		(exclude_from_sim no)
+		(at 178.308 122.936 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3bd4814e-59e3-419a-b95e-c334a9798866")
+	)
 	(text "hang on....\nI was going to yolo this,\nbut.. do I need to?\nwell, what was the point otherwise?"
 		(exclude_from_sim no)
 		(at 39.624 54.864 0)
