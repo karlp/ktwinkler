@@ -76,16 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|163305000|118075000|4a4896f8-77eb-43aa-a5c0-ba63f0212844|b822b1dd-368a-47da-981f-a54eb9e93509",
-          ""
-        ],
-        [
-          "starved_thermal|107300000|131815000|2274cfe6-cba3-468d-b669-2d35ecbad711|90cb59ac-35f6-4459-8dcf-2ccfd76d4bf4|F.Cu",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
