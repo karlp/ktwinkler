@@ -4313,7 +4313,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4338,7 +4338,7 @@
 					)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4370,7 +4370,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4392,7 +4392,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -4430,7 +4430,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4974,7 +4974,7 @@
 	)
 	(text "LMR33630BDDAR? 24V solid, 3A, 1.2Mhz, cheap and well stocked...\nLMR41420Y - 24V, 2A, 1.1Mhz, cheap and well stocked.\nSY8303 - 24v solid, 3A, 500-2000k, cheap and well stocked.\nI still refuse to use non-synch buck in the year of our wonder, 2026\nUsing two of the same, would save me extended fees, ok for small orders?\nbut just an 1117 is better?\n\n2 of them means you can always have 3.3v regardless of bus voltage?"
 		(exclude_from_sim no)
-		(at 294.894 142.24 0)
+		(at 204.47 67.056 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4985,7 +4985,7 @@
 	)
 	(text "5-24V in, with\n buck to 12\n buck to 5\n buck to 3.3 (lol, no, who needs that)\n passthrough\nas options for the led supply.\nseparate 3.3V ~ish supply for the esp32 itself.\njust an ams1117-3.3 for the esp32? could I live with myself?"
 		(exclude_from_sim no)
-		(at 187.452 153.162 0)
+		(at 85.598 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6234,7 +6234,7 @@
 		)
 		(uuid "fb8f1abf-6ccd-40c6-941b-7798224e8b44")
 	)
-	(label "VBUS"
+	(label "VUBus"
 		(at 114.3 43.18 0)
 		(effects
 			(font
@@ -8257,7 +8257,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "551aa34b-b43b-47dc-b9d3-986ce855ef1a")
 		(property "Reference" "J2"
@@ -10259,7 +10259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm"
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1x2.5mm_P0.5mm"
 			(at 124.46 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -10581,6 +10581,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 165.1 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3fec310-952e-4ae1-829b-f374f9ec777a")
+		(property "Reference" "#PWR041"
+			(at 165.1 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 165.1 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 165.1 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7d7e2b5-b246-45a4-88f6-701d0d848512")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/974aa20f-6384-4103-a4af-e95b95e9bb34"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "karl-atomic-basic:Diode_SS34")
 		(at 137.16 43.18 180)
 		(unit 1)
@@ -10699,84 +10777,6 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/974aa20f-6384-4103-a4af-e95b95e9bb34"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 165.1 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dd36270a-04af-4de1-a827-14d2043e9817")
-		(property "Reference" "#PWR022"
-			(at 165.1 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 165.1 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 165.1 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ae2ba1ce-e2e9-42c6-98f5-f048f8d7a0c2")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/974aa20f-6384-4103-a4af-e95b95e9bb34"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)

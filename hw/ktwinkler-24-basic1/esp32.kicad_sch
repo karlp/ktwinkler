@@ -4634,26 +4634,6 @@
 		(uuid "fce31cd2-03c3-4b16-b6a7-2e4795d9d615")
 	)
 	(label "PWM1"
-		(at 162.56 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1581652b-1afc-449d-986b-92f88351d319")
-	)
-	(label "PWM6"
-		(at 106.68 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "326de21d-9ca0-4ac2-90e6-9b0ed770fd3a")
-	)
-	(label "PWM4"
 		(at 104.14 124.46 180)
 		(effects
 			(font
@@ -4661,7 +4641,47 @@
 			)
 			(justify right bottom)
 		)
+		(uuid "1581652b-1afc-449d-986b-92f88351d319")
+	)
+	(label "U0TXDb"
+		(at 102.87 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "29ac5f4b-6060-49d8-9c26-1915d6ac305d")
+	)
+	(label "PWM6"
+		(at 162.56 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "326de21d-9ca0-4ac2-90e6-9b0ed770fd3a")
+	)
+	(label "PWM4"
+		(at 106.68 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
 		(uuid "52e3e26e-a2c7-4780-8111-ee7809bec49e")
+	)
+	(label "U0TXD"
+		(at 76.2 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5728fa6e-6002-44b9-89bf-20936f5c8d04")
 	)
 	(label "MODE_SW"
 		(at 30.48 64.77 0)
@@ -4672,6 +4692,16 @@
 			(justify left bottom)
 		)
 		(uuid "68826c94-7c75-4a52-815d-b492f10f473f")
+	)
+	(label "U0RXD"
+		(at 80.01 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69f6ee05-4bcd-4e55-944c-10a4180d31b7")
 	)
 	(label "PWM4"
 		(at 30.48 77.47 0)
@@ -4694,7 +4724,7 @@
 		(uuid "8b7b6d9c-0939-4706-98ca-e59f542a042d")
 	)
 	(label "PWM8"
-		(at 162.56 111.76 0)
+		(at 162.56 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4714,7 +4744,7 @@
 		(uuid "ad09a9cd-3cd8-4a16-ba31-1f9114322ec5")
 	)
 	(label "PWM7"
-		(at 162.56 109.22 0)
+		(at 162.56 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4734,7 +4764,7 @@
 		(uuid "b44e6a59-c025-49e4-807d-fe37475a94a0")
 	)
 	(label "PWM5"
-		(at 106.68 99.06 180)
+		(at 104.14 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4764,12 +4794,12 @@
 		(uuid "d23d6d24-9175-46f2-bd24-39919c033664")
 	)
 	(label "PWM2"
-		(at 162.56 106.68 0)
+		(at 106.68 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d4576056-a78c-42b4-be40-2ec4fb34054e")
 	)
@@ -4784,12 +4814,12 @@
 		(uuid "deec9dbb-7a9a-42a2-b7bb-e77a56c501dd")
 	)
 	(label "PWM3"
-		(at 104.14 121.92 180)
+		(at 162.56 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "e325be31-5200-4c6c-99bc-6269a504a54a")
 	)
@@ -5379,7 +5409,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_Experiments:ANT-YOLOPOLE"
+		(property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Left"
 			(at 261.62 83.82 0)
 			(hide yes)
 			(show_name no)
