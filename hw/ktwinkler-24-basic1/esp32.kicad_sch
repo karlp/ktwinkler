@@ -627,12 +627,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-atomic-basic:Crystal_32k_3215_Q13FC13500004"
+		(symbol "karl-atomic-basic:KC0402_1.5pF"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -640,27 +640,40 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Y"
-				(at 0 2.54 0)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal_32k_3215_Q13FC13500004"
-				(at 0 -2.54 0)
+			(property "Value" "1.5pf"
+				(at 0.254 -2.032 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at -0.508 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -671,8 +684,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C32346.pdf"
-				(at 0 0 0)
+			(property "Description" "50V, C0G"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -682,8 +695,8 @@
 					)
 				)
 			)
-			(property "Description" "32.768kHz 70kΩ Crystal ±20ppm SMD3215-2P, 12.5pF"
-				(at 0 0 0)
+			(property "MPN" "0402CG1R5C500NT"
+				(at -0.254 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -693,19 +706,8 @@
 					)
 				)
 			)
-			(property "MPN" "Q13FC13500004"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C32346"
-				(at 0 0 0)
+			(property "LCSC Part #" "C1552"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -726,7 +728,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "quartz ceramic resonator oscillator"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -737,7 +739,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Crystal*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -748,24 +750,13 @@
 					)
 				)
 			)
-			(symbol "Crystal_32k_3215_Q13FC13500004_0_1"
+			(symbol "KC0402_1.5pF_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -0.762) (xy -1.27 0.762)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 -1.524)
-					(end 0.762 1.524)
-					(stroke
-						(width 0)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -774,10 +765,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -0.762) (xy 1.27 0.762)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.381)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -785,11 +776,19 @@
 					)
 				)
 			)
-			(symbol "Crystal_32k_3215_Q13FC13500004_1_1"
+			(symbol "KC0402_1.5pF_1_1"
+				(text "0402"
+					(at -1.524 1.27 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
 				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "1"
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -805,9 +804,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "2"
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -975,203 +974,6 @@
 				)
 			)
 			(symbol "KC0402_100nF_16V_1_1"
-				(text "0402"
-					(at -1.524 1.27 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "karl-atomic-basic:KC0402_2.2pF"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "2.2pF"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-				(at -0.508 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "50V, C0G"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0402CG2R2C500NT"
-				(at -0.254 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C1559"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "jlcbasic" "basic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "KC0402_2.2pF_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "KC0402_2.2pF_1_1"
 				(text "0402"
 					(at -1.524 1.27 0)
 					(effects
@@ -3589,15 +3391,16 @@
 		)
 		(uuid "25be4658-543d-481a-bfd3-52896ed739f2")
 	)
-	(text "LOL, you fucking eeedjit"
+	(text "Internal flash\ndon't touch!"
 		(exclude_from_sim no)
-		(at 178.308 122.936 0)
+		(at 157.48 122.682 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(uuid "3bd4814e-59e3-419a-b95e-c334a9798866")
+		(uuid "70822c32-bda8-46fa-bbce-689fc547f31f")
 	)
 	(text "hang on....\nI was going to yolo this,\nbut.. do I need to?\nwell, what was the point otherwise?"
 		(exclude_from_sim no)
@@ -3663,6 +3466,17 @@
 		)
 		(uuid "cb4a3f7d-1f98-4e6e-a803-e9d24fb18102")
 	)
+	(text "Just stock c3 hw guidelines"
+		(exclude_from_sim no)
+		(at 197.358 85.344 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ccf27ef7-868f-4807-bdf5-7c6fe126301f")
+	)
 	(junction
 		(at 132.08 86.36)
 		(diameter 0)
@@ -3674,6 +3488,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "01bb33f1-4fde-4db7-9adc-d82983384322")
+	)
+	(junction
+		(at 175.26 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0569b6be-7c33-48c9-84db-3a26edeb2dc4")
 	)
 	(junction
 		(at 121.92 86.36)
@@ -3692,12 +3512,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d5ab5c7-65c3-424c-8a37-2f3ab8bf4b0e")
-	)
-	(junction
-		(at 78.74 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d7a1396-656a-4a62-983e-9cc326593e72")
 	)
 	(junction
 		(at 238.76 93.98)
@@ -3766,13 +3580,7 @@
 		(uuid "7dd53d29-d941-4304-be02-96219bd1260e")
 	)
 	(junction
-		(at 78.74 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8510a022-297e-488c-bdf9-577fb55a563c")
-	)
-	(junction
-		(at 96.52 83.82)
+		(at 86.36 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90fd25ae-7d28-4313-9569-b5e968518904")
@@ -3790,12 +3598,6 @@
 		(uuid "c413efa9-b71f-489f-b5ed-15a34cb3e621")
 	)
 	(junction
-		(at 63.5 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5c58b51-d482-4a5a-9cae-681a4f11b104")
-	)
-	(junction
 		(at 162.56 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3806,6 +3608,30 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef07bb7b-a974-434f-8eb5-d5e93ec5c1ef")
+	)
+	(no_connect
+		(at 154.94 116.84)
+		(uuid "33d4ff15-677c-4fa5-a8e7-a1ce8fac2839")
+	)
+	(no_connect
+		(at 154.94 124.46)
+		(uuid "7fc5dd36-279b-4471-8a09-4eb7faa9fabe")
+	)
+	(no_connect
+		(at 154.94 121.92)
+		(uuid "b12780dd-eacd-4719-84e7-a9e2b9943798")
+	)
+	(no_connect
+		(at 154.94 129.54)
+		(uuid "d112aa44-4377-4b49-9710-ce2d873a17af")
+	)
+	(no_connect
+		(at 154.94 119.38)
+		(uuid "d17c7e3d-f6d4-4379-869f-47ef2f810416")
+	)
+	(no_connect
+		(at 154.94 127)
+		(uuid "ea6f5b73-b142-48c1-8195-57a98ca2a3cb")
 	)
 	(wire
 		(pts
@@ -3819,7 +3645,17 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 83.82) (xy 96.52 83.82)
+			(xy 91.44 93.98) (xy 109.22 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04a7d106-aa74-428e-85d6-f8ee12b6b6cc")
+	)
+	(wire
+		(pts
+			(xy 91.44 83.82) (xy 86.36 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3839,13 +3675,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 121.92) (xy 109.22 121.92)
+			(xy 25.4 87.63) (xy 30.48 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "09ef91ce-0e84-4611-980a-186b8c063d8d")
+		(uuid "07a118aa-d957-4558-b55e-7b7b7debaed5")
 	)
 	(wire
 		(pts
@@ -3856,16 +3692,6 @@
 			(type default)
 		)
 		(uuid "0d2bf127-18f6-49ba-8faa-b55c884fb449")
-	)
-	(wire
-		(pts
-			(xy 63.5 121.92) (xy 63.5 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "140a4b3d-56bf-4871-9caf-2344bfc3cb4c")
 	)
 	(wire
 		(pts
@@ -3889,13 +3715,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 121.92) (xy 63.5 121.92)
+			(xy 104.14 121.92) (xy 109.22 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19b79dc2-c139-466f-aab1-ba7677c11494")
+		(uuid "1e95cc4a-9a59-4eb3-a3b9-cccc63e850bc")
 	)
 	(wire
 		(pts
@@ -3959,6 +3785,26 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 109.22) (xy 154.94 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31befb8b-c78d-4dfd-aee2-6a1c345b36e5")
+	)
+	(wire
+		(pts
+			(xy 25.4 80.01) (xy 30.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ec608e-5aae-4fca-876a-ad8cfff4bc34")
+	)
+	(wire
+		(pts
 			(xy 55.88 119.38) (xy 58.42 119.38)
 		)
 		(stroke
@@ -3989,26 +3835,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 85.09) (xy 30.48 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37f41eb7-4eec-4a7c-b4bd-3a033a6f02ff")
-	)
-	(wire
-		(pts
-			(xy 25.4 80.01) (xy 30.48 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a0e2424-740e-4a25-9df2-9937622f0a20")
-	)
-	(wire
-		(pts
 			(xy 25.4 74.93) (xy 30.48 74.93)
 		)
 		(stroke
@@ -4016,16 +3842,6 @@
 			(type default)
 		)
 		(uuid "3b11b0fa-4cb8-482d-9022-8263866612f5")
-	)
-	(wire
-		(pts
-			(xy 73.66 127) (xy 78.74 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b72c270-2074-4897-b57b-4dbf6657b7d2")
 	)
 	(wire
 		(pts
@@ -4056,6 +3872,16 @@
 			(type default)
 		)
 		(uuid "41ac1c8b-a047-4b20-9ae1-1c84dd395044")
+	)
+	(wire
+		(pts
+			(xy 25.4 82.55) (xy 30.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44096f35-5a47-4c41-b412-b3515623a8f4")
 	)
 	(wire
 		(pts
@@ -4119,16 +3945,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 104.14) (xy 109.22 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51021b5a-5c05-49a0-a954-d860b82fc8df")
-	)
-	(wire
-		(pts
 			(xy 83.82 139.7) (xy 83.82 144.78)
 		)
 		(stroke
@@ -4139,23 +3955,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 99.06) (xy 170.18 99.06)
+			(xy 154.94 99.06) (xy 175.26 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "56b8e800-2462-4326-8b73-4c6708243c04")
-	)
-	(wire
-		(pts
-			(xy 73.66 121.92) (xy 78.74 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57f03038-61ee-4d31-8d57-950e5838c5e9")
 	)
 	(wire
 		(pts
@@ -4176,6 +3982,16 @@
 			(type default)
 		)
 		(uuid "5922446d-fcbf-428b-93c8-519c8cc38d9a")
+	)
+	(wire
+		(pts
+			(xy 175.26 99.06) (xy 182.88 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "598f726d-17c3-4ca6-839f-85fbc35a1f9e")
 	)
 	(wire
 		(pts
@@ -4239,16 +4055,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 93.98) (xy 101.6 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6957ef93-ac12-4a28-b6b9-44b57237043c")
-	)
-	(wire
-		(pts
 			(xy 154.94 63.5) (xy 162.56 63.5)
 		)
 		(stroke
@@ -4289,6 +4095,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 124.46) (xy 109.22 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73c4852c-acd5-4eb7-adf2-9b1de5954a0b")
+	)
+	(wire
+		(pts
 			(xy 238.76 101.6) (xy 238.76 104.14)
 		)
 		(stroke
@@ -4316,16 +4132,6 @@
 			(type default)
 		)
 		(uuid "79ceccaa-6663-4ee1-82ed-076e8bf5be5d")
-	)
-	(wire
-		(pts
-			(xy 78.74 127) (xy 88.9 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a92e783-017e-4d2b-80c9-f25487c76d16")
 	)
 	(wire
 		(pts
@@ -4379,23 +4185,13 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 99.06) (xy 96.52 91.44)
+			(xy 86.36 99.06) (xy 86.36 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8a832cff-330e-4a7e-8d8d-2514d8c49298")
-	)
-	(wire
-		(pts
-			(xy 88.9 124.46) (xy 88.9 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c752405-2db8-46d5-8791-2a638ed95233")
 	)
 	(wire
 		(pts
@@ -4409,16 +4205,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 124.46) (xy 88.9 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "943668fb-846c-474d-82eb-123319e854cf")
-	)
-	(wire
-		(pts
 			(xy 147.32 63.5) (xy 154.94 63.5)
 		)
 		(stroke
@@ -4426,36 +4212,6 @@
 			(type default)
 		)
 		(uuid "945a19e5-41de-4d1a-b318-5bbc2610a507")
-	)
-	(wire
-		(pts
-			(xy 154.94 111.76) (xy 167.64 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a06633d-fd5e-455b-b2aa-c602c92cd88a")
-	)
-	(wire
-		(pts
-			(xy 63.5 127) (xy 63.5 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d4f409c-dcbb-4f25-8549-60fcf6a1cf2a")
-	)
-	(wire
-		(pts
-			(xy 154.94 127) (xy 160.02 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f6f303a-7734-4e60-b7c0-236638c27934")
 	)
 	(wire
 		(pts
@@ -4489,6 +4245,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 111.76) (xy 154.94 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a141ebfa-0fd8-4dd9-a439-7bf2bc14bf6b")
+	)
+	(wire
+		(pts
 			(xy 81.28 101.6) (xy 109.22 101.6)
 		)
 		(stroke
@@ -4499,7 +4265,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 99.06) (xy 96.52 99.06)
+			(xy 109.22 99.06) (xy 86.36 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4539,16 +4305,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 116.84) (xy 160.02 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae8772e8-afee-43c0-81aa-c9fe3f32dcd7")
-	)
-	(wire
-		(pts
 			(xy 160.02 93.98) (xy 205.74 93.98)
 		)
 		(stroke
@@ -4566,16 +4322,6 @@
 			(type default)
 		)
 		(uuid "b341a982-4c55-4f5a-93de-9ad8e330cbd6")
-	)
-	(wire
-		(pts
-			(xy 25.4 87.63) (xy 30.48 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3f0dcd2-bca8-4744-8968-f8e8a4ad1840")
 	)
 	(wire
 		(pts
@@ -4599,16 +4345,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 124.46) (xy 160.02 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bab34a47-9d14-4cca-bc86-5fb00cba7275")
-	)
-	(wire
-		(pts
 			(xy 220.98 93.98) (xy 220.98 96.52)
 		)
 		(stroke
@@ -4616,6 +4352,16 @@
 			(type default)
 		)
 		(uuid "bfc51688-547a-4202-9aa1-a29c9bf1590f")
+	)
+	(wire
+		(pts
+			(xy 25.4 85.09) (xy 30.48 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0b5e0ee-011b-46dc-b99b-7dc04399dbbf")
 	)
 	(wire
 		(pts
@@ -4629,16 +4375,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 129.54) (xy 160.02 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c800be90-5d80-46db-adb9-a5d8e56cc0b1")
-	)
-	(wire
-		(pts
 			(xy 73.66 137.16) (xy 73.66 139.7)
 		)
 		(stroke
@@ -4649,7 +4385,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 93.98) (xy 101.6 91.44)
+			(xy 91.44 93.98) (xy 91.44 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4679,16 +4415,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 127) (xy 63.5 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb9fef0a-0c14-4885-ba77-ef5a737cb450")
-	)
-	(wire
-		(pts
 			(xy 220.98 93.98) (xy 238.76 93.98)
 		)
 		(stroke
@@ -4706,16 +4432,6 @@
 			(type default)
 		)
 		(uuid "ce902e76-14fe-4727-a30b-42dbcee929e1")
-	)
-	(wire
-		(pts
-			(xy 154.94 121.92) (xy 160.02 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2c036ce-aa89-4935-9d38-a955521b7c1a")
 	)
 	(wire
 		(pts
@@ -4789,17 +4505,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 82.55) (xy 30.48 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e40241e6-db85-4ea9-830f-f4ce069ded40")
-	)
-	(wire
-		(pts
-			(xy 154.94 104.14) (xy 160.02 104.14)
+			(xy 154.94 104.14) (xy 162.56 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4819,17 +4525,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 119.38) (xy 160.02 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5c80dfb-3008-42a0-bb9c-de10e5cfb3f5")
-	)
-	(wire
-		(pts
-			(xy 96.52 83.82) (xy 96.52 86.36)
+			(xy 86.36 83.82) (xy 86.36 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4856,6 +4552,16 @@
 			(type default)
 		)
 		(uuid "ebf11be3-4790-4fae-a31a-190d2e6a765d")
+	)
+	(wire
+		(pts
+			(xy 187.96 99.06) (xy 190.5 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece8220a-5986-477b-bc0e-7d7ac1a42bd5")
 	)
 	(wire
 		(pts
@@ -4899,13 +4605,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 167.64 109.22)
+			(xy 175.26 106.68) (xy 175.26 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fb0cc539-545a-442c-bccc-2f607dee8fee")
+		(uuid "f5bbb00c-d7b8-4e4a-a372-d0df49099fe8")
 	)
 	(wire
 		(pts
@@ -4919,7 +4625,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 86.36) (xy 101.6 83.82)
+			(xy 91.44 86.36) (xy 91.44 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4928,44 +4634,34 @@
 		(uuid "fce31cd2-03c3-4b16-b6a7-2e4795d9d615")
 	)
 	(label "PWM1"
-		(at 106.68 104.14 180)
+		(at 162.56 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1581652b-1afc-449d-986b-92f88351d319")
+	)
+	(label "PWM6"
+		(at 106.68 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "1581652b-1afc-449d-986b-92f88351d319")
-	)
-	(label "PWM8"
-		(at 160.02 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "365cf8bd-b642-4f28-a5a8-8b46eeaff8ca")
+		(uuid "326de21d-9ca0-4ac2-90e6-9b0ed770fd3a")
 	)
 	(label "PWM4"
-		(at 160.02 124.46 0)
+		(at 104.14 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "52e3e26e-a2c7-4780-8111-ee7809bec49e")
-	)
-	(label "PWM5"
-		(at 160.02 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "542c0b23-229e-4831-a3a6-a41149e4e838")
 	)
 	(label "MODE_SW"
 		(at 30.48 64.77 0)
@@ -4987,16 +4683,6 @@
 		)
 		(uuid "72388aea-1691-41b7-ba89-865ff20df409")
 	)
-	(label "PWM6"
-		(at 160.02 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "78391414-b526-4df9-98eb-8e299b81fde2")
-	)
 	(label "MODE_SW"
 		(at 106.68 96.52 180)
 		(effects
@@ -5007,25 +4693,15 @@
 		)
 		(uuid "8b7b6d9c-0939-4706-98ca-e59f542a042d")
 	)
-	(label "PWM5"
-		(at 30.48 80.01 0)
+	(label "PWM8"
+		(at 162.56 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ac77eecd-e37e-4620-b267-afd1e83fe268")
-	)
-	(label "PWM6"
-		(at 30.48 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac94de01-cb60-4e41-bfa9-7dcb66ce040a")
+		(uuid "9cec99de-163e-4f82-9ae8-e667d5e6b151")
 	)
 	(label "PWM2"
 		(at 30.48 72.39 0)
@@ -5038,6 +4714,36 @@
 		(uuid "ad09a9cd-3cd8-4a16-ba31-1f9114322ec5")
 	)
 	(label "PWM7"
+		(at 162.56 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b26a69f5-5b96-469c-bc73-bb4751896852")
+	)
+	(label "PWM6"
+		(at 30.48 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b44e6a59-c025-49e4-807d-fe37475a94a0")
+	)
+	(label "PWM5"
+		(at 106.68 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9780c8a-22f5-4cd4-ab7c-b84f59cadd05")
+	)
+	(label "PWM7"
 		(at 30.48 85.09 0)
 		(effects
 			(font
@@ -5045,7 +4751,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b0bba4eb-1927-4845-96b0-fbbd11f530a8")
+		(uuid "c9dc5bba-4491-4514-b8e4-73fcec8599d9")
 	)
 	(label "PWM8"
 		(at 30.48 87.63 0)
@@ -5055,7 +4761,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c4cbdf60-504b-4dc7-a907-c0d3ed7a6ded")
+		(uuid "d23d6d24-9175-46f2-bd24-39919c033664")
 	)
 	(label "PWM2"
 		(at 162.56 106.68 0)
@@ -5067,16 +4773,6 @@
 		)
 		(uuid "d4576056-a78c-42b4-be40-2ec4fb34054e")
 	)
-	(label "PWM3"
-		(at 160.02 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d88870ea-1e08-40cb-86f0-20b3ca809065")
-	)
 	(label "PWM1"
 		(at 30.48 69.85 0)
 		(effects
@@ -5087,15 +4783,25 @@
 		)
 		(uuid "deec9dbb-7a9a-42a2-b7bb-e77a56c501dd")
 	)
-	(label "PWM7"
-		(at 160.02 116.84 0)
+	(label "PWM3"
+		(at 104.14 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e325be31-5200-4c6c-99bc-6269a504a54a")
+	)
+	(label "PWM5"
+		(at 30.48 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e3385901-5ba2-4f00-b161-19d070edaf48")
+		(uuid "e7b1c6b0-043f-4bc5-a4b5-f0ba3523f6d3")
 	)
 	(label "PWM3"
 		(at 30.48 74.93 0)
@@ -5106,30 +4812,6 @@
 			(justify left bottom)
 		)
 		(uuid "f65f4be6-5416-4d71-a8d6-a8f6b5d6e654")
-	)
-	(global_label "RESET_ESP"
-		(shape input)
-		(at 170.18 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "196ec2cf-4142-4def-a8ae-0ea1aa5d5328")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.5064 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
 	(global_label "USBDN"
 		(shape bidirectional)
@@ -5203,6 +4885,17 @@
 			)
 		)
 	)
+	(hierarchical_label "PWM7"
+		(shape output)
+		(at 25.4 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0ad9a44d-c6ce-45e6-96fa-f5c57f9e0367")
+	)
 	(hierarchical_label "PWM5"
 		(shape output)
 		(at 25.4 80.01 180)
@@ -5212,18 +4905,7 @@
 			)
 			(justify right)
 		)
-		(uuid "441bc6c7-fdd3-4df2-8f27-90520cd84bc0")
-	)
-	(hierarchical_label "P1_Req_Out"
-		(shape output)
-		(at 167.64 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "49655d13-3494-4d56-a43c-3f5e92aee77d")
+		(uuid "0f870c8d-0d6f-4882-8d7b-3431ba60ebff")
 	)
 	(hierarchical_label "MODE"
 		(shape input)
@@ -5236,17 +4918,6 @@
 		)
 		(uuid "4b7d1f74-9d24-4144-b334-20e85104d311")
 	)
-	(hierarchical_label "PWM6"
-		(shape output)
-		(at 25.4 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ad18750-5aa2-448c-8c09-798312342185")
-	)
 	(hierarchical_label "PWM1"
 		(shape output)
 		(at 25.4 69.85 180)
@@ -5257,17 +4928,6 @@
 			(justify right)
 		)
 		(uuid "62fb0b43-37bf-43b5-afee-d006c4a4af0f")
-	)
-	(hierarchical_label "P1IN"
-		(shape input)
-		(at 167.64 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "72c06780-5bdb-4899-ae15-e955194e17f3")
 	)
 	(hierarchical_label "PWM3"
 		(shape output)
@@ -5289,7 +4949,18 @@
 			)
 			(justify right)
 		)
-		(uuid "92759d3a-e640-4cd6-bce1-ab70832175dc")
+		(uuid "7f5bf02a-f6f4-437c-ab97-3d88784499cd")
+	)
+	(hierarchical_label "PWM6"
+		(shape output)
+		(at 25.4 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f742c56-55ca-4623-a772-7dda3e1a2b1f")
 	)
 	(hierarchical_label "PWM2"
 		(shape output)
@@ -5301,17 +4972,6 @@
 			(justify right)
 		)
 		(uuid "aebefbb5-e2f8-477d-ad4f-a3c019096b7b")
-	)
-	(hierarchical_label "PWM7"
-		(shape output)
-		(at 25.4 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "af730dc3-6271-4865-83d1-3fa62b5d5323")
 	)
 	(hierarchical_label "PWM4"
 		(shape output)
@@ -5397,130 +5057,6 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-atomic-basic:KC0402_22pF")
-		(at 71.12 127 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0dd53508-6ff0-44c8-be18-f7cc648e0bb6")
-		(property "Reference" "C10"
-			(at 70.6172 132.08 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22pF"
-			(at 70.6172 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 74.93 127.508 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "50V, C0G"
-			(at 74.93 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0402CG220J500NT"
-			(at 74.93 127.254 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C1555"
-			(at 74.93 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 71.12 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 71.12 127 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "be7ee15d-b91a-4048-bbce-c2cbf5bbf7ed")
-		)
-		(pin "1"
-			(uuid "cec50907-ba9d-4fd5-8704-78653e4b718d")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5653,256 +5189,6 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KR0402_0R")
-		(at 213.36 93.98 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "196b2a8e-537f-46f9-bccb-7adebbdfcd38")
-		(property "Reference" "R16"
-			(at 213.36 88.9 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 213.36 91.44 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 213.36 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, 0603"
-			(at 213.36 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C17168"
-			(at 213.36 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0402WGF0000TCE"
-			(at 213.36 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 213.36 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 213.36 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bee5beb8-63cd-4efb-b28e-db964907d7ce")
-		)
-		(pin "2"
-			(uuid "3c99a114-6481-4a81-b077-0a7139982f21")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-atomic-basic:Crystal_32k_3215_Q13FC13500004")
-		(at 78.74 124.46 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21cda736-faf6-4747-8731-62f8b2c69c8a")
-		(property "Reference" "Y2"
-			(at 81.28 123.1899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "32k"
-			(at 81.28 125.7299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
-			(at 78.74 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C32346.pdf"
-			(at 78.74 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "32.768kHz 70kΩ Crystal ±20ppm SMD3215-2P, 12.5pF"
-			(at 78.74 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "Q13FC13500004"
-			(at 78.74 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C32346"
-			(at 78.74 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 78.74 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 78.74 124.46 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eb8d00f9-12db-4d69-b604-419d2df8fef6")
-		)
-		(pin "2"
-			(uuid "70e0c3e4-30dc-45ac-8ba8-b778822d6fab")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "Y2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 132.08 142.24 0)
 		(unit 1)
@@ -5981,8 +5267,8 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0402_22pF")
-		(at 71.12 121.92 90)
+		(lib_id "power:+3V3")
+		(at 190.5 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5991,9 +5277,10 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2989b645-e2e9-4c3c-a230-060766e2016d")
-		(property "Reference" "C9"
-			(at 70.6172 115.57 90)
+		(uuid "24ab05d8-0f82-4c32-a2b7-9477301141af")
+		(property "Reference" "#PWR027"
+			(at 190.5 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6002,18 +5289,19 @@
 				)
 			)
 		)
-		(property "Value" "22pF"
-			(at 70.6172 118.11 90)
+		(property "Value" "+3V3"
+			(at 193.04 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 74.93 122.428 0)
+		(property "Footprint" ""
+			(at 190.5 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6024,7 +5312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 121.92 0)
+			(at 190.5 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6034,8 +5322,8 @@
 				)
 			)
 		)
-		(property "Description" "50V, C0G"
-			(at 74.93 121.92 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 190.5 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6044,61 +5332,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "MPN" "0402CG220J500NT"
-			(at 74.93 122.174 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C1555"
-			(at 74.93 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 71.12 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 71.12 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a80bfdd6-beb7-469a-891f-e96a55a83941")
 		)
 		(pin "1"
-			(uuid "f712e85d-e4c8-45a2-af14-9eb465e4f19f")
+			(uuid "587daf06-6a30-47f3-a84f-b8ee7d757fe2")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "C9")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -6198,134 +5439,8 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KC0402_2.2pF")
-		(at 220.98 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "384c91bf-8e9e-455c-8824-5b47fa9b8730")
-		(property "Reference" "C18"
-			(at 223.52 97.2871 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2pF"
-			(at 223.52 99.8271 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 220.472 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "50V, C0G"
-			(at 220.98 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0402CG2R2C500NT"
-			(at 220.726 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C1559"
-			(at 220.98 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 220.98 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 220.98 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2ea11c47-8eaf-4122-957d-8bf346406524")
-		)
-		(pin "1"
-			(uuid "8fe09f16-34b8-41af-ba5a-458095153afe")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
-		(at 96.52 83.82 0)
+		(at 86.36 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6336,7 +5451,7 @@
 		(fields_autoplaced yes)
 		(uuid "432044b2-7ef0-4d71-b7c5-10086e736853")
 		(property "Reference" "#PWR030"
-			(at 96.52 87.63 0)
+			(at 86.36 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +5462,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 96.52 78.74 0)
+			(at 86.36 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6357,7 +5472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 83.82 0)
+			(at 86.36 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6368,7 +5483,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 83.82 0)
+			(at 86.36 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6379,7 +5494,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 96.52 83.82 0)
+			(at 86.36 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6868,7 +5983,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "534a04ca-3438-49e0-b9af-08dac8ddfa22")
 		(property "Reference" "R15"
@@ -7120,7 +6235,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5ada02bc-45f4-44c4-adb0-2192e8e4fe48")
 		(property "Reference" "R3"
@@ -7356,7 +6471,7 @@
 	)
 	(symbol
 		(lib_id "karl-atomic-basic:KR0402_10k")
-		(at 96.52 88.9 0)
+		(at 86.36 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7367,7 +6482,7 @@
 		(fields_autoplaced yes)
 		(uuid "651049fa-bc6b-40b1-addf-8aed79feb6c3")
 		(property "Reference" "R12"
-			(at 99.06 87.6299 0)
+			(at 88.9 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7378,7 +6493,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 99.06 90.1699 0)
+			(at 88.9 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7389,7 +6504,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7400,7 +6515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7411,7 +6526,7 @@
 			)
 		)
 		(property "Description" "Resistor, 0603"
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7422,7 +6537,7 @@
 			)
 		)
 		(property "LCSC Part #" "C25744"
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7433,7 +6548,7 @@
 			)
 		)
 		(property "MPN" "0402WGF1002TCE"
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7444,7 +6559,7 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7455,7 +6570,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 96.52 88.9 0)
+			(at 86.36 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7982,7 +7097,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 205.74 99.06 180)
+		(at 213.36 93.98 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7993,29 +7108,27 @@
 		(fields_autoplaced yes)
 		(uuid "816fd322-e1bc-41eb-afd7-8196c82a30e2")
 		(property "Reference" "L2"
-			(at 207.01 97.7899 0)
+			(at 213.36 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "1nH"
-			(at 207.01 100.3299 0)
+		(property "Value" "2.2nH"
+			(at 213.36 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 205.74 99.06 0)
+			(at 213.36 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8026,7 +7139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 99.06 0)
+			(at 213.36 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8037,7 +7150,7 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
-			(at 205.74 99.06 0)
+			(at 213.36 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8047,8 +7160,8 @@
 				)
 			)
 		)
-		(property "MPN" "LQG15HS1N0S02D"
-			(at 205.74 99.06 0)
+		(property "MPN" "LQG15HS2N2S02D"
+			(at 213.36 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8058,19 +7171,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C18222"
-			(at 205.74 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 205.74 99.06 0)
+		(property "LCSC Part #" "C86061"
+			(at 213.36 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8205,6 +7307,256 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KC0603_1uF")
+		(at 175.26 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b57697d-cc80-429f-8f7c-5c75311eea39")
+		(property "Reference" "C19"
+			(at 177.8 99.8271 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 177.8 102.3671 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 174.752 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V, X5R"
+			(at 175.26 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C15849"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bec674ff-a779-4bb3-a323-9b96d6f4ca2d")
+		)
+		(pin "2"
+			(uuid "4eb2a021-4462-4603-86de-a0e42912a726")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KR0402_10k")
+		(at 185.42 99.06 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8be2e343-699a-497c-96ec-d264fc5ff875")
+		(property "Reference" "R19"
+			(at 185.42 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 185.42 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, 0603"
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25744"
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0ac1e729-d6bf-4818-b415-a91b38c6882f")
+		)
+		(pin "1"
+			(uuid "f44dccdb-8eea-4cf7-94b5-9cf3b95cb1c2")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -8368,96 +7720,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 160.02 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9e8355ce-b694-420c-a5c0-14b1da754c80")
-		(property "Reference" "TP2"
-			(at 162.56 99.5679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 162.56 102.1079 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 165.1 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 160.02 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 160.02 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a74b64f4-36c6-4f7e-b14d-ab43b6138e98")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
 		(at 172.72 68.58 0)
 		(unit 1)
@@ -8578,6 +7840,121 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KC0402_1.5pF")
+		(at 205.74 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab1f87b1-85df-4388-a0f1-cd0d59e420cb")
+		(property "Reference" "C3"
+			(at 208.28 97.2871 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5pf"
+			(at 208.28 99.8271 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 205.232 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V, C0G"
+			(at 205.74 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402CG1R5C500NT"
+			(at 205.486 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1552"
+			(at 205.74 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 205.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f9c74c9-e928-4079-99b4-97abec50df5b")
+		)
+		(pin "2"
+			(uuid "6874d0a4-46bd-4f0a-ad10-85f6c9c30dce")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -8711,7 +8088,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 129.54 0)
+		(at 175.26 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8720,9 +8097,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b649076d-ea34-4dfd-a151-03e6d4d759a1")
-		(property "Reference" "#PWR012"
-			(at 63.5 135.89 0)
+		(uuid "b3f1a113-db00-4e71-aa2e-9640ef7076a6")
+		(property "Reference" "#PWR038"
+			(at 175.26 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8733,7 +8110,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 134.62 0)
+			(at 175.26 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8743,7 +8120,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 129.54 0)
+			(at 175.26 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8754,7 +8131,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 129.54 0)
+			(at 175.26 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8765,7 +8142,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 129.54 0)
+			(at 175.26 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8776,20 +8153,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "1e6c177a-6de5-4c84-ae5a-a86859cb44b7")
+			(uuid "d167b186-5582-42a7-8a37-275472072900")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
-					(reference "#PWR012")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "karl-atomic-basic:KR0402_10k")
-		(at 101.6 88.9 0)
+		(lib_id "karl-atomic-basic:KC0402_1.5pF")
+		(at 220.98 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8798,9 +8175,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8664ad2-129e-4623-9020-61ce0b037cc6")
-		(property "Reference" "R10"
-			(at 104.14 87.6299 0)
+		(uuid "b551a63c-57e7-40a3-8b10-b0a4fb039c62")
+		(property "Reference" "C1"
+			(at 223.52 97.2871 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8810,8 +8187,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 104.14 90.1699 0)
+		(property "Value" "1.5pf"
+			(at 223.52 99.8271 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8821,8 +8198,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 101.6 88.9 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 220.472 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8833,7 +8210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 88.9 0)
+			(at 220.98 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8843,8 +8220,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, 0603"
-			(at 101.6 88.9 0)
+		(property "Description" "50V, C0G"
+			(at 220.98 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8854,8 +8231,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C25744"
-			(at 101.6 88.9 0)
+		(property "MPN" "0402CG1R5C500NT"
+			(at 220.726 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8865,8 +8242,8 @@
 				)
 			)
 		)
-		(property "MPN" "0402WGF1002TCE"
-			(at 101.6 88.9 0)
+		(property "LCSC Part #" "C1552"
+			(at 220.98 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8877,7 +8254,122 @@
 			)
 		)
 		(property "jlcbasic" "basic"
-			(at 101.6 88.9 0)
+			(at 220.98 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6200fc74-5760-4d9b-89d0-6e8849da1900")
+		)
+		(pin "2"
+			(uuid "72624177-a7a7-4f1e-ae2a-6531dc33b966")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KR0402_10k")
+		(at 91.44 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8664ad2-129e-4623-9020-61ce0b037cc6")
+		(property "Reference" "R10"
+			(at 93.98 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 93.98 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, 0603"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25744"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8888,7 +8380,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 101.6 88.9 0)
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

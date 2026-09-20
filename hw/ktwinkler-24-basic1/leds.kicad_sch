@@ -163,172 +163,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_2_Small_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JP"
-				(at 0 2.794 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Small_Open"
-				(at 0 -2.286 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, small symbol, open"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Jumper_2_Small_Open_0_0"
-				(circle
-					(center -1.016 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.016 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Small_Open_0_1"
-				(arc
-					(start -0.762 1.0196)
-					(mid 0 1.2729)
-					(end 0.762 1.0196)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Small_Open_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "karl-atomic-basic:KC0402_100nF_16V"
 			(pin_numbers
 				(hide yes)
@@ -516,436 +350,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "karl-parts:Driver_AD116"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 6.604 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Driver_AD116"
-				(at -4.826 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 1.524 -10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C7463412.pdf"
-				(at 3.302 -6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-7V, 1.1A/2A peak"
-				(at -1.778 -9.398 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "AD116"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C7463412"
-				(at -12.7 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Single channel DC Motor driver"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver_AD116_1_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUTB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "INB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "INA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUTA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "karl-parts:Driver_FM116C"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 6.604 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Driver_FM116C"
-				(at -4.826 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 1.524 -10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2802264.pdf"
-				(at 3.302 -6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-6V, 0.6A/0.8A peak"
-				(at -1.778 -9.398 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "FM116C"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C2802264"
-				(at -12.7 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Single channel DC Motor driver"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver_FM116C_1_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUTB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "INB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "INA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUTA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1171,221 +575,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "karl-parts:Driver_T1016H"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 6.604 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Driver_T1016H"
-				(at -4.826 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 1.524 -10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C5142991.pdf"
-				(at 3.302 -6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-6.5V, 0.9A/2.3A peak"
-				(at -1.778 -9.398 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "T1016H"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C5142991"
-				(at -12.7 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Single channel DC Motor driver"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver_T1016H_1_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUTB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "INB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "INA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUTA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1522,40 +711,6 @@
 		)
 		(uuid "3ee8e571-48f8-47d6-a522-e59590753b34")
 	)
-	(text "FIXME"
-		(exclude_from_sim no)
-		(at 162.56 99.06 0)
-		(effects
-			(font
-				(size 10.16 10.16)
-				(thickness 2.032)
-				(bold yes)
-			)
-		)
-		(uuid "59a163ff-7110-4ced-be83-df27b29a7d04")
-	)
-	(text "Allow providing other power on the jumper,\nthis channel can do 40V, in theory..."
-		(exclude_from_sim no)
-		(at 39.37 43.942 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d0711a8-b75d-454e-9aa5-9d90610422b3")
-	)
-	(text "Try and split these power? to eval the drivers separately?"
-		(exclude_from_sim no)
-		(at 170.434 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8eae7701-6bf4-4cc3-a2c8-d1cc97560ea8")
-	)
 	(text "fm116c: 0.04, 60k stock (600/800mA)\nad116: 0.04, 3k stock (1.1/2A)\nlk116: 0.04 200 stock (1A/2A)\nt1016h: 0.05 4k stock  (2.3A)\nbdr6120: 0.05 ~zero stock\ngr6205: 0.03 2k stock (200mA)\nhl116: 0.03 3k stock (500/800mA)"
 		(exclude_from_sim no)
 		(at 117.602 37.338 0)
@@ -1566,17 +721,6 @@
 			(justify left)
 		)
 		(uuid "98f96e5d-8190-45fc-9fe3-8e3d017fe413")
-	)
-	(text "Make all connectors here be vertical, not my normal\nhorizontal.  It's easier for the boxes to plug things that way."
-		(exclude_from_sim no)
-		(at 150.368 117.348 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9c8bc8cd-8713-45e7-b5b4-d6b58d1ad93a")
 	)
 	(text "Tested: GM8023B and FM116, both seem fine at 5V.  Have not tested at higher voltages!\nTODO: test gm8023 with 24V! (might need to make some led strings up myself?)\n"
 		(exclude_from_sim no)
@@ -1590,10 +734,10 @@
 		(uuid "9efef478-d55a-4c23-9805-bd80f944cc5f")
 	)
 	(junction
-		(at 101.6 129.54)
+		(at 101.6 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "001859a4-3f66-46f4-8389-95da19384a56")
+		(uuid "0173c044-b79b-47a2-a630-5f522c7ac05e")
 	)
 	(junction
 		(at 101.6 63.5)
@@ -1608,34 +752,10 @@
 		(uuid "2ec075f1-267d-46a4-b730-eecc9b165e55")
 	)
 	(junction
-		(at 38.1 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f558f5b-9214-4209-bc24-b222ca2afee3")
-	)
-	(junction
-		(at 101.6 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36581bca-4282-4ccc-83fd-fed8ce7c57b7")
-	)
-	(junction
 		(at 101.6 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3766b827-d3af-43db-94cc-ad82f715f7ff")
-	)
-	(junction
-		(at 38.1 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3965578c-309d-491f-b86d-28e51909d0e9")
-	)
-	(junction
-		(at 119.38 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e976f7a-90fc-420d-98a4-8982f82b234e")
 	)
 	(junction
 		(at 111.76 58.42)
@@ -1644,10 +764,28 @@
 		(uuid "3f1fcdc0-9ab9-4064-b7ee-50f8ed1ccf9d")
 	)
 	(junction
+		(at 116.84 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "439aa6f6-832d-4cda-ab65-a6b3d2a0cba3")
+	)
+	(junction
+		(at 38.1 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4db5bb7b-3982-4781-817f-134bac4a78c7")
+	)
+	(junction
 		(at 101.6 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4e599b74-fb50-4827-8290-49b626138922")
+	)
+	(junction
+		(at 101.6 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f5d389a-6d9c-47b1-a2c9-f8d07890485b")
 	)
 	(junction
 		(at 116.84 99.06)
@@ -1656,10 +794,40 @@
 		(uuid "69dcb166-ef0a-42de-a784-eb072c67173f")
 	)
 	(junction
+		(at 116.84 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a7d5f62-7d5e-45a8-bc03-e692a12edd7b")
+	)
+	(junction
+		(at 101.6 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "762d1690-3ffd-4b1d-84d0-864b782951e6")
+	)
+	(junction
 		(at 38.1 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d3eace2-d8b0-4076-844d-3561345f43a2")
+	)
+	(junction
+		(at 101.6 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adbf7e3c-a4db-41ab-a9d1-ec6f4454f939")
+	)
+	(junction
+		(at 38.1 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adfbeedf-60d2-4ae1-bd86-2342a213514b")
+	)
+	(junction
+		(at 111.76 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4f96cfd-015b-4b3e-b5a6-748b4fb8881e")
 	)
 	(junction
 		(at 116.84 63.5)
@@ -1668,40 +836,16 @@
 		(uuid "bb0e0a84-5821-4e46-a317-cc7137c7e492")
 	)
 	(junction
-		(at 118.11 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1d81f8b-b2a5-4e1d-bc70-5a91568bf987")
-	)
-	(junction
 		(at 111.76 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2f36682-0b0e-471c-904f-3eb1000f6599")
 	)
 	(junction
-		(at 101.6 134.62)
+		(at 111.76 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cdd1ca60-46fd-4f43-881f-56ee9d7f8a25")
-	)
-	(junction
-		(at 113.03 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ddc7873b-b454-466a-8e91-13c23de91fa2")
-	)
-	(junction
-		(at 101.6 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e4cd3e0b-7730-4791-8576-3882614579a6")
-	)
-	(junction
-		(at 114.3 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eaf15211-6215-440a-9a48-7cb51b42a104")
+		(uuid "e0a510e3-fc8c-4781-bbb6-3c1416dc83f3")
 	)
 	(wire
 		(pts
@@ -1715,16 +859,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 170.18) (xy 101.6 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04b6109d-7bff-48d8-827d-022c5e68cb63")
-	)
-	(wire
-		(pts
 			(xy 116.84 96.52) (xy 116.84 99.06)
 		)
 		(stroke
@@ -1732,36 +866,6 @@
 			(type default)
 		)
 		(uuid "089841a3-6507-422f-a8b3-f408bf218733")
-	)
-	(wire
-		(pts
-			(xy 86.36 167.64) (xy 93.98 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d5fa25b-3518-4c97-b600-2412902b7373")
-	)
-	(wire
-		(pts
-			(xy 101.6 170.18) (xy 119.38 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a1a9347-24c6-465a-854f-1005d14df6a6")
-	)
-	(wire
-		(pts
-			(xy 118.11 132.08) (xy 118.11 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a9a996a-9050-4bc3-83ec-3d637c1e4ee2")
 	)
 	(wire
 		(pts
@@ -1775,13 +879,23 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 132.08) (xy 113.03 129.54)
+			(xy 50.8 132.08) (xy 66.04 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ba10d1b-5e1e-4853-a3f7-d0d11985307c")
+		(uuid "1c9187ba-58a5-490b-a841-5ad568aced6c")
+	)
+	(wire
+		(pts
+			(xy 38.1 162.56) (xy 66.04 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf87645-7a4b-4fa8-8d7d-bc72f6f545fa")
 	)
 	(wire
 		(pts
@@ -1792,6 +906,16 @@
 			(type default)
 		)
 		(uuid "2253573a-4ab9-47ad-bcc7-0743fd7bb889")
+	)
+	(wire
+		(pts
+			(xy 116.84 170.18) (xy 121.92 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "248c5e8c-16e2-4879-adb1-acf2b2b40244")
 	)
 	(wire
 		(pts
@@ -1815,23 +939,53 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 132.08) (xy 113.03 132.08)
+			(xy 50.8 167.64) (xy 66.04 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2db896fe-b7e8-4dec-a7ef-94f69c01a62c")
+		(uuid "2e32e992-1f8b-4b6b-85f2-ef8ea3bd2add")
 	)
 	(wire
 		(pts
-			(xy 38.1 162.56) (xy 38.1 127)
+			(xy 101.6 129.54) (xy 111.76 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e0dc47c-207c-42ee-83b4-1a26465ba944")
+		(uuid "2e63a746-41bf-46a7-bc59-f1898cd5a0b1")
+	)
+	(wire
+		(pts
+			(xy 116.84 167.64) (xy 116.84 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340b0899-c8a2-48fe-9a12-e671c420747a")
+	)
+	(wire
+		(pts
+			(xy 50.8 129.54) (xy 66.04 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e0e9fc-bf45-492f-ab0e-e4b0029b3b9a")
+	)
+	(wire
+		(pts
+			(xy 93.98 170.18) (xy 101.6 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35fae397-e055-4b43-bcd7-cd7c2d5679cc")
 	)
 	(wire
 		(pts
@@ -1845,23 +999,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 55.88) (xy 53.34 55.88)
+			(xy 38.1 55.88) (xy 66.04 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "36685fa9-4938-4c90-83a4-cb8bc58188c8")
-	)
-	(wire
-		(pts
-			(xy 76.2 175.26) (xy 76.2 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "385bccc4-3c5a-4b93-9a2d-a82203e51fd9")
 	)
 	(wire
 		(pts
@@ -1875,16 +1019,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 165.1) (xy 121.92 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bb1c646-206d-443d-b3cb-55443f8913ca")
-	)
-	(wire
-		(pts
 			(xy 86.36 96.52) (xy 93.98 96.52)
 		)
 		(stroke
@@ -1892,6 +1026,16 @@
 			(type default)
 		)
 		(uuid "3cad9ffb-7bb0-4290-8902-4095ee6c2f5c")
+	)
+	(wire
+		(pts
+			(xy 86.36 132.08) (xy 93.98 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4015dfed-bc96-421d-8764-845341f92659")
 	)
 	(wire
 		(pts
@@ -1905,33 +1049,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 134.62) (xy 118.11 134.62)
+			(xy 76.2 139.7) (xy 76.2 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "494e7001-1f52-468d-ab7a-acd5885ceb63")
-	)
-	(wire
-		(pts
-			(xy 50.8 129.54) (xy 66.04 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d39e212-8f2d-4e08-8ebd-81bf4afa1c98")
-	)
-	(wire
-		(pts
-			(xy 118.11 134.62) (xy 121.92 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51f0e59d-9665-4ccb-ac97-d26dc176252f")
+		(uuid "5521d599-7d9a-4fae-9305-7b8c6af0f8da")
 	)
 	(wire
 		(pts
@@ -1945,13 +1069,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 134.62) (xy 101.6 134.62)
+			(xy 86.36 129.54) (xy 101.6 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "597e4be4-4856-4e42-ac1f-62f7adfc79dc")
+		(uuid "5a8bbcc5-73f6-42d9-baeb-b63ac97708e0")
 	)
 	(wire
 		(pts
@@ -1965,13 +1089,23 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 167.64) (xy 93.98 170.18)
+			(xy 114.3 132.08) (xy 111.76 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e24afdb-4122-4f56-8f54-1e23e11a10cc")
+		(uuid "5f3d4523-7846-4a9a-9446-45701c85fa66")
+	)
+	(wire
+		(pts
+			(xy 38.1 162.56) (xy 38.1 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e710ad-e640-4b70-a5cc-b597630de445")
 	)
 	(wire
 		(pts
@@ -1985,43 +1119,33 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 165.1) (xy 101.6 165.1)
+			(xy 101.6 165.1) (xy 111.76 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68e69ea7-15a8-45ae-96ae-161f7eb13e8f")
+		(uuid "675e6817-b825-4ccf-862e-a3990003e231")
 	)
 	(wire
 		(pts
-			(xy 121.92 132.08) (xy 121.92 134.62)
+			(xy 76.2 175.26) (xy 76.2 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e09fd90-8708-4899-9c56-8d4bc855b057")
+		(uuid "6e6d0377-5c03-4eb1-804f-2000f31e2a5e")
 	)
 	(wire
 		(pts
-			(xy 119.38 167.64) (xy 119.38 170.18)
+			(xy 121.92 167.64) (xy 121.92 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "73c37950-9cb7-492b-9609-de77d534c3d6")
-	)
-	(wire
-		(pts
-			(xy 101.6 129.54) (xy 113.03 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78287aa0-4cdc-4987-84fd-a71e0d94eddd")
+		(uuid "73b77036-6827-4dd7-925d-43ed1cd67b97")
 	)
 	(wire
 		(pts
@@ -2045,6 +1169,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 167.64) (xy 93.98 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8395d68c-2e6f-4485-ac3a-869a211ef4e7")
+	)
+	(wire
+		(pts
 			(xy 116.84 63.5) (xy 121.92 63.5)
 		)
 		(stroke
@@ -2065,6 +1199,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 129.54) (xy 121.92 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b656f55-304f-4d28-a6f7-5d87425b05a1")
+	)
+	(wire
+		(pts
 			(xy 114.3 60.96) (xy 111.76 60.96)
 		)
 		(stroke
@@ -2072,16 +1216,6 @@
 			(type default)
 		)
 		(uuid "909a0b6a-ed0e-4d98-9974-80211ad65d44")
-	)
-	(wire
-		(pts
-			(xy 93.98 132.08) (xy 93.98 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94a22b5f-4483-4b35-9b1d-3a4912631034")
 	)
 	(wire
 		(pts
@@ -2115,13 +1249,23 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 132.08) (xy 121.92 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ed22186-06e8-49cc-b523-a088de5e4390")
+	)
+	(wire
+		(pts
 			(xy 50.8 165.1) (xy 66.04 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a9e9f110-152f-4221-99dc-af97cd147c19")
+		(uuid "ab11c39c-529a-41ad-9c34-9025239f171e")
 	)
 	(wire
 		(pts
@@ -2135,6 +1279,26 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 167.64) (xy 111.76 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aca6049c-95ad-4ad8-ba19-9c48b78cc903")
+	)
+	(wire
+		(pts
+			(xy 111.76 132.08) (xy 111.76 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b012cb42-1700-469e-9c6e-43d92fde63bd")
+	)
+	(wire
+		(pts
 			(xy 116.84 60.96) (xy 116.84 63.5)
 		)
 		(stroke
@@ -2145,23 +1309,43 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 170.18) (xy 121.92 170.18)
+			(xy 101.6 170.18) (xy 116.84 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7fa7e44-fe2a-415d-9f30-51c177bcf201")
+		(uuid "b423883a-4993-49a1-a37f-fc7e8d61c1a5")
 	)
 	(wire
 		(pts
-			(xy 121.92 167.64) (xy 121.92 170.18)
+			(xy 93.98 134.62) (xy 101.6 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b856e467-78f5-4662-ae78-eec9ef9fae10")
+		(uuid "b6ba2f72-078c-4ea5-8b59-25a54af803ea")
+	)
+	(wire
+		(pts
+			(xy 86.36 167.64) (xy 93.98 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71ab1ca-dcb0-47c8-921e-a446a3914bbd")
+	)
+	(wire
+		(pts
+			(xy 86.36 165.1) (xy 101.6 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8752766-91e8-445a-b42d-563ab4450ff3")
 	)
 	(wire
 		(pts
@@ -2172,26 +1356,6 @@
 			(type default)
 		)
 		(uuid "ba812bf2-daeb-41b4-9f49-f9a5bd53d772")
-	)
-	(wire
-		(pts
-			(xy 66.04 162.56) (xy 38.1 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb61d7cd-7275-45ed-88a8-e21afcdfd117")
-	)
-	(wire
-		(pts
-			(xy 114.3 167.64) (xy 114.3 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1c88e9d-5cda-42f3-8b55-2e8fe11de6c6")
 	)
 	(wire
 		(pts
@@ -2215,13 +1379,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 167.64) (xy 66.04 167.64)
+			(xy 116.84 134.62) (xy 121.92 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c607e727-e748-44f8-b575-e847be0cac28")
+		(uuid "c5520900-1215-4148-990a-fb7334d2e54e")
 	)
 	(wire
 		(pts
@@ -2232,6 +1396,26 @@
 			(type default)
 		)
 		(uuid "c89215db-cf7d-46ae-bcd1-73c51d000e2e")
+	)
+	(wire
+		(pts
+			(xy 116.84 132.08) (xy 116.84 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca64e276-85d9-4517-89fe-28945841c318")
+	)
+	(wire
+		(pts
+			(xy 93.98 132.08) (xy 93.98 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd05f235-8c59-4e37-abe6-8354ca1b2431")
 	)
 	(wire
 		(pts
@@ -2255,43 +1439,13 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 55.88) (xy 66.04 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3e6397f-b1a9-4898-ae8e-47d221022ae8")
-	)
-	(wire
-		(pts
-			(xy 86.36 132.08) (xy 93.98 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d64c2d87-ddbd-4425-9acf-ca46ec95d06a")
-	)
-	(wire
-		(pts
-			(xy 101.6 165.1) (xy 114.3 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da4b3fee-7e7a-484f-822a-20bf5d51a65b")
-	)
-	(wire
-		(pts
 			(xy 38.1 127) (xy 38.1 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da6feee8-e085-427d-b32d-bcee936a9f8b")
+		(uuid "dee84c84-c918-4056-9a8f-e248d80b61ac")
 	)
 	(wire
 		(pts
@@ -2302,6 +1456,16 @@
 			(type default)
 		)
 		(uuid "e060a7ed-fb4b-4745-9115-58baf17c5549")
+	)
+	(wire
+		(pts
+			(xy 38.1 127) (xy 66.04 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1610b28-762e-467b-8bdf-174f44bfb2a2")
 	)
 	(wire
 		(pts
@@ -2325,43 +1489,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 167.64) (xy 114.3 167.64)
+			(xy 101.6 134.62) (xy 116.84 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7e7e55c-936f-4fa2-922f-74d0bf07393b")
+		(uuid "eee1e174-1334-4d4b-a50d-5ba1eba808ea")
 	)
 	(wire
 		(pts
-			(xy 76.2 139.7) (xy 76.2 144.78)
+			(xy 111.76 167.64) (xy 111.76 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f66951d3-bf75-4a05-8130-5943148d18c9")
-	)
-	(wire
-		(pts
-			(xy 38.1 127) (xy 66.04 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f747322e-78cf-4007-a667-d9ab9fb899f8")
-	)
-	(wire
-		(pts
-			(xy 50.8 132.08) (xy 66.04 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f80d2380-da0c-4eeb-b729-1784f5699a8c")
+		(uuid "f8e65460-a15d-492f-ab25-c047ec0c354c")
 	)
 	(wire
 		(pts
@@ -2375,6 +1519,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 165.1) (xy 121.92 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa14358d-939f-49bd-be83-b437bf0cc5f4")
+	)
+	(wire
+		(pts
 			(xy 27.94 48.26) (xy 38.1 48.26)
 		)
 		(stroke
@@ -2382,26 +1536,6 @@
 			(type default)
 		)
 		(uuid "fa7ac1ef-c65f-4c1c-a589-bb35d1a9f5d7")
-	)
-	(wire
-		(pts
-			(xy 113.03 129.54) (xy 121.92 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb48a5e0-cb91-4d5f-bbfa-259e80287b68")
-	)
-	(wire
-		(pts
-			(xy 86.36 129.54) (xy 101.6 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffa3ab45-dc71-41dd-a798-829ac5e8cf4a")
 	)
 	(hierarchical_label "LED1B"
 		(shape input)
@@ -2414,6 +1548,17 @@
 		)
 		(uuid "00a35feb-e793-4435-911a-9782b738ca9c")
 	)
+	(hierarchical_label "LED3B"
+		(shape input)
+		(at 50.8 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3678c309-80c5-4091-b6d7-662434de957f")
+	)
 	(hierarchical_label "LED4A"
 		(shape input)
 		(at 50.8 165.1 180)
@@ -2423,7 +1568,7 @@
 			)
 			(justify right)
 		)
-		(uuid "383ddff4-91c2-48b5-a6c8-abf3d59b7616")
+		(uuid "5acc0a9c-3934-44f2-9509-67527733d38a")
 	)
 	(hierarchical_label "PWR_LEDS"
 		(shape passive)
@@ -2458,16 +1603,27 @@
 		)
 		(uuid "813f780f-57cf-43d9-86bc-4e6d944e4997")
 	)
-	(hierarchical_label "LED3B"
+	(hierarchical_label "LED3A"
 		(shape input)
-		(at 50.8 132.08 180)
+		(at 50.8 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "9473f3c9-49da-44cd-a670-356e406129ba")
+		(uuid "90ef9a01-6b1f-4de4-abda-266c26935c3c")
+	)
+	(hierarchical_label "LED4B"
+		(shape input)
+		(at 50.8 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c674c7bb-bb53-4b07-998b-10bb4963a389")
 	)
 	(hierarchical_label "LED2B"
 		(shape input)
@@ -2480,31 +1636,9 @@
 		)
 		(uuid "c92c709f-8ea0-43fc-a561-221f05a38fcf")
 	)
-	(hierarchical_label "LED4B"
-		(shape input)
-		(at 50.8 167.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c9c7f8e7-085b-46f3-99dd-dc78021fe893")
-	)
-	(hierarchical_label "LED3A"
-		(shape input)
-		(at 50.8 129.54 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f7cc0c15-341b-48c3-82f9-36eec50fca5e")
-	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 127 129.54 0)
+		(lib_id "karl-parts:Driver_GM8023B")
+		(at 76.2 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2512,9 +1646,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "057f7a71-4387-4e61-b4ee-069547b1e1b4")
-		(property "Reference" "J7"
-			(at 127 138.43 0)
+		(fields_autoplaced yes)
+		(uuid "0663b539-06e2-494a-83aa-5b358abc86a2")
+		(property "Reference" "U14"
+			(at 76.2 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2523,8 +1658,8 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 127 135.89 0)
+		(property "Value" "GM8023B"
+			(at 76.2 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2533,8 +1668,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal"
-			(at 127 129.54 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 77.724 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2544,8 +1679,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 127 129.54 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C269871.pdf"
+			(at 79.502 174.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2555,8 +1690,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 129.54 0)
+		(property "Description" "Single channel SOT23-6 DC Relay/Coil Driver, 5-42V, 800mA"
+			(at 74.422 177.038 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2566,8 +1701,8 @@
 				)
 			)
 		)
-		(property "MPN" "WJ15EDGVC-3.81-2P"
-			(at 127 129.54 0)
+		(property "MPN" "GM8023B"
+			(at 76.2 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2577,8 +1712,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C8387"
-			(at 127 129.54 0)
+		(property "LCSC Part #" "C269871"
+			(at 63.5 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2589,7 +1724,111 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 127 129.54 0)
+			(at 76.2 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a70970c8-624a-4ed0-a056-5802fa2b21b3")
+		)
+		(pin "2"
+			(uuid "50a60e34-5370-4604-a7d1-e7944423f480")
+		)
+		(pin "4"
+			(uuid "bf9d998c-8856-4049-bcc7-2c398459fa3a")
+		)
+		(pin "6"
+			(uuid "1ba6f591-6251-4be2-bc31-7fd005f58e48")
+		)
+		(pin "1"
+			(uuid "2b297b96-32ca-4bc6-a1cf-20acfa0e1604")
+		)
+		(pin "5"
+			(uuid "46e916ff-7160-484f-904a-8a6d3ae95807")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 114.3 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09296a12-1958-4169-9cb8-2417a1ed35ba")
+		(property "Reference" "J17"
+			(at 111.76 161.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 111.76 163.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
+			(at 114.3 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.3 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 162.56 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2600,21 +1839,232 @@
 			)
 		)
 		(pin "2"
-			(uuid "d37e354b-06cc-4ae1-a1ef-a31dacfa884e")
+			(uuid "c3bd4592-0de6-490d-856f-d5d36cb3026e")
 		)
 		(pin "1"
-			(uuid "e5600e8a-9baf-420b-8024-547ff9045e8b")
+			(uuid "1e50889a-f0a9-4778-96db-fb7a8b8e6369")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "J7")
+					(reference "J17")
 					(unit 1)
 				)
 			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "J?")
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 114.3 127 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1a5867b2-aafa-45ea-966d-ada497f93c60")
+		(property "Reference" "J15"
+			(at 111.76 125.7299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 111.76 128.2699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
+			(at 114.3 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.3 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7c54cf06-eb06-4cc8-a74a-852f6fdd563e")
+		)
+		(pin "1"
+			(uuid "a48685bd-0310-4a4b-9699-01b1e16c6637")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-parts:Driver_GM8023B")
+		(at 76.2 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2154f4b5-639b-432e-94cd-d4fc21a3996d")
+		(property "Reference" "U13"
+			(at 76.2 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GM8023B"
+			(at 76.2 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 77.724 142.494 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C269871.pdf"
+			(at 79.502 138.684 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single channel SOT23-6 DC Relay/Coil Driver, 5-42V, 800mA"
+			(at 74.422 141.478 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GM8023B"
+			(at 76.2 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C269871"
+			(at 63.5 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 76.2 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "38d1389e-4bb5-4dda-9403-1cc580cb6745")
+		)
+		(pin "2"
+			(uuid "649fcd9f-0e4d-41d8-a590-dcf6199d0650")
+		)
+		(pin "4"
+			(uuid "0157fc0d-7104-4909-b8f6-d89274159ead")
+		)
+		(pin "6"
+			(uuid "d51d119a-2021-4ebe-9169-5bbdb21468db")
+		)
+		(pin "1"
+			(uuid "52d7dd00-e08f-4d68-8b4f-345d9c10dc10")
+		)
+		(pin "5"
+			(uuid "6a7f850e-47a5-45e0-ba53-0d18ad2d2a75")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -2707,223 +2157,6 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Small_Open")
-		(at 55.88 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26a9dee0-5663-4a79-97ae-0d32fb073dbb")
-		(property "Reference" "JP3"
-			(at 55.88 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LocalPower"
-			(at 55.88 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, small symbol, open"
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "126cfec7-49bc-4f18-8c7f-45961b1d9932")
-		)
-		(pin "1"
-			(uuid "c832fd7d-31f5-4cb0-85cc-af5f0cc201cb")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "JP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
-		(at 101.6 132.08 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b1e8a26-404c-4746-8719-f9e2f1a78a9c")
-		(property "Reference" "C4"
-			(at 104.14 130.3071 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 104.14 132.8471 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 101.092 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "16V X7R"
-			(at 101.6 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL05B104KO5NNNC"
-			(at 101.346 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C1525"
-			(at 101.6 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "jlcbasic" "basic"
-			(at 101.6 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 101.6 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "99a29c4d-e91c-4677-a14b-da5f3884a30b")
-		)
-		(pin "1"
-			(uuid "83e94a0f-e492-427b-a6f7-a464d7c70b10")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3050,229 +2283,6 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "karl-parts:Driver_T1016H")
-		(at 76.2 132.08 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39aa9aac-7f84-4cb5-a8db-2ca292efcced")
-		(property "Reference" "U4"
-			(at 76.2 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "T1016H"
-			(at 76.2 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 77.724 142.494 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5142991.pdf"
-			(at 79.502 138.684 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-6.5V, 0.9A/2.3A peak"
-			(at 74.422 141.478 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "T1016H"
-			(at 76.2 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C5142991"
-			(at 63.5 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 76.2 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "2d47ae85-1888-4490-a4ff-60df07154655")
-		)
-		(pin "3"
-			(uuid "15153380-8a49-4d50-bfeb-f2f981029f9a")
-		)
-		(pin "6"
-			(uuid "d8eaf8dc-08d9-41ff-9452-b039b4870696")
-		)
-		(pin "4"
-			(uuid "f1a70cad-e9fd-44a4-9bc6-037f236b8fee")
-		)
-		(pin "1"
-			(uuid "5283dae3-f985-4ad0-ac65-c20c601102e6")
-		)
-		(pin "2"
-			(uuid "38ee95ba-8a25-4d01-b453-9874185d6015")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 116.84 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "39b71ed4-49f8-4d5b-b155-e3154e36a672")
-		(property "Reference" "J16"
-			(at 114.3 161.2899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 114.3 163.8299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
-			(at 116.84 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 116.84 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 116.84 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9d821fe3-2003-4ae7-a86a-9b1ed30c62d9")
-		)
-		(pin "1"
-			(uuid "06c6a1f9-4f0c-4015-8f77-8db6684eac83")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -3530,8 +2540,8 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-parts:Driver_FM116C")
-		(at 76.2 96.52 0)
+		(lib_id "power:GND")
+		(at 76.2 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3540,29 +2550,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5e14dd16-3f30-41c3-9946-82daa27872e2")
-		(property "Reference" "U2"
-			(at 76.2 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FM116C"
-			(at 76.2 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 77.724 106.934 0)
+		(uuid "4d47d32c-6783-4c37-99ea-5ea6d537c658")
+		(property "Reference" "#PWR04"
+			(at 76.2 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3572,9 +2562,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2802264.pdf"
-			(at 79.502 103.124 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 76.2 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3583,118 +2572,8 @@
 				)
 			)
 		)
-		(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-6V, 0.6A/0.8A peak"
-			(at 74.422 105.918 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "FM116C"
-			(at 76.2 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C2802264"
-			(at 63.5 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 76.2 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "69911808-c8a4-4239-938e-9891d2ba64b9")
-		)
-		(pin "1"
-			(uuid "376ee814-3499-4a7d-97b2-9c841ca1d96c")
-		)
-		(pin "6"
-			(uuid "8e3f6313-543f-4923-b6f9-176612e05340")
-		)
-		(pin "2"
-			(uuid "bd2da034-5179-4cf2-9dd6-3069f59ae619")
-		)
-		(pin "3"
-			(uuid "cab163e4-6968-4405-aae6-5da6776efb24")
-		)
-		(pin "4"
-			(uuid "f221e9c8-ad6b-45b0-bde5-ff05bce54408")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 115.57 127 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "664a9962-1494-49b8-a639-1ef6af56bdfe")
-		(property "Reference" "J15"
-			(at 113.03 125.7299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 113.03 128.2699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
-			(at 115.57 127 0)
+		(property "Footprint" ""
+			(at 76.2 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3705,7 +2584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 127 0)
+			(at 76.2 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3715,8 +2594,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 115.57 127 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3725,28 +2604,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Manufacturer" ""
-			(at 115.57 127 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "39cd7273-aee1-47fe-aba5-b9329d973ecf")
 		)
 		(pin "1"
-			(uuid "e27a9370-7748-490c-b0b4-0346d5c03613")
+			(uuid "f9d26088-1b7b-425d-b6d5-e640696eb07c")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "J15")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4013,8 +2878,8 @@
 		)
 	)
 	(symbol
-		(lib_id "karl-parts:Driver_AD116")
-		(at 76.2 167.64 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4022,10 +2887,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81d8210c-ea4f-42ac-aa2e-2a9a24d3b1ed")
-		(property "Reference" "U5"
-			(at 76.2 154.94 0)
+		(uuid "7b2e9bfe-4e82-43f7-9111-1d2c0c659dd7")
+		(property "Reference" "J16"
+			(at 127 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4034,8 +2898,8 @@
 				)
 			)
 		)
-		(property "Value" "AD116"
-			(at 76.2 157.48 0)
+		(property "Value" "Conn_01x02"
+			(at 127 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4044,8 +2908,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 77.724 178.054 0)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical"
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4055,8 +2919,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7463412.pdf"
-			(at 79.502 174.244 0)
+		(property "Datasheet" ""
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4066,8 +2930,8 @@
 				)
 			)
 		)
-		(property "Description" "Single channel SOT23-6 DC Motor Driver, 2-7V, 1.1A/2A peak"
-			(at 74.422 177.038 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4077,8 +2941,8 @@
 				)
 			)
 		)
-		(property "MPN" "AD116"
-			(at 76.2 167.64 0)
+		(property "MPN" "WJ15EDGVC-3.81-02P-14-00A"
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4088,8 +2952,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C7463412"
-			(at 63.5 172.72 0)
+		(property "LCSC Part #" "C8396"
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4100,7 +2964,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 76.2 167.64 0)
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4110,34 +2974,372 @@
 				)
 			)
 		)
-		(pin "6"
-			(uuid "5b56fc14-4e0f-4bcf-8652-fc39599ef1fd")
-		)
-		(pin "4"
-			(uuid "acce5450-700d-40d2-bef2-ddcbc031e6e4")
-		)
-		(pin "3"
-			(uuid "cd9956fa-a175-4266-aaaa-ff5de1fd922a")
+		(pin "2"
+			(uuid "b58c9205-5607-40e7-afe7-d788278079a0")
 		)
 		(pin "1"
-			(uuid "d2935d41-795c-4101-a821-dead98194910")
-		)
-		(pin "5"
-			(uuid "a15d62a0-7e81-4bd3-8437-c3f1a7640055")
-		)
-		(pin "2"
-			(uuid "99b2c5a5-6ee3-460a-b1e7-cfcfb9bb25ae")
+			(uuid "b1bf9e45-684f-4b6e-8d22-3383d87e0b63")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "U5")
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1451261-190e-4ae5-b503-dc4ecd6a4bc6")
+		(property "Reference" "J18"
+			(at 127 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 127 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical"
+			(at 127 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 127 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WJ15EDGVC-3.81-02P-14-00A"
+			(at 127 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C8396"
+			(at 127 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 127 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "57e86e1e-f985-473a-818a-038e68ab7632")
+		)
+		(pin "1"
+			(uuid "19ff9373-1752-499e-aae4-fdee2e2cba8c")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "J18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-atomic-basic:KC0402_100nF_16V")
+		(at 101.6 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4a22157-da1e-45e1-acb8-5ec5941f1f0e")
+		(property "Reference" "C9"
+			(at 104.14 130.3071 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 104.14 132.8471 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.092 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "16V X7R"
+			(at 101.6 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 101.346 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1525"
+			(at 101.6 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "jlcbasic" "basic"
+			(at 101.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 101.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5e035230-a0c6-41ac-8432-87ded55054bb")
+		)
+		(pin "1"
+			(uuid "99f54520-c99d-4d56-a4a4-a1c17943f7df")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d306eca8-54e5-456f-9702-96f7967b4cfa")
+		(property "Reference" "J6"
+			(at 127 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 127 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical"
+			(at 127 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 127 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WJ15EDGVC-3.81-02P-14-00A"
+			(at 127 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C8396"
+			(at 127 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 127 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "79d93f75-6388-4876-bcbf-2a7e969571f1")
+		)
+		(pin "1"
+			(uuid "02b80075-1beb-4227-8736-666dd08974bd")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "J6")
 					(unit 1)
 				)
 			)
 			(project "leds"
 				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "U?")
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -4154,8 +3356,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8f239e62-6419-45b2-9b77-fcd993f74753")
-		(property "Reference" "C3"
+		(uuid "d4716f4c-de95-4599-906c-cc6d0524afc4")
+		(property "Reference" "C10"
 			(at 104.14 165.8671 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4255,15 +3457,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "82529d78-32b4-42db-9bc4-6bafe44086b3")
+			(uuid "ab90ed10-1a2a-4080-a6bd-aee184429b1f")
 		)
 		(pin "1"
-			(uuid "17312386-19c8-41f7-83d9-44f993d8087f")
+			(uuid "1237d7df-8704-46ed-89fb-51583804ca68")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "C3")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4280,8 +3482,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "94cb2abc-522c-4fda-ad56-a30b31d5a877")
-		(property "Reference" "#PWR03"
+		(uuid "db798990-fd4b-4e5f-844a-18d88a6ae86e")
+		(property "Reference" "#PWR07"
 			(at 76.2 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -4336,338 +3538,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7417a6a-316f-4375-80a8-349535a1ece9")
+			(uuid "7bead216-bf27-45c6-95aa-fc749dfc15af")
 		)
 		(instances
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ec4a62d-ce9c-4b2a-82a5-d6bf6d442255")
-		(property "Reference" "#PWR04"
-			(at 76.2 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.2 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b9063a0-9880-49bb-ad8b-a6b5b68add71")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 127 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d306eca8-54e5-456f-9702-96f7967b4cfa")
-		(property "Reference" "J6"
-			(at 127 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 127 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal"
-			(at 127 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "WJ15EDGVC-3.81-2P"
-			(at 127 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C8387"
-			(at 127 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 127 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "79d93f75-6388-4876-bcbf-2a7e969571f1")
-		)
-		(pin "1"
-			(uuid "02b80075-1beb-4227-8736-666dd08974bd")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "J?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 127 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "df0c3c70-d947-445d-8a1a-0d87dbb55a71")
-		(property "Reference" "J8"
-			(at 127 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 127 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal"
-			(at 127 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "WJ15EDGVC-3.81-2P"
-			(at 127 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C8387"
-			(at 127 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 127 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b8ea1907-2704-41af-9d41-963f15555b62")
-		)
-		(pin "1"
-			(uuid "41ad7339-b496-4aab-bfab-61f910ef0baa")
-		)
-		(instances
-			(project "ktwinkler-24-basic1"
-				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-			(project "leds"
-				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
-					(reference "J?")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4704,7 +3580,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal"
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical"
 			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4737,7 +3613,7 @@
 				)
 			)
 		)
-		(property "MPN" "WJ15EDGRC-3.81-2P"
+		(property "MPN" "WJ15EDGVC-3.81-02P-14-00A"
 			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4748,7 +3624,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C8387"
+		(property "LCSC Part #" "C8396"
 			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4786,6 +3662,131 @@
 			(project "leds"
 				(path "/9ebaab77-0759-43ea-87f9-fd126be3ebdf"
 					(reference "J?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "karl-parts:Driver_GM8023B")
+		(at 76.2 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd53fa45-9884-483c-a2c6-1569eb6e26b5")
+		(property "Reference" "U12"
+			(at 76.2 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GM8023B"
+			(at 76.2 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 77.724 106.934 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C269871.pdf"
+			(at 79.502 103.124 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single channel SOT23-6 DC Relay/Coil Driver, 5-42V, 800mA"
+			(at 74.422 105.918 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GM8023B"
+			(at 76.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C269871"
+			(at 63.5 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 76.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "7b0b5d43-2500-4890-9613-20fb2fb9d42f")
+		)
+		(pin "2"
+			(uuid "ef54211d-ac66-4390-82f3-00b7914bae41")
+		)
+		(pin "4"
+			(uuid "db940580-f43c-4547-9b7c-59416fb552a1")
+		)
+		(pin "6"
+			(uuid "b7cfe9ce-a2bb-4a18-8921-742998738f4e")
+		)
+		(pin "1"
+			(uuid "09415b7a-b08f-4d8c-9eac-2a62a59ba3b1")
+		)
+		(pin "5"
+			(uuid "0dfd960a-9f27-466d-8358-43b1b4915e73")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/c43f945b-11fd-4720-850e-2a9100759260"
+					(reference "U12")
 					(unit 1)
 				)
 			)
