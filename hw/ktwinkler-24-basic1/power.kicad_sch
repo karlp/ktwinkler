@@ -707,7 +707,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8034,7 +8034,7 @@
 		(pin "B6"
 			(uuid "e93f0ed1-057a-4146-a9b9-9419cb964763")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "1668bf72-ab53-4264-8480-8382bdfbdf93")
 		)
 		(pin "B1"

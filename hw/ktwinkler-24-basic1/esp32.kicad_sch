@@ -4305,6 +4305,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 104.14) (xy 109.22 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeb84652-86d6-43c3-b4c0-07d3df4ec0e1")
+	)
+	(wire
+		(pts
 			(xy 160.02 93.98) (xy 205.74 93.98)
 		)
 		(stroke
@@ -6375,6 +6385,94 @@
 			(project "ktwinkler-24-basic1"
 				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 92.71 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5be84283-1cd1-4d0c-ad47-77c5a90f4a33")
+		(property "Reference" "TP4"
+			(at 89.408 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 89.408 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 92.71 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 92.71 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 92.71 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "387eb9c6-184f-4ce5-bbd1-185508ed492f")
+		)
+		(instances
+			(project "ktwinkler-24-basic1"
+				(path "/48773b41-b773-40e2-8ba4-2e78c7a3e45f/f1fab45e-2489-4bf6-8b0f-5e1748a9ff79"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
