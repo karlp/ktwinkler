@@ -1,4 +1,5 @@
-# Include MicroPython ESP32 component.
-get_filename_component(MICROPY_DIR "../../../lib/micropython" ABSOLUTE)
-set(PROJECT_DIR ${MICROPY_DIR}/ports/esp32)
-include(${PROJECT_DIR}/main/CMakeLists.txt)
+# Ensure MICROPY_DIR is set, and then just include the normal main component
+get_filename_component(PROJECT_DIR "../../.." ABSOLUTE)
+set(MICROPY_DIR ${PROJECT_DIR}/lib/micropython)
+
+include (${MICROPY_DIR}/ports/esp32/main/CMakeLists.txt)

@@ -1,25 +1,20 @@
 # fw options
-Given that there's two cpus in paralell, there's... multiple options for firmware.  First off, we're having micropython on the esp32, as a baseline.
-
-We'll probably also try esphome on the esp32.
-
-For the ch584, ... could be anything yet ;)
+Given that there's multiple boards, with multiple hardwares in this repo, the firmware really has a few options.  At the time of writing, work is focused on esp32 variants, and using them with home assistant, and/or Artnet or sACN/E1.31
 
 
-# micropython builds esp32-c3
+# micropython builds
 
-We prefer using idf in a container.
-but make submodules doens't work well like that?
-like  podman run --rm  -v .:/project:Z -w /project/lib/micropython/ports/esp32 -e HOME=/tmp docker.io/espressif/idf:v5.5.1 make submodules
- should be ok, nbut... it isn't just do the submodules by hand and move on with life...
-
+## One time prep
+We prefer using idf in a container, however, the original "make submodules" targets inside esp32 aren't happy with that.  Just update the submodules we know ahead of time.
 ```
-git submodule update --init lib/berkeley-db-1.xx lib/micropython-lib
+git submodule update --init lib/micropython-lib lib/berkeley-db-1.xx
 ```
 
+## (re)build
 ```
-podman run --rm  -v .:/project:Z -w /project/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.1 idf.py  build
+podman run --rm  -v .:/project:Z -w /project/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.4 idf.py  build
 ```
+
 # To flash.
 ```
 podman run --rm --device /dev/ttyACM0 -v .:/project:Z -w /project/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.1 idf.py -b 921660 build erase-flash flash
