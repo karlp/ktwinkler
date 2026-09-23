@@ -20,6 +20,18 @@ class Twinkl:
         self.w[other].duty(0)
         self.w[sel].duty(brightness)
 
+    def both(self, brightness1, brightness2=None, step_ms=4):
+        """Both must alternate between them "fast" as only one can be on at a time...."""
+        if brightness2 is None:
+            brightness2 = brightness1
+        while True:
+            self.w[0].duty(brightness1)
+            self.w[1].duty(0)
+            time.sleep_ms(step_ms)
+            self.w[0].duty(0)
+            self.w[1].duty(brightness2)
+            time.sleep_ms(step_ms)
+
     def blink_single(self, sel, brightness, step_time_ms=100):
         other = 0
         if sel == 0:
