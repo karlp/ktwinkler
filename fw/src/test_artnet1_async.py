@@ -5,9 +5,11 @@ connected to our asyncio twinkler
 """
 
 import asyncio
+import collections
 import machine
 import socket
 import struct
+import time
 
 import home
 import config_node
@@ -46,6 +48,7 @@ class ADumbArtnet:
         # We're going to need.... some sort of dispatching...
         # and we probably don't want a network instance for each potential node?
         self.handlers = {}
+        self.recv_stats = collections.deque([], 100)
 
     def add_handler(self, start_chan, length, handler):
         self.handlers[start_chan] = (start_chan, length, handler)
@@ -55,19 +58,36 @@ class ADumbArtnet:
         if len(data) > 19:  # Basic check for Art-Net header
             if data[0:7] == b'Art-Net' and data[8] == 0x00:  # Art-Net ID and OpCode low byte for ArtDMX
                 universe = data[14] | (data[15] << 8)
-                print(f"Received packet for Universe: {universe}")
+                #print(f"Received packet for Universe: {universe}")
                 if universe == self.universe_target:
                     dmx_data = data[18:]
                     #print(f"Received Universe {universe} from {addr}, Channels: {len(dmx_data)}")
                     # We configured two, two channel dimmers on channels 3-4 and 27-28
                     # This live updates, so... we've got the basics in place now.
                     # TODO - look at our handlers and dispatch them...
-                    twinkle1 = struct.unpack('BB', dmx_data[2:4])
-                    twinkle2 = struct.unpack('BB', dmx_data[26:28])
-                    print(f"DMX Data (hacked ):", twinkle1, twinkle2)
+                    # twinkle1 = struct.unpack('BB', dmx_data[2:4])
+                    # twinkle2 = struct.unpack('BB', dmx_data[26:28])
+                    # print(f"DMX Data (hacked ):", twinkle1, twinkle2)
                     for start_chan in self.handlers:
                         start_chan, length, handler = self.handlers[start_chan]
                         handler.handle_dmx(dmx_data[start_chan-1:start_chan-1+length])
+
+    async def monitor_stats(self):
+        while True:
+            await asyncio.sleep_ms(1000)
+            # snapshot copy to do stats
+            if len(self.recv_stats) < 2:
+                continue
+            tlist = list(self.recv_stats)
+            s = sorted(tlist)
+            if len(s) % 2 != 0:
+                median = s[len(s) // 2]
+            else:
+                median = (s[len(s) // 2 - 1] + s[len(s) // 2]) / 2
+            # Now calculate the mean
+            mean = sum(tlist) / len(tlist)
+            lower_quartile = s[len(s) // 4]
+            print(f"RX timing {len(s)}: median: {median} mean: {mean} lq {lower_quartile}")
 
 
     async def task_network(self):
@@ -88,7 +108,9 @@ class ADumbArtnet:
             count = self.sock.readinto(buffer)
             if not count:
                 return
+            t1 = time.ticks_us()
             await self.process_packet(buffer[:count])
+            self.recv_stats.append(time.ticks_diff(time.ticks_us(), t1))
 
 
         while True:
@@ -115,11 +137,12 @@ async def task_main():
 
     artnet = ADumbArtnet(universe_target=0)
     asyncio.create_task(artnet.task_network())
-    asyncio.create_task(task_dummy_idle())
-    atwinkler_instance1 = atwinkler.TwinklAsync(machine.Pin.board.PWM1, machine.Pin.board.PWM2)
-    atwinkler_instance2 = atwinkler.TwinklAsync(machine.Pin(2), machine.Pin(8))
+    asyncio.create_task(artnet.monitor_stats())
+    # well, if even _one_ async flickers, lets try moving to poll then? 
+    atwinkler_instance1 = atwinkler.TwinklAsync(machine.Pin.board.PWM1, machine.Pin.board.PWM2, async_step_ms=1)
+    #atwinkler_instance2 = atwinkler.TwinklAsync(machine.Pin(2), machine.Pin(8))
     artnet.add_handler(3, 2, ADumbArtnetTwinklerx1(atwinkler_instance1, 3))
-    artnet.add_handler(27, 2, ADumbArtnetTwinklerx1(atwinkler_instance2, 27))
+    #artnet.add_handler(27, 2, ADumbArtnetTwinklerx1(atwinkler_instance2, 27))
     while True:
         await asyncio.sleep(3)
         print("tick")
