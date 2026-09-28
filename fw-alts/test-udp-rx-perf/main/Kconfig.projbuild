@@ -1,0 +1,23 @@
+menu "UDP receiver example"
+
+config UDP_RX_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+    help
+        SSID for the Wi-Fi network this example should join.
+
+config UDP_RX_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+    help
+        Password for the Wi-Fi network. This value is stored in sdkconfig;
+        do not commit sdkconfig if it contains real credentials.
+
+config UDP_RX_PORT
+    int "UDP listen port"
+    range 1 65535
+    default 6454
+    help
+        UDP port to bind the receiver socket to (6454 is the Art-Net port).
+
+endmenu
