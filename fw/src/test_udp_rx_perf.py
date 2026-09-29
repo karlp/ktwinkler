@@ -231,5 +231,6 @@ def main(mode, ssid=DEFAULT_SSID, password=DEFAULT_PASSWORD):
 
 
 if __name__ == "__main__":
+    print("Running on: ", sys.implementation)
     main(mode)
 
