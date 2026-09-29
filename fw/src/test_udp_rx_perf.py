@@ -1,44 +1,79 @@
 #!python3
 """
-Based on our artnet demo, but stripped down while we try and figure out
-how to receive udp packets without blocking things unduly.
+A "stripped down" UDP receive performance test for MicroPython.
+Tries a few different ways of doing non-blocking UDP receive, though, 
+for these tests, there's nothing _else_
+Should run on any micropython with wifi station mode...
 
-all of these are timings for receiving 900byte udp packets, broadcast every 50ms
+You can run this like so:
+```
+mpremote exec "mode='poll_register'; ssid='some_ssid'; password='some_password'" run src/test_udp_rx_perf.py
+```
 
+Modes that can be chosen:
+- poll_register: use select.poll() and register the socket for events
+- sockopt20: use socket option 20 for event-driven receive
+- async_poll: use asyncio with poll for non-blocking receive
+- async_simple: use simple asyncio for non-blocking receive
+
+Timings for receiving 900byte udp packets, broadcast every 50 ms.
+(timings _are_ faster with small packets, but they are not the underlying problem)
+Packets can be generarted with the ht_send_udp.py script here.
+
+On ESP32-C3...
 ~80 usecs - ../fw-alts/test-udp-rx-perf (ESP-IDF C based)
-~650 usecs for using poller directly - this file, test.run()
-~720 usecs for socket option 20 - this file. test.run_sockopt20()
-~850 usecs for async via poll  - test_artnet1_async, test.task_network_via_poll())
-~900 usecs for original simplistic asyncio - test_artnet1_async, test.task_network()
-
+~630 usecs for mode poll_register
+~700 usecs for mode sockopt20
+~630 usecs for mode async_poll
+~900 usecs for mode async_simple
 """
 
 import asyncio
 import collections
-import machine
+import network
 import select
 import socket
-import struct
+import sys
 import time
 
-###### THIS SECTION IS JUST MY NETWORK CONFIG
-import home
-import config_node
-config = config_node.lookup_config()
+# You can set this here, or pass them as args to main()
+try:
+    DEFAULT_SSID = ssid
+    DEFAULT_PASSWORD = password
+except:
+    print("ssid and password not provided by mpremote exec, using default values (See help)")
+    DEFAULT_SSID = "your_default_ssid"
+    DEFAULT_PASSWORD = "your_default_password"
 
-# Blocking call! (TODO - use config_node for home device ids? nahh, no need to tie them together)
-station = home.HomeStation("kartnet1")
-###### ^^^^  DOWN TO HERE.
 
-class SyncDumbArtnet:
-    def __init__(self, universe_target, bind='0.0.0.0', port=6454):
-        self.universe_target = universe_target
+def do_station(ssid, password):
+    """
+    Blocking, simple, just get me connected and give me back.
+    """
+    sta = network.WLAN(network.STA_IF)
+    sta.active(False)  # reset interface
+    sta.active(True)
+    sta.connect(ssid, password)
+
+    att = 0
+    while not sta.isconnected():
+        att += 1
+        print(f"Trying SSID: {ssid}, #{att}")
+        time.sleep_ms(500)
+    print(f"Conn: {sta.ifconfig()[0]}")
+
+class TestUdpRxPerf:
+    def __init__(self, bind='0.0.0.0', port=5005):
         self.bind = bind
         self.port = port
         self.sock_stats = collections.deque([], 100)
         self.buffer = bytearray(1024)
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.sock.setblocking(False)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     def make_stats(self, data):
+        """Simple, veryyyyy basic stats"""
         if len(data) == 0:
             return 0, 0, 0
         s = sorted(data)
@@ -50,7 +85,7 @@ class SyncDumbArtnet:
         lower_quartile = s[len(s) // 4]
         return median, mean, lower_quartile
 
-    def handle_sock_evts(self, a):
+    def _sock20_handle_sock_evts(self, s):
         t1 = time.ticks_us()
         data = self.sock.recv(1024)
         if not data:
@@ -59,20 +94,17 @@ class SyncDumbArtnet:
         self.sock_stats.append(time.ticks_diff(time.ticks_us(), t1))
         #print(f"rx len: {len(data)}")
 
-
     def run_sockopt20(self):
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.sock.setblocking(False)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self.sock.setsockopt(socket.SOL_SOCKET, 20, self.handle_sock_evts)
+        """Main synchronous run method for using socket option 20"""
+        self.sock.setsockopt(socket.SOL_SOCKET, 20, self._sock20_handle_sock_evts)
         self.sock.bind((self.bind, self.port))
 
-        #while True:
-        #    # will also try with asyncio here?
-        #    time.sleep(1)
+        tick_stats = time.ticks_ms()
+        # while True:
+        #     # will also try with asyncio here?
+        #     time.sleep(1)
 
         poller = select.poll()
-        tick_stats = time.ticks_ms()
         while True:
             events = poller.poll(1000)
             for fd, flag in events:
@@ -83,13 +115,10 @@ class SyncDumbArtnet:
                 tick_stats = time.ticks_ms()
                 median, mean, lower_quartile = self.make_stats(self.sock_stats)
                 print(f"SOCK rx {len(self.sock_stats)}: median: {median} mean: {mean} lq {lower_quartile}")
-            
 
 
-    def run(self):
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.sock.setblocking(False)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    def run_poll_register(self):
+        """Main synchronous run method for using poll and registering the socket for events."""
         self.sock.bind((self.bind, self.port))
 
         poller = select.poll()
@@ -106,12 +135,9 @@ class SyncDumbArtnet:
                         data = self.sock.recv(1024)
                         self.sock_stats.append(time.ticks_diff(time.ticks_us(), t1))
                         if not data:
-                            # Connection closed by the remote host
-                            print("Connection closed by peer.")
+                            print("For tcp, this is conn closed, for UDP, should never happen")
                             break
-                            
                         #print(f"rx len: {len(data)}")
-                        
                     except OSError as e:
                         # Handle unexpected socket errors
                         print("Socket error:", e)
@@ -121,27 +147,89 @@ class SyncDumbArtnet:
                 tick_stats = time.ticks_ms()
                 median, mean, lower_quartile = self.make_stats(self.sock_stats)
                 print(f"SOCK rx {len(self.sock_stats)}: median: {median} mean: {mean} lq {lower_quartile}")
-            #print("tick lmain poll")
+
+    async def _async_network_work(self):
+        tx = time.ticks_us()
+        #count = self.sock.readinto(self.buffer)
+        self.buffer = self.sock.recv(1024)
+        if not self.buffer:
+            return
+        count = len(self.buffer)
+        if not count:
+            return
+        self.sock_stats.append(time.ticks_diff(time.ticks_us(), tx))
 
 
-async def task_main():
-    artnet = ADumbArtnet(universe_target=0, port=5005)
-    asyncio.create_task(artnet.task_network_via_poll())
-    asyncio.create_task(artnet.monitor_stats())
-    while True:
-        await asyncio.sleep(3)
-        print("tick")
+    async def task_async_simple(self):
+        """
+        Simplistic asyncio task, first iteration.
+        """ 
+        self.sock.bind((self.bind, self.port))
 
-def main():
-    test = SyncDumbArtnet(universe_target=0, port=5005)
-    #test.run()
-    test.run_sockopt20()
+        while True:
+            try:
+                await self._async_network_work()
+            except OSError as e:
+                if e.errno == 11:  # EAGAIN, no data available
+                    await asyncio.sleep_ms(20)
+                else:
+                    raise
+            # Yes, this is polling every 20 ms So it _should_ just be less efficient,
+            # it shouldn't be significantly _slower_ as well, IMO...
+            await asyncio.sleep_ms(20)
 
 
-#if __name__ == "__main__":
-#    main()
-main()
+    async def task_async_poll(self):
+        """asyncio, but attempting to register the socket onto poller above..."""
+        self.sock.bind((self.bind, self.port))
+
+        poller = select.poll()
+        poller.register(self.sock, select.POLLIN)
+
+        while True:
+            events = poller.poll(0)
+            if not events:
+                await asyncio.sleep_ms(5)
+                continue
+            for fd, flag in events:
+                if flag & select.POLLIN:
+                    await self._async_network_work()
 
 
-# TODO:
-# TODO - toss all the artnet, just make a swallowing udp receiver, with all versions, and args to choose from
+    async def monitor_stats_async(self):
+        while True:
+            await asyncio.sleep_ms(1000)
+            median, mean, lower_quartile = self.make_stats(self.sock_stats)
+            print(f"SOCK rx {len(self.sock_stats)}: median: {median} mean: {mean} lq {lower_quartile}")
+
+
+    async def run_async(self, mode):
+        if mode == "async_simple":
+            asyncio.create_task(self.task_async_simple())
+        elif mode == "async_poll":
+            asyncio.create_task(self.task_async_poll())
+        else:
+            raise ValueError(f"Unknown async mode: {mode}")
+        asyncio.create_task(self.monitor_stats_async())
+        while True:
+            # "do nothing"
+            await asyncio.sleep(3)
+
+
+
+def main(mode, ssid=DEFAULT_SSID, password=DEFAULT_PASSWORD):
+    do_station(ssid, password)
+    test = TestUdpRxPerf(bind="0.0.0.0", port=5005)
+    if mode == "sockopt20":
+        test.run_sockopt20()
+    elif mode == "poll_register":
+        test.run_poll_register()
+    elif mode in ["async_simple", "async_poll"]:
+        asyncio.run(test.run_async(mode))
+    else:
+        print(f"Unknown mode: {mode}")
+
+
+if __name__ == "__main__":
+    main(mode)
+
