@@ -8,11 +8,7 @@ would be better long term
 import machine
 import binascii
 
-static_data = {
-
-}
-
-# Dataclasses are ideal, but not in mpy.
+# Dataclasses are ideal, but not in mpy. (but mpy has named tuples? maybe another day...)
 class NodeConfig:
     def __init__(self, device_uid, **kwargs):
         self.device_uid = device_uid
@@ -25,7 +21,9 @@ class NodeConfig:
 
 static_data = {
     # The purple reworked ktwinklermulti with the cut tracks
-    b"70af091689f8" : NodeConfig("70af091689f8", artnet_channel=2)
+    b"70af091689f8" : NodeConfig("70af091689f8", artnet_channel=2),
+    # TTGO display
+    b'246f28250538' : NodeConfig("246f28250538", artnet_channel=3),
 }
 
 def lookup_config():
