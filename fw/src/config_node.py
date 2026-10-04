@@ -24,6 +24,8 @@ static_data = {
     b"70af091689f8" : NodeConfig("70af091689f8", artnet_channel=2),
     # TTGO display
     b'246f28250538' : NodeConfig("246f28250538", artnet_channel=3),
+    # First working 24-basic1 board.
+    b'80456b04e538': NodeConfig("80456b04e538", artnet_channel=2),
 }
 
 def lookup_config():
