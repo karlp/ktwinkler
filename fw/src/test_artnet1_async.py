@@ -16,6 +16,7 @@ import home
 import config_node
 config = config_node.lookup_config()
 import atwinkler
+import ptwinkler
 
 # Blocking call! (TODO - use config_node for home device ids? nahh, no need to tie them together)
 station = home.HomeStation("kartnet1")
@@ -40,6 +41,22 @@ class ADumbArtnetTwinklerx1:
 
     def __repr__(self):
         return f"<ADumbArtnetTwinklerx1 start_chan={self.start_chan} len={self.len}>"
+
+class ADumbArtnetTwinklerPhased:
+    """
+    An equally dumb twinkler handler, just takes care of converting the dmx into logical for the twinkler instance.
+    """
+    def __init__(self, pt: ptwinkler.TwinklPhased, start_chan):
+        self.start_chan = start_chan
+        self.len = 2
+        self.t = pt
+
+    def handle_dmx(self, dmx_data):
+        """We're defining that this handler gets _just_ it's own channels"""
+        aa, bb = struct.unpack('BB', dmx_data[:self.len])
+        #print(f"{self} Handling DMX data: {aa}, {bb}")
+        # dmx is 0..255, we're doing 0..1023, so just.. x4?
+        self.t.set_logical([aa*4, bb*4])
 
 class ADumbArtnet:
     def __init__(self, universe_target, bind='0.0.0.0', port=6454):
@@ -166,7 +183,7 @@ class ADumbArtnet:
             t1 = time.ticks_us()
             #await self.process_packet(self.buffer[:count])
             await self.process_packet_real(count)
-            #print(f"processed {count} bytes lol")
+            print(f"processed {count} bytes lol")
             self.process_stats.append(time.ticks_diff(time.ticks_us(), t1))
 
 
@@ -190,14 +207,18 @@ async def task_main():
             i += 1
             print(f"Dummy idle tick {i}")
 
-    artnet = ADumbArtnet(universe_target=0, port=5005)
+    artnet = ADumbArtnet(universe_target=0, port=6454)
     #asyncio.create_task(artnet.task_network())
     asyncio.create_task(artnet.task_network_via_poll())
     asyncio.create_task(artnet.monitor_stats())
     # well, if even _one_ async flickers, lets try moving to poll then? 
-    atwinkler_instance1 = atwinkler.TwinklAsync(machine.Pin.board.PWM1, machine.Pin.board.PWM2, async_step_ms=2)
+    #atwinkler_instance1 = atwinkler.TwinklAsync(machine.Pin.board.PWM1, machine.Pin.board.PWM2, async_step_ms=2)
+    h1 = ptwinkler.TwinklPhased(machine.Pin.board.PWM1, machine.Pin.board.PWM2)
+    h2 = ptwinkler.TwinklPhased(machine.Pin.board.PWM3, machine.Pin.board.PWM4)
     #atwinkler_instance2 = atwinkler.TwinklAsync(machine.Pin(32), machine.Pin(33))
-    artnet.add_handler(3, 2, ADumbArtnetTwinklerx1(atwinkler_instance1, 3))
+    artnet.add_handler(3, 2, ADumbArtnetTwinklerPhased(h1, 3))
+    artnet.add_handler(27, 2, ADumbArtnetTwinklerPhased(h2, 27))
+    #artnet.add_handler(3, 2, ADumbArtnetTwinklerx1(atwinkler_instance1, 3))
     #artnet.add_handler(27, 2, ADumbArtnetTwinklerx1(atwinkler_instance2, 27))
     while True:
         await asyncio.sleep(3)
