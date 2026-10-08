@@ -46,8 +46,7 @@ class ADumbArtnetTwinklerPhased:
     """
     An equally dumb twinkler handler, just takes care of converting the dmx into logical for the twinkler instance.
     """
-    def __init__(self, pt: ptwinkler.TwinklPhased, start_chan):
-        self.start_chan = start_chan
+    def __init__(self, pt: ptwinkler.TwinklPhased):
         self.len = 2
         self.t = pt
 
@@ -88,14 +87,9 @@ class ADumbArtnet:
                 if universe == self.universe_target:
                     dmx_data = data[18:]
                     #print(f"Received Universe {universe} from {addr}, Channels: {len(dmx_data)}")
-                    # We configured two, two channel dimmers on channels 3-4 and 27-28
-                    # This live updates, so... we've got the basics in place now.
-                    # TODO - look at our handlers and dispatch them...
-                    # twinkle1 = struct.unpack('BB', dmx_data[2:4])
-                    # twinkle2 = struct.unpack('BB', dmx_data[26:28])
-                    # print(f"DMX Data (hacked ):", twinkle1, twinkle2)
                     for start_chan in self.handlers:
                         start_chan, length, handler = self.handlers[start_chan]
+                        print(f"Processing dmx data for channel: {start_chan}/{length}")
                         handler.handle_dmx(dmx_data[start_chan-1:start_chan-1+length])
 
     async def monitor_stats(self):
@@ -211,15 +205,11 @@ async def task_main():
     #asyncio.create_task(artnet.task_network())
     asyncio.create_task(artnet.task_network_via_poll())
     asyncio.create_task(artnet.monitor_stats())
-    # well, if even _one_ async flickers, lets try moving to poll then? 
-    #atwinkler_instance1 = atwinkler.TwinklAsync(machine.Pin.board.PWM1, machine.Pin.board.PWM2, async_step_ms=2)
-    h1 = ptwinkler.TwinklPhased(machine.Pin.board.PWM1, machine.Pin.board.PWM2)
-    h2 = ptwinkler.TwinklPhased(machine.Pin.board.PWM3, machine.Pin.board.PWM4)
-    #atwinkler_instance2 = atwinkler.TwinklAsync(machine.Pin(32), machine.Pin(33))
-    artnet.add_handler(3, 2, ADumbArtnetTwinklerPhased(h1, 3))
-    artnet.add_handler(27, 2, ADumbArtnetTwinklerPhased(h2, 27))
-    #artnet.add_handler(3, 2, ADumbArtnetTwinklerx1(atwinkler_instance1, 3))
-    #artnet.add_handler(27, 2, ADumbArtnetTwinklerx1(atwinkler_instance2, 27))
+    artnet.add_handler(3, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM1, machine.Pin.board.PWM2)))
+    artnet.add_handler(6, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM3, machine.Pin.board.PWM4)))
+    artnet.add_handler(9, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM5, machine.Pin.board.PWM6)))
+    # loll., out of pwm channels.
+    #artnet.add_handler(12, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM7, machine.Pin.board.PWM8)))
     while True:
         await asyncio.sleep(3)
         print("tick")
