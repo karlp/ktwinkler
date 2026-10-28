@@ -24,8 +24,11 @@ static_data = {
     b"70af091689f8" : NodeConfig("70af091689f8", artnet_channel=2),
     # TTGO display
     b'246f28250538' : NodeConfig("246f28250538", artnet_channel=3),
+
+    # Give them all 4*2 channels, starting from 10
+    b'80456b04e590': NodeConfig("80456b04e590", artnet_channel=10, artnet_length=4),
     # First working 24-basic1 board.
-    b'80456b04e538': NodeConfig("80456b04e538", artnet_channel=2),
+    b'80456b04e538': NodeConfig("80456b04e538", artnet_channel=18, artnet_length=4),
 }
 
 def lookup_config():
