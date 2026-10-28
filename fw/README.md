@@ -11,11 +11,14 @@ git submodule update --init lib/micropython-lib lib/berkeley-db-1.xx
 ```
 
 ## (re)build
+(The extra .. is so that _this_ repo's top level git repository is accessible for versioning)
 ```
-podman run --rm  -v .:/project:Z -w /project/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.4 idf.py  build
+podman run --rm -v ..:/project:Z -w /project/fw/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.4 idf.py  build
+podman run --rm -v ..:/project:Z -w /project/fw/boards/ktwinkler-24-basic1 -e HOME=/tmp docker.io/espressif/idf:v5.5.4 idf.py -b 921660 build
 ```
 
 # To flash.
 ```
-podman run --rm --device /dev/ttyACM0 -v .:/project:Z -w /project/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.1 idf.py -b 921660 build erase-flash flash
+podman run --rm --device /dev/ttyACM0 -v ..:/project:Z -w /project/fw/boards/ktwinkler-multi-r2025-12 -e HOME=/tmp docker.io/espressif/idf:v5.5.4 idf.py -b 921660 build erase-flash flash
+podman run --rm --device /dev/ttyACM0 -v ..:/project:Z -w /project/fw/boards/ktwinkler-24-basic1 -e HOME=/tmp docker.io/espressif/idf:v5.5.4 idf.py -b 921660 build erase-flash flash
 ```
