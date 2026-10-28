@@ -7,6 +7,7 @@ connected to our asyncio twinkler
 import asyncio
 import collections
 import machine
+import random
 import select
 import socket
 import struct
@@ -15,32 +16,20 @@ import time
 import home
 import config_node
 config = config_node.lookup_config()
-import atwinkler
 import ptwinkler
 
 # Blocking call! (TODO - use config_node for home device ids? nahh, no need to tie them together)
 station = home.HomeStation("kartnet1")
 
-class ADumbArtnetTwinklerx1:
-    """
-    A single (bi) channel twinkler, connected to artnet.
-    very very alpha concept of what a useful api here should be.
-    """
-    def __init__(self, atwinkler: atwinkler.TwinklAsync, start_chan):
-        self.start_chan = start_chan
-        self.len = 2
-        self._at = atwinkler
-        # connect this "logical device's" maintennance task to the event loop
-        asyncio.create_task(self._at.task_maintain_logical())
 
-    def handle_dmx(self, dmx_data):
-        """We're defining that this handler gets _just_ it's own channels"""
-        aa, bb = struct.unpack('BB', dmx_data[:self.len])
-        #print(f"{self} Handling DMX data: {aa}, {bb}")
-        self._at.set_logical([aa, bb])
+class ArtNetOpcode:
+    """Very incomplete"""
+    Poll = 0x2000
+    PollReply = 0x2100
+    Output = 0x5000
+    Dmx = 0x5000
 
-    def __repr__(self):
-        return f"<ADumbArtnetTwinklerx1 start_chan={self.start_chan} len={self.len}>"
+
 
 class ADumbArtnetTwinklerPhased:
     """
@@ -78,15 +67,82 @@ class ADumbArtnet:
             start_chan, length, handler = self.handlers[start_chan]
             await handler.handle_dmx(b"fk")
 
-    async def process_packet_real(self, count):
+    async def process_packet_real(self, count, saddr):
+        if count < 14:
+            return
         data = self.buffer[:count]
-        if len(data) > 19:  # Basic check for Art-Net header
-            if data[0:7] == b'Art-Net' and data[8] == 0x00:  # Art-Net ID and OpCode low byte for ArtDMX
+        if data[0:7] != b'Art-Net':
+            return
+
+        # note... little...
+        opcode, = struct.unpack_from("<H", data[8:10])
+        print(f"opcode received is: {opcode:x}")
+
+        if opcode == ArtNetOpcode.Poll:
+            #lol, big ;)
+            # TODO - for every byte short from 14..22, fill in zeros if it didn't arrive.
+            proto, flags, diag = struct.unpack_from(">HBB", data[10:14])
+            # I think they just want us to reply here?
+            print(f"attempting to reply to poll: proto: {proto:x}, flags: {flags:x}, diag: {diag:x}")
+            # FIXME - we should really defer to a processing task, rather than building here?
+            # is it ok yto just build, then defer the post with an async task? probably....
+            # time.sleep(random(.. something less than one second))
+            #packet = b'Art-Net\x00' + ... the rest of it...
+            # fucking, byteswap our IP... fucking.. wot. but ok. thanks artnet.
+            #ip_rev = 0xaabbccdd #station.sta.ipconfig("addr4")[0] # fucking fuck
+            ip_rev = 0
+            for i, octet in enumerate(station.sta.ipconfig("addr4")[0].split('.')):
+                #ip_rev = (ip_rev << 8) | int(octet)
+                ip_rev |= int(octet) << (i * 8)
+            version = 2022
+            netswitch = 0 # I think these are interesting, but not for me
+            subswitch = 0
+            oem = 0xcafe
+            ubea = 0
+            status1 = 0xf0 # indicators normal, no ubea, no RDM, port address programming unused
+            esta = 0xf00d
+            #node_report = "#0000 [6969] lol"
+            node_report = ""
+            #num_ports = 0 # "nodes can ignore this, it's implicit from portytpes...."
+            num_ports = 1  # maybe they really want it?
+            #port_types = 0x80808080 # output only, I think?
+            port_types = 0x80000000 # just one output port
+            #good_input = 0x01010101 # ? maybe? (or 80808080?)
+            good_input = 0x80000000 # ? maybe? (or 80808080?)
+            good_output = 0x80000000 # otuputing dmx, we're a plain real node...
+            swin = 0 # fuck this addressing complication, I want to try out discovery! FIXME
+            swout = 0 # fuck this addressing complication, I want to try out discovery! FIXME
+            style = 0
+            mac_h32 = 0
+            mac_l16 = 0
+            # This is not going to be the most performant, but it's tedious doing the size offsetting
+            packet = bytearray()
+            # lol, no whitespace allowed in fmt strings in mpy
+            packet.extend(struct.pack("<8sHLH", b"Art-Net", ArtNetOpcode.PollReply, ip_rev, 0x1936))
+            packet.extend(struct.pack(">HBBHBB", version, netswitch, subswitch, oem, ubea, status1))
+            packet.extend(struct.pack("<H", esta))
+            packet.extend(struct.pack("<18s64s64s", "ktwinkler", f"esp32node_{config.device_uid}", node_report))
+            packet.extend(struct.pack(">HLLLLL", num_ports, port_types, good_input, good_output, swin, swout))
+            # priotity, macro, remote, 3xspare, all zero.
+            packet.extend(struct.pack(">BBBBBBBLH", 0, 0, 0, 0,0,0, style, mac_h32, mac_l16))
+            
+            #packet = struct.pack()
+            async def _artnetpoll_reply(s: socket.socket, daddr: socket.AddressInfo, pkt: bytes):
+                """Send pkt to daddr on s, after an artnet random delay"""
+                await asyncio.sleep_ms(random.randint(50, 1000))
+                x = s.sendto(pkt, daddr)
+                print(f"sent a reply to {daddr} and got {x}")
+
+            asyncio.create_task(_artnetpoll_reply(self.sock, saddr, packet))
+            return
+
+        if opcode == ArtNetOpcode.Dmx:
+            if len(data) > 19:  # Basic check for enough of an output package
                 universe = data[14] | (data[15] << 8)
-                #print(f"Received packet for Universe: {universe}")
+                print(f"Received packet for Universe: {universe}")
                 if universe == self.universe_target:
                     dmx_data = data[18:]
-                    #print(f"Received Universe {universe} from {addr}, Channels: {len(dmx_data)}")
+                    #print(f"Received Universe {universe}, Channels: {len(dmx_data)}")
                     for start_chan in self.handlers:
                         start_chan, length, handler = self.handlers[start_chan]
                         print(f"Processing dmx data for channel: {start_chan}/{length}")
@@ -164,10 +220,10 @@ class ADumbArtnet:
         poller = select.poll()
         poller.register(self.sock, select.POLLIN)
 
-        async def _same_network_handler_really(self):
+        async def _same_network_handler_really(self: ADumbArtnet):
             tx = time.ticks_us()
             #count = self.sock.readinto(self.buffer)
-            self.buffer = self.sock.recv(1024)
+            self.buffer, addr = self.sock.recvfrom(1024)
             if not self.buffer:
                 return
             count = len(self.buffer)
@@ -176,7 +232,7 @@ class ADumbArtnet:
             self.sock_stats.append(time.ticks_diff(time.ticks_us(), tx))
             t1 = time.ticks_us()
             #await self.process_packet(self.buffer[:count])
-            await self.process_packet_real(count)
+            await self.process_packet_real(count, addr)
             print(f"processed {count} bytes lol")
             self.process_stats.append(time.ticks_diff(time.ticks_us(), t1))
 
@@ -204,10 +260,10 @@ async def task_main():
     artnet = ADumbArtnet(universe_target=0, port=6454)
     #asyncio.create_task(artnet.task_network())
     asyncio.create_task(artnet.task_network_via_poll())
-    asyncio.create_task(artnet.monitor_stats())
-    artnet.add_handler(3, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM1, machine.Pin.board.PWM2)))
-    artnet.add_handler(6, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM3, machine.Pin.board.PWM4)))
-    artnet.add_handler(9, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM5, machine.Pin.board.PWM6)))
+    #asyncio.create_task(artnet.monitor_stats())
+    artnet.add_handler(config.artnet_channel + 0, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM1, machine.Pin.board.PWM2)))
+    artnet.add_handler(config.artnet_channel + 2, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM3, machine.Pin.board.PWM4)))
+    artnet.add_handler(config.artnet_channel + 4, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM5, machine.Pin.board.PWM6)))
     # loll., out of pwm channels.
     #artnet.add_handler(12, 2, ADumbArtnetTwinklerPhased(ptwinkler.TwinklPhased(machine.Pin.board.PWM7, machine.Pin.board.PWM8)))
     while True:
@@ -219,7 +275,7 @@ def main():
 
 #if __name__ == "__main__":
 #    main()
-main()
+#main()
 
 
 # TODO:
